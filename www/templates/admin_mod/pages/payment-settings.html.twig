@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main>
+        <form method="POST" action="{{constant('CURRENT_PAGE')}}">
+            <fieldset>
+                <label>Set "live"</label>
+                <input type="checkbox" name="isLive" {% if data.isLive %}checked{%endif%}/>
+            </fieldset>
+            <fieldset>
+                <label>Paypal Account:</label>
+                <input type="text" name="account" value="{{data.account}}"/>
+            </fieldset>
+            <input type="submit" name="submit"/>
+        </form>
+    </main>
+{% endblock %}

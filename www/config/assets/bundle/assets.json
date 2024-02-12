@@ -1,0 +1,29 @@
+{
+    "img": [ 
+        {"src":"/deployment/img/assets/social/facebook.png","name":"fb_link","alt":"UINteam on Facebook"},
+        {"src":"/deployment/img/assets/social/twitter.png","name":"twitter_link","alt":"UINteam on Twitter"},
+        {"src":"/deployment/img/assets/social/google.png","name":"google_link","alt":"UINteam on Google+"},
+        {"src":"/deployment/img/assets/social/linkedin.png","name":"linkedin_link","alt":"UINteam on LinkedIn"},
+        {"src":"/deployment/img/assets/social/youtube.png","name":"youtube_link","alt":"UINteam on Youtube"},
+        {"src":"/deployment/img/assets/submit_btn.gif","name":"submit_btn","alt":"submit"},
+        {"src":"/deployment/img/assets/submit_onWhite_btn.jpg","name":"submit_onWhite_btn","alt":"submit"},
+        {"src":"/deployment/img/assets/select_btn.gif","name":"select_btn","alt":"select"},
+        {"src":"/deployment/img/assets/infographics.png","name":"infographics","alt":"what-where-when"},
+        {"src":"/deployment/img/assets/steps/step_what.png","name":"step_what","alt":"what"},
+        {"src":"/deployment/img/assets/steps/step_when.png","name":"step_when","alt":"when"},
+        {"src":"/deployment/img/assets/steps/step_where.png","name":"step_where","alt":"where"},
+        {"src":"/deployment/img/assets/uinSupply.jpg","name":"uin_supply","alt":"uin supply"},
+        {"src":"/deployment/img/assets/uinAsk.jpg","name":"uin_ask","alt":"uin ask"}
+    ],
+    "link": [
+        {"href":"http://compwebdesign.com/","name":"cwd"},
+        {"href":"/advise_new.php","name":"become_adviser"}, 
+        {"href":"/asker.php","name":"asker"},
+        {"href":"/supplier.php","name":"supplier"},
+        {"href":"https://www.facebook.com/uinteam","name":"fb"},
+        {"href":"https://twitter.com/uin_team","name":"twitter"},
+        {"href":"https://plus.google.com/+Uinteamcom/videos","name":"googleplus"},
+        {"href":"http://uk.linkedin.com/in/uinteam","name":"linkedin"},
+        {"href":"https://www.youtube.com/channel/UC3dUPxEHqrobcyUQRNwwUAA","name":"youtube"}
+    ]
+}

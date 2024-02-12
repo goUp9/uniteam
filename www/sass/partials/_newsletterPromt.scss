@@ -1,0 +1,37 @@
+#newsletterPromt{
+    width: 350px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 999;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    p{
+        color:$blue;
+        margin: 25px 0;
+        line-height: 1.5em;
+    }
+    input[type='button']{
+        padding: 10px;  
+        border: 1px $blue solid;
+        font-family: $mainFont;
+        cursor: pointer;
+    }
+    
+    input[type='button'].yes{
+        background-color:$blue;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    input[type='button'].no{
+        background-color:white;
+    }
+}
+

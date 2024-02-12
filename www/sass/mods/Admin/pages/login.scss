@@ -1,0 +1,39 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/top-nav";
+
+div#login {
+    width:400px;
+    margin: 0 auto; margin-top: 100px;
+    background-color:#fc7e40;
+    display:table;
+    padding:20px;
+    form input[type='text'], form input[type='password']{
+        width:300px; height: 35px;
+        display: block;
+        margin-top:5px; margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size:1.3em; font-weight: normal; color:white;
+    }
+
+    form label {
+        color:white;
+        display: block;
+        margin-top: 15px; margin-bottom: 5px;
+    }
+    
+    form input[type='image']{
+        margin: 5px; margin-left: 150px; margin-top: 20px;
+    }
+}
+

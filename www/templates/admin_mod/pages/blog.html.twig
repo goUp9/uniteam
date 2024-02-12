@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main data-ng-controller="BlogAdminCtrl as b">
+        <div id="form_item">
+            <form id="edit_item">
+                <label>Article title:</label>
+                <input type="text" data-ng-model="currentItem.title"/>
+                <label>Article text:</label>
+                <textarea ck-editor name="article" class="ckeditor ck" data-ng-model="currentItem.text"></textarea>
+                <label>Article meta keywords (separate with comma):</label>
+                <textarea data-ng-model="currentItem.keywordsString"></textarea>
+                <input type="button" value="submit" data-ng-click="add_item(currentItemId)"/>
+                <input type="button" value="clear" data-ng-click="clear_item()"/>
+            </form>
+        </div>
+        <div id="comments">
+            <div class="comments" data-ng-repeat="comment in comments">
+                    <p class="text">{{'{{comment.text}}'}}</p>
+                    <p class="user">posted by {{'{{comment.idUser.username}}'}}</p>
+                    <input type="button" value="delete" data-ng-click="delete_comment($index)"/>
+            </div>
+                    <input type="button" value="Done editing comments" data-ng-click="clear_comments()" data-ng-show="idArticle&&comments.length>0"/>
+        </div>
+        <div id="items">
+            <div class="item" data-ng-repeat="item in items">
+                <p class="title">{{'{{item.title}}'}}</p>
+                <p class="date">{{'{{item.dateCreated}}'}}</p>
+                <input type="button" value="edit" data-ng-click="chose_to_edit($index)"/>
+                <input type="button" value="delete" data-ng-click="delete_item($index)"/>
+                <input type="button" value="Manage comments" data-ng-click="get_comments(item.id)"/>              
+            </div>
+                <div id="pages">
+                    <label>Go to page:</label>
+                    <p data-ng-click="switch_page(p.page)" data-ng-repeat="p in pages">{{'{{p.page}}'}}</p>
+                </div>
+        </div>
+    </main> 
+{% endblock %}

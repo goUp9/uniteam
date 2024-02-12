@@ -1,0 +1,33 @@
+{
+    "route": {
+        "request": "blog-add-comment",
+        "controller": "Index\/Updates:add_comment",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Index\/HomeForm",
+            "Admin\/DefaultTextsManager"
+            ],
+        "params":{"":""},
+        "forms":{"login":{"form class":"Users\/LoginForm","action":""}},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "calls":[
+            "Users:remember_user",
+            "Communication:get_unread_notifications",
+            "Communication:get_unread_msgs"            
+            ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "route": {
+        "request": "give-advice",
+        "controller": "Advice\/Give",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Users\/Users",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Index\/HomeForm",
+            "Admin\/DefaultTextsManager"
+            ],
+        "params":{},
+        "forms":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "calls":[
+            "Users:remember_user",
+            "Communication:get_unread_notifications",
+            "Communication:get_unread_msgs"            
+            ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

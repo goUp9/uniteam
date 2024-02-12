@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+{% block content %} 
+    {% if data.newsletterPromtFlag %}
+        {% include 'commons/newsletterPromt.html.twig'%}
+    {% endif %}
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>     
+        <h1>My uin</h1>        
+        {% include 'commons/myuin-nav.html.twig'%}       
+        <div clickable class="btn">
+            <p><a class="nostyle" href="{{link.myuin__reset_password.href}}">Reset Password</a></p>
+        </div>
+        <div id="personal_form" ng-controller="PersonalCtrl as s">
+            <div class="usr-msg error" ng-show="showError">
+                <p>{{'{{validationMsg}}'}}</p>
+            </div>
+            <div class="usr-msg" ng-bind-html="success.msg" ng-show="success.flag">                
+            </div>
+            {{forms.personal| raw}}
+        </div>         
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main ng-controller="NotificationsCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        <div class="btns">            
+            <div ng-click="n.back_to_msgs()" ng-show="n.readMsg" id="back-to-msgs" class="btn"> 
+                <p>Back to messages</p> 
+            </div>             
+            <div ng-click="n.mark_unread()" ng-show="n.readMsg" id="mark-unread" class="btn"> 
+                <p>Mark as unread</p> 
+            </div>
+        </div>   
+        <div class="internal-link" data-ng-click="showVideosFlag=!showVideosFlag">
+            <p data-ng-show="!showVideosFlag"><span>?</span>Need help? Watch our videos</p>
+            <p data-ng-show="showVideosFlag">Hide videos</p>
+        </div>
+        <div id="videos" data-ng-show="showVideosFlag">
+            {% for video in data.videos %}
+                <div class="video">
+                    <iframe width="420" height="315" src="{{video.video}}" frameborder="0" allowfullscreen></iframe>
+                    <p>{{video.title}}</p>
+                </div>
+            {%endfor%}
+        </div>
+        <article ng-hide="n.readMsg">
+            <p>{{'{{n.userMsg}}'}}</p>
+            <div title="Read Message" class="msgs-item" ng-class="{read: msg.read,is_important:msg.isImportant}" ng-click="n.read_msg($index)" ng-repeat="msg in msgs">
+                <p class="msg-body">{{'{{msg.preview}}'}}...</p>
+            </div>
+        </article>
+        <div ng-hide="n.readMsg" class="page-nums">
+            <div ng-repeat="page in pages" data-ng-click="n.go_to_page($index)" ng-class="{current: page==n.postData.page}">
+                <p>{{ '{{page}}' }}</p>
+            </div>
+        </div>
+        <article ng-show="n.readMsg">
+            <div id="current-msg" bind-unsafe-html="n.readingMsg.msg"></div>
+        </article>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

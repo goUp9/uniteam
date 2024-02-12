@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-ask-archive-query",
+        "controller": "MyUin\/Ask:archive_query",
+        "injections": [],
+        "dependancies": [],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

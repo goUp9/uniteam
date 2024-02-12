@@ -1,0 +1,297 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/newsletterPromt";
+
+@import "../widgets/login_panel";
+@import "../widgets/feedbck";
+
+@media (max-width:700px){
+    #info_arrow {
+        display: none;
+    }
+}
+
+.video {
+    margin: 10px;
+}
+
+
+#search-tool {
+    width:100%;
+    background:white;
+    position:relative;
+    #info_arrow {
+        position:absolute;
+        top:120px; left:50%;
+        width:200px; height:300px;
+        background: url("../../img/css/info_arrow.png") no-repeat center center;
+        z-index: 5;
+        margin-left: -390px;
+    }
+    #search-box {
+        min-width:290px; width:100%;
+        margin: 0 auto;
+        margin-top:1%;
+        .top {
+            width:301px; height:142px;
+/*            width:290px; height:110px;*/
+            margin: 0 auto; padding-left:60px;
+            background: url("../../img/css/logo_animation.gif") no-repeat 50px bottom;
+/*            background: url("../../img/css/logo.png") no-repeat 60px bottom;*/
+        }
+        .middle {
+            form {
+                width:600px;
+                margin: 0px auto 6px;
+                angucomplete {
+                    width:343px;
+                    display:inline-block;
+                    #whatquery_dropdown {
+                        margin-left: 100px;
+                    }
+                    .angucomplete-searching{
+                        span{
+                            text-decoration: underline;
+                            color:$blue;
+                        }
+                    }
+                }
+                input[type="text"]{
+                    width:240px; height:30px;
+                    border:#3264fa 1px solid;
+                    padding:0; padding-left:3px; margin:0; margin-left:100px;
+                    display:inline-block;  vertical-align: top;
+                      -webkit-appearance: none;
+                      -webkit-border-radius: 0;
+                }
+                select{
+                    width:157px; height:32px;
+                    border:#3264fa 1px solid;
+                    padding:0; padding-left:3px; margin:0; margin-left:10px;
+                    display:inline-block;  vertical-align: top;
+                      -webkit-appearance: none;
+                      -webkit-border-radius: 0;
+                }
+                #btn_ask {
+                    height:32px; width:67px;
+                    background-color: #3264fa;
+                    color:white;
+                    border:1px #3264fa solid;                    
+                    font-size:1em; text-align: center;
+                    padding:0; margin:0;
+                    display:inline-block; vertical-align: top;
+                      -webkit-appearance: none;
+                      -webkit-border-radius: 0;
+                }  
+                #btn_supply {
+                    height:32px; width:67px;
+                    background-color: white;                    
+                    color:#3264fa;
+                    border:1px #3264fa solid;
+                    font-size:1em; text-align: center;
+                    display:inline-block;  vertical-align: top; 
+                      -webkit-appearance: none;
+                      -webkit-border-radius: 0;
+                }
+            }
+            .tags-holder{
+                .tags-bar {
+                    width:240px; height:30px;
+                    border:#3264fa 1px solid;
+                    padding:0; padding-left:3px; margin:0; margin-left:100px;
+                    display:inline-block;  vertical-align: top;
+                      -webkit-appearance: none;
+                      -webkit-border-radius: 0;
+                }
+            }
+        }
+        
+        @media (max-width:410px){
+            .middle {
+                form {
+                    width:100%;
+                    margin: 0 auto;
+                    angucomplete {
+                        width:50%;
+                        display:inline-block;
+                        #whatquery_dropdown {
+                            margin-left: 0;
+                        }
+                    }
+                    input[type="text"]{
+                        width:100%; height:30px;
+                        margin-left: 0;
+                    }                
+                }
+            }
+        }
+        
+        .bottom {
+            width:400px; height:255px;
+            margin: 0 auto;
+            background: url("../../img/css/legs-animation.gif") no-repeat center center;
+            position:relative;
+/*            #search_arrow {
+                width: 50px; height: 190px;
+                background: url("../../img/css/search_arrow.png") no-repeat top center;
+                position:absolute; z-index: 5; top: 0; left:47px;
+                display: none;
+            }*/
+            #ask_or_supply{
+                width:50px;
+                display:inline-block;
+                vertical-align: top;
+                padding-top:152px;
+                p{
+                    color:$blue; text-align: center; 
+                    line-height: 3.9; font-size: .7em;
+                }
+            }
+            #and_get{
+                width:300px;
+                display:inline-block;
+                vertical-align: top;
+                padding-top:128px;
+                p {
+                    color:$blue; font-size: .7em;
+                    text-align: right; line-height: 8;
+                }
+            }
+            @media (max-width:600px){
+                #ask_or_supply{
+                    display: none;               
+                }
+                #and_get{
+                    display:none;        
+                }
+            }
+        }
+    }   
+    
+    
+    #adviser-box {
+        width:210px;
+        margin: 25px auto;
+        text-align:center;
+        p {
+            color:#3264fa;
+            span {
+                font-weight: bold;
+            }
+        }
+        .button{
+            width:208px; height:35px;
+            border:#3264fa 1px solid;
+            margin-top:12px;
+            cursor:pointer;
+            p{
+                margin-top:10px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:800px){
+    html {
+        overflow-y: scroll;
+    }
+    #search-tool {
+        #search-box {
+            width:auto;
+        }
+        width:100%; height:auto;
+        float:none; clear:both;
+        background:white;
+        position:relative;
+        nav {
+            display: table;
+            clear:both;
+            .button {
+                margin-top:8px;               
+            }
+            .left.nav-box{
+                #btn_home {
+                    display: none;                                
+                }
+                #btn_help {
+                    display: block;
+                }
+            }
+        }        
+    }
+
+
+}
+
+@media (max-width:600px){
+    html {
+        overflow-y: scroll;
+    }
+    #search-tool {
+        #search-box {
+            width:auto;
+            .top {
+                    width:220px; height:114px;
+                    margin: 0 auto; padding-left:30px;
+                    background: url("../../img/css/logo_animation.gif") no-repeat 30px bottom;
+                    background-size: 80%;
+                }
+/*            .top {
+                width:290px; height:110px;
+                margin: 0 auto; padding-left:30px;
+                background: url("../../img/css/logo.png") no-repeat 30px bottom;
+            }*/
+            .middle{
+                form {
+                    select {
+                        display:none;
+                    }
+                }
+            }
+            .bottom {
+                width:300px; height:220px;
+                margin: 0 auto;
+                background: url("../../img/css/legs-animation.gif") no-repeat center center; 
+                 background-size: 80%;
+            }
+        }
+        width:100%; height:auto;
+        float:none; clear:both;
+        background:white;
+        position:relative;
+        nav {
+            display: table;
+            clear:both;
+            .button {
+                margin-top:8px;               
+            }
+            .left.nav-box{
+                #btn_home {
+                    display: none;                                
+                }
+                #btn_help {
+                    display: block;
+                }
+            }
+        }        
+    }
+}
+
+@media (max-width:400px){
+    main {
+        padding-top: 15px;
+    }
+    #search-box {
+        margin-top:0;
+    }
+}
+

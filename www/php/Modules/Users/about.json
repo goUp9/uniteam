@@ -1,0 +1,11 @@
+{
+    "id":"0011",
+    "title": "Users",
+    "descr": "All users functionalities",
+    "controller":"",
+    "config":"",
+    "entities": [""],
+    "templates":"",
+    "common assets":"",
+    "database tables":[""]
+}

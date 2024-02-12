@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/delete-videos",
+        "controller": "MyUin\/Videos:delete_video",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{"id":null},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

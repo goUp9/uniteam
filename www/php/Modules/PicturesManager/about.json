@@ -1,0 +1,11 @@
+{
+    "id":"0007",
+    "title": "Pictures Manager",
+    "descr": "Manages all uploaded pictures.",
+    "controller":"",
+    "config":"",
+    "entities": [""],
+    "templates":"",
+    "common assets":"",
+    "database tables":[""]
+}

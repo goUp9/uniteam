@@ -1,0 +1,33 @@
+{% extends "base.html.twig"%}
+
+{% block body %}
+    <div id="wrapper">
+    <main>
+    	<article id="fatal-error"> 
+            <h1>CWD FrameWork has caught a Fatal Error</h1>
+            <h2>Error Details</h2>
+            <p><i>{{data.error.msg}}</i></p>
+            <p>Happened in file: <b>{{data.error.file}}</b></p> 
+            <p>On line: <b>{{data.error.line}}</b></p>
+            <h2>Stack Trace</h2>
+            <table>
+                <tr>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Function</th>
+                    <th>Class</th>
+                {% for item in data.error.trace %}
+                    <tr>
+                        <td>{{item.file}}</td>
+                        <td>{{item.line}}</td>
+                        <td>{{item.function}}</td>
+                        <td>{{item.class}}</td>                        
+                    </tr>
+                {% endfor %}
+            </table>
+        </article>
+    </main>
+    <div id="pushfooter">
+    </div>
+    </div>
+{% endblock %}

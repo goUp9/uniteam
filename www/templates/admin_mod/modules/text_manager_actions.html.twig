@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main>
+        <h1 class="title">Texts Manager</h1> 
+            <section class="action" data-clickable>
+                <p><a class="nostyle" href="{{link.admin__default_text_manager.href}}">Web site texts</a></p>
+            </section>
+            <section class="action" data-clickable>
+                <p><a class="nostyle" href="{{link.admin__general_texts_manager.href}}">Other texts</a></p>
+            </section>
+    </main>
+    
+{% endblock %}

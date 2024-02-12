@@ -1,0 +1,21 @@
+<h1>New Advice</h1>
+<p>What:<strong>{{tags}}</strong></p>
+    {% if wheres is not empty %}        
+<p>Where: around <strong>{{wheres[0].radius}}</strong> miles from <strong>{{wheres[0].place.formattedAddress}}</strong></p>
+    {% endif %}
+<p>When:<strong>{{whens[0].dateType}}</strong> <strong>{{date1}}</strong>
+    {% if date2 is not empty %}        
+            <strong>{{date2}}</strong>
+    {% endif %}
+</p>
+<p>Query id: #{{idQuery}}</p>        
+<p>Budget:  <strong>{{finalAsker.currency}} {{data.budget}}</strong></p> 
+<p>Message from Adviser: <strong>{{data.advice}}</strong></p>
+<p>Expires on: {{expDate}}</p>
+<p>If you are happy with this advice - accept this advice and confirm your request</p>
+<form method="POST" action="{{constant('LINKS_PRE')}}match-suppliers-with-adviser/{{idQuery}}/"> 
+    <input type="hidden" value="{{data.budget}}" name="budget"/>
+    <input type="hidden" value="{{data.advice}}" name="advice"/>
+    <input type="hidden" value="{{adviser}}" name="adviser"/>
+    <input type="submit" value="Accept and Confirm">
+</form>

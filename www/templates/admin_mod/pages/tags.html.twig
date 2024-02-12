@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <article ng-controller="TagsCtrl as t">
+        <div ng-hide="u.editMode" id="tools">
+            <p ng-click="t.all_active()">Set selected to active</p>
+            <p ng-click="t.all_disabled()">Set selected to disabled</p>
+        </div>
+        <div class="search-items">
+            <label>Search tags:</label>
+            <input type="text" ng-model="t.postData.searchVal">
+            <div ng-click="t.get_tags()" id="btn__search">
+                <p>search</p>
+            </div>
+            <div ng-click="t.add_tag()" id="btn__add">
+                <p>Add tag</p>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th><input type="checkbox" ng-model="t.bulkPageFlag" ng-click="t.bulk_page()"></th>
+                <th ng-click="t.postData.orderBy='t.tag';t.get_tags();">tag</th>
+                <th ng-click="t.postData.orderBy='t.status';t.get_tags();">status</th>
+                <th ng-click="t.postData.orderBy='tg.name';t.get_tags();">category</th>
+                <th ng-click="t.postData.orderBy='t.dateCreated';t.get_tags();">date created</th>
+                <th ng-click="t.postData.orderBy='u.username';t.get_tags();">created by</th>
+            </tr>
+            <tr ng-repeat="tag in tags| orderBy:t.predicate:t.reverse">
+                <td><input type="checkbox" class="bulk" ng-model="tag.bulk" ng-init="tag.bulk=false" ng-click="tag.bulk=!tag.bulk"/></td>                
+                <td><input type="text" ng-init="tag.old=tag.tag" ng-model="tag.tag"/><p id='btn__save_changes' ng-click="t.save_change($index)">Save changes</p></td>  
+                <td>  
+                    <div class="onoffswitch">
+                        <input ng-model="tag.status" ng-change="t.save_change($index)" type="checkbox"  class="onoffswitch-checkbox" id="myonoffswitch{{ '{{tag.tag}}' }}">
+                        <label class="onoffswitch-label" for="myonoffswitch{{ '{{tag.tag}}' }}">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+                <td> 
+                    <p>{{ '{{tags[$index].name}}' }}</p>
+                    <label>Change category:</label>
+                    <select ng-model="tags[$index].id"  ng-change="t.set_cat($index)">
+                        <option value=""></option>
+                        <option ng-repeat="cat in cats" value="{{ '{{cat.id}}' }}">{{ '{{cat.name}}' }}</option>
+                    </select>
+                </td>
+                <td><p>{{ '{{tag.dateCreated.date}}' }}</p></td>  
+                <td><p>{{ '{{tag.username}}' }}(id: {{ '{{tag.id}}' }})</p></td>  
+            </tr> 
+        </table>
+        <div class="page-nums">
+            <div ng-repeat="page in pages" data-ng-click="t.go_to_page($index)" ng-class="{current: page==t.postData.page}">
+                <p>{{ '{{page}}' }}</p>
+            </div>
+        </div>
+    </article> 
+{% endblock %}

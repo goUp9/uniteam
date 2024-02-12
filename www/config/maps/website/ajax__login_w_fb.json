@@ -1,0 +1,24 @@
+{
+    "route": {
+        "request": "ajax/login-w-fb",
+        "controller": "Users\/Registration:login_w_facebook",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login"
+        ],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

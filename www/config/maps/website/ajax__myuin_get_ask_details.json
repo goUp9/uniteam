@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-get-ask-details",
+        "controller": "MyUin\/Ask:ajax_get_details",
+        "injections": [],
+        "dependancies": [],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

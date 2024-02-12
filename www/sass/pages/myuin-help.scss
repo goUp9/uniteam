@@ -1,0 +1,35 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+
+@import "../widgets/login_panel";
+
+
+
+#videos{
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+    text-align:center;
+    .video{
+        display: inline-block;
+        margin: 0 10px;
+        iframe{
+            display: inline-block;
+        }
+        p{
+            color:$blue;
+            margin: 10px 0;
+        }
+    }
+}
+
+

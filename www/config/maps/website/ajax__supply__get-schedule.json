@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/supply/get-schedule",
+        "controller": "When\/Supplier:get_schedule",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

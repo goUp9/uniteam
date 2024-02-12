@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/update-msg-data",
+        "controller": "Communication\/Messages:update_message_data",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

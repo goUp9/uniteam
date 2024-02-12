@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/advise/when",
+        "controller": "When\/Supplier:confirm",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

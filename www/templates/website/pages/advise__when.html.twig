@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main>
+        <h1>Advise</h1>
+        <div class="steps-heading">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.advise__where.href}}"><img class="grayscale opacity" src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><img src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></div>
+        </div>
+        <div id="form" data-ng-controller="AdviseSearchCtrl as when">
+            <h1>Please set up your opening hours:</h1>
+            <div class="set-ups">
+                <p ng-click="when.quickSelectFlag=!when.quickSelectFlag"  class="hint" id="quick-select">Quick-selection days</p>
+                <ul ng-show="when.quickSelectFlag">
+                    <li data-ng-click="when.set_alldays()">24/7</li>
+                    <li data-ng-click="when.weekends()">Weekends</li>
+                    <li data-ng-click="when.weekdays()">Weekdays</li>
+                </ul>
+            </div>
+            <ul>                
+                <li data-ng-repeat="day in weekDays"><p>{{'{{day.title}}'}}:</p>
+                    <input type="checkbox" data-ng-click="when.setClosedFlag($index)" data-ng-model="when.closedFlags[$index]" data-ng-init="when.closedFlags[$index]=false"/><label class="closed">Closed</label><br/>
+                    <label>from </label>
+                    <hour-select selected="when.formData[$index].from.hours"></hour-select>
+                    <minutes-select selected="when.formData[$index].from.minutes"></minutes-select>
+                    <label>to </label>
+                    <hour-select selected="when.formData[$index].to.hours"></hour-select>
+                    <minutes-select selected="when.formData[$index].to.minutes"></minutes-select>
+                </li>
+            </ul>
+            <div class="btn" id="btn__save" data-ng-click="when.submit()">
+                <p>Continue</p>
+            </div>
+        </div>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

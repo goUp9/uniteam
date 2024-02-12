@@ -1,0 +1,44 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="AskFinalCtrl as final">
+        <div id="query-type">
+            <img src="{{img.uin_ask.src}}" alt="{{img.uin_ask.alt}}" /><h1>asking</h1>
+        </div>
+        <div class="steps-heading" ng-if="final.headingFlag">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.ask__where.href}}"><img class="grayscale opacity" src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.ask__when.href}}"><img class="grayscale opacity" src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></a></div>
+        </div>        
+        <div id="form">
+          
+            <h1>Set your budget:</h1>
+            <select data-ng-model="final.currency">
+                <option ng-selected="final.currency == cur.code" data-ng-repeat="cur in final.currencyList" value="{{'{{cur.code}}'}}">{{'{{cur.name}}'}}</option>
+            </select>
+            <p>Current budget: {{'{{ final.budget | currency:final.currency+" "}}'}}</p>
+            <input type='number' ng-model='final.budget' step="0.01" ng-change="final.validate_budget()"/>
+            <p>Additional comments for the suppliers:</p>
+            <textarea ng-model='final.msg'></textarea>
+            <div id="adviser-box">
+                <div class="checkbox-holder">
+                    <input type="checkbox" ng-model="final.adviseOnBudget" ng-change="final.switch_adviseBtn_checkbox()"/>
+                    {{data.textManager.adviseBox_label_budget| raw}}
+                </div>
+                {{data.textManager.adviseBox_label_msg| raw}}
+                <textarea ng-model='final.adviseMsg' ng-change="final.switch_adviseBtn()" ng-focus="final.switch_adviseBtn()" ng-blur="final.switch_adviseBtn()"></textarea>                
+                <div class="btn" id="btn__save" ng-show="final.adviseBtnFlag" data-ng-click="final.submit(true)">
+                    <p>Ask an Adviser</p>
+                </div>
+            </div>
+            <div class="btn" id="btn__save" data-ng-click="final.submit()">
+                <p>Finish</p>
+            </div>           
+        </div>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

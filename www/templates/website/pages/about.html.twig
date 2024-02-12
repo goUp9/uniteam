@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main>
+            <article id="col1">
+                <div id="logo">
+                    <h1>Matching clients and service providers worldwide</h1>
+                </div>
+                <div id="youtube-video">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/NKSEZe58a04?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="text">
+                    {{data.textManager.about_main|raw}}
+                </div>
+            </article>
+            <article id="col2">
+                <div class="heading">
+                    <h1>Ask</h1>
+                </div>
+               {{data.textManager.about_ask|raw}}
+            </article>
+            <article id="col3">
+                <div class="heading">
+                    <h1>Supply</h1>
+                </div>
+                {{data.textManager.about_supply|raw}}
+                
+            </article>
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

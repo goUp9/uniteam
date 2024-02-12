@@ -1,0 +1,22 @@
+{
+    "texts":[
+        {
+            "title":"Socionics Basics",
+            "repo":"Bundle\\Doctrine\\Entities\\SocionicsBasics"
+        },
+        {
+            "title":"Socionics Relations",
+            "repo":"Bundle\\Doctrine\\Entities\\SocionicsRelations"
+        },
+        {
+            "title":"Socionics Quadras",
+            "repo":"Bundle\\Doctrine\\Entities\\SocionicsQuadras"
+        },
+         {
+            "title":"Socionics Types",
+            "repo":"Bundle\\Doctrine\\Entities\\SocionicsTypes"
+        }
+    ]
+        
+    
+}

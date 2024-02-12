@@ -1,0 +1,26 @@
+<h1>New Advice request from an Asker</h1>
+<p>What:<strong>{{tags}}</strong></p>
+    {% if wheres is not empty %}        
+<p>Where: around <strong>{{wheres[0].radius}}</strong> miles from <strong>{{wheres[0].place.formattedAddress}}</strong></p>
+    {% endif %}
+<p>When:<strong>{{whens[0].dateType}}</strong> <strong>{{date1}}</strong>
+    {% if date2 is not empty %}        
+            <strong>{{date2}}</strong>
+    {% endif %}
+        </p>
+        
+<p>Budget:  <strong>{{finalAsker.currency}} {{finalAsker.budget}}</strong></p> 
+<p>Is advise on budget needed? <strong>{% if finalAsker.isAdviseOnBudgetNeeded %}YES{%else%}NO{%endif%}</strong></p>
+<p>Additional info: <strong>{{finalAsker.msg}}</strong></p>
+<p>Message: <strong>{{finalAsker.adviceMsg}}</strong></p>
+<p>Expires on: {{expDate}}</p>
+<p> Please leave your advice in the form below</p>
+<form method="POST" action="{{constant('LINKS_PRE')}}give-advice/">
+    <label>Budget:</label>
+    {{finalAsker.currency}}    
+    <input type="number" name="budget" value="{{finalAsker.budget}}"/>
+    <label>Message:</label>
+    <textarea placeholder="your advice" name="advice"></textarea>
+    <input type="hidden" value="{{idQuery}}" name="idQuery"/>
+    <input type="submit" value="advise">
+</form>

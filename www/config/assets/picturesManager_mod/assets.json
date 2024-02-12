@@ -1,0 +1,24 @@
+{
+   "path":[
+        {
+            "href": "/data/pictures/fullsize/",
+            "name": "fullsize"
+        },
+        {
+            "href": "/data/pictures/big/",
+            "name": "big"
+        },
+        {
+            "href": "/data/pictures/medium/",
+            "name": "medium"
+        },
+        {
+            "href": "/data/pictures/small/",
+            "name": "small"
+        },
+        {
+            "href": "/data/pictures/thumbs/",
+            "name": "thumbs"
+        }
+    ]
+}

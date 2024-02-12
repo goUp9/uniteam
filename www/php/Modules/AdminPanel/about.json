@@ -1,0 +1,14 @@
+{
+    "id":"1",
+    "title": "Admin Panel",
+    "descr": "Area for the administrator to edit the content of the web site",
+    "css":"admin_mod",
+    "js":"Admin_mod",
+    "img":"admin_mod",
+    "mysql table": ["admin_users.sql"],
+    "controller":"Admin",
+    "config":"adminPanel_mod",
+    "entities": ["AdminUsers.class.php"],
+    "templates":"admin_mod",
+    "database tables":["admin_users"]
+}

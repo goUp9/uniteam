@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://compwebdesign.com/favIcon.ico" />
+{% block meta %}
+<meta name="description" content="{{meta.description}}">
+<meta name="keywords" content="{{meta.keywords}}">
+{% endblock %}
+{% block includes %}
+    {% for item in meta.css %}
+        {{ item |  raw }}
+    {% endfor %}
+    {% for item in meta.js %}
+        {{ item |  raw }}
+    {% endfor %}
+{% endblock %}
+
+<title>{{ meta.title }}</title>
+</head>
+
+<body> 
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

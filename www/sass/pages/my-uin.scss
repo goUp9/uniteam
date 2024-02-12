@@ -1,0 +1,102 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+@import "../partials/newsletterPromt";
+
+@import "../widgets/login_panel";
+
+.btn {
+    width:100px;
+    background-color: $blue;   
+    cursor:pointer;
+    height: 45px;   
+    margin: 20px 10px;
+    display:inline-block; vertical-align: top;
+    p {
+        color:white; font-family: $mainFont; 
+        padding-top:10px;
+        font-weight: bold; font-size:.87em;
+        text-align:center;
+    }
+} 
+
+
+#personal_form {
+    width:100%; 
+    margin-top:7px;
+    form {  
+        .wrap {
+            width:240px;
+            display:inline-block;
+            padding: 10px;
+            vertical-align:top;
+        }
+        .wrap.btns {
+            display:block;
+            clear:both; float:none;
+            margin: 0 auto;
+        }
+        input[type="text"],input[type="email"],input[type="password"]{
+            width:214px; height:30px;
+            border:1px solid $blue;
+            margin:5px 0 15px; 
+            padding: 0 3px;
+        }
+        label {
+            font-family: $mainFont; color:$blue; font-size:.76em;
+            font-style: italic; font-weight: bold;
+        }
+        .intl-tel-input input, .intl-tel-input input[type="text"], .intl-tel-input input[type="tel"]{
+            margin:10px 0 !important;
+            padding-left: 48px;
+        }
+    }
+}
+
+.internal-link{ 
+    display: inline-block;
+    vertical-align: top;
+    background-color: $blue;
+    margin: 20px 10px;
+    cursor: pointer;
+    p{
+        color:white;
+        margin: 10px 5px;   
+        display: inline-block;                
+    } 
+    span{
+        width: 15px; height: 20px;
+        display: block;
+        float:left;
+        padding: 0 0 0 5px;
+        margin: 0 5px;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 20px;
+        color:$blue;
+    }
+}
+
+#videos{
+    width: 100%;
+    padding: 5px 0;
+    text-align:center;
+    .video{
+        display: inline-block;
+        iframe{
+            display: inline-block;
+        }
+        p{
+            color:$blue;
+            margin: 10px 0;
+        }
+    }
+}

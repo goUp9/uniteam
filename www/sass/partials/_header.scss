@@ -1,0 +1,295 @@
+header{
+    position:relative;
+    #motto {
+        width:400px;
+        position: absolute;
+        top:30px; left: 50%;
+        margin-left: -200px;
+        z-index:2;
+        p{
+            text-align: center; font-family: $mainFont;color:$blue;
+            font-size: .87em;
+        }
+        b,strong {
+            font-weight: bold;
+        }
+        i,em {
+            font-style: italic;
+        }
+    }
+    #mobile_motto {
+        width:100%;
+        position: relative;
+        float:right; clear:both;
+        p{
+            text-align: center; font-family: $mainFont;color:$blue;
+            font-size: .76em;
+        }
+        b,strong {
+            font-weight: bold;
+        }
+        i,em {
+            font-style: italic;
+        }
+    }
+    nav {
+        width:100%; height: 47px;
+        padding-top:18px; 
+        .button {
+            float:left;
+        }
+        .left.nav-box{
+            width:295px;
+            float:left;
+            #btn_home {
+                width:35px;height:35px;
+                background: url("../../img/css/home-bg.png") no-repeat center center;
+                background-color:#3264fa; 
+                display: inline-block;
+                padding:5px; margin-left:28px;
+            }
+            #btn_about {
+                width:200px; height:45px;
+                margin:0 10px;                    
+                background: url("../../img/css/camera-bg.png") no-repeat 133px center; background-color: white;
+                display: inline-block;
+                background-color:$blue;
+                p {
+                    color:white; padding-top:15px; text-transform: uppercase; font-size:1.12em; margin-left:35px;
+                }
+            }
+            #btn_about_home {
+                width:100px; height:45px;
+                margin:0 10px; 
+                display: inline-block;
+                background-color:$blue;
+                p {
+                    color:white; padding-top:15px; text-transform: uppercase; font-size:1.12em;
+                    text-align: center;
+                }
+            }
+            #btn_video {
+                width:50px; height:45px;
+                margin:0 10px;                    
+                background: url("../../img/css/camera-bg.png") no-repeat center center; background-color: white;
+                display: inline-block;
+                background-color:$blue;
+                cursor: pointer;
+            }
+        }
+        .updates-wrap.nav-box {
+            width:100px;
+            float:right; 
+            #ico_new-notofications {
+                width:45px; height:35px;
+                background: url("../../img/css/notifications-off.png") no-repeat 5px center;
+                display: inline-block;
+                margin-top:10px;
+            }
+            #ico_new-mail{
+                width:45px; height:35px;
+                background: url("../../img/css/mail-off.png") no-repeat 5px center;
+                display: inline-block;
+                margin-top:10px;
+            }
+            p {
+                width:70%;
+                padding:2px; 
+                background-color:#fb7b4e;
+                font-family: $mainFont; font-size: .76em;
+                border-radius: 5px;
+                text-align:right; font-weight: bold;
+            }
+            p.none {
+                background-color:lightgray;
+            }            
+        }
+        .right.nav-box{
+            width:280px;
+            float:right;            
+            #btn_signup {
+                width:113px; height:45px;
+                background-color:#3264fa;
+                margin-right:10px;
+                p {
+                    color:white; text-align: center;
+                    margin-top:15px;
+                }
+            }            
+            #btn_myuin {
+                width:113px; height:45px;                
+                margin-right:10px;
+                background: url("../../img/css/myuin.png") no-repeat 5px center;
+                background-color:#3264fa;
+                p {
+                    color:white; text-align: center;
+                    margin-top:15px;
+                }
+            }
+            
+            #btn_login {
+                width:111px; height:43px;
+                border:#3264fa 1px solid;
+                cursor:pointer;
+                p{
+                    color:#3264fa; text-align: center;
+                    margin-top:15px;
+                }
+            }
+            #btn_logout {
+                width:111px; height:43px;
+                border:#3264fa 1px solid;
+                cursor:pointer;
+                p{
+                    color:#3264fa; text-align: center;
+                    margin-top:15px;
+                }
+            }
+        }
+    }
+}
+
+#current-username {
+    float:right;
+    p {
+        background-color: white;
+        font-size: .76em;
+        padding-top:20px; padding-right: 20px; padding-bottom: 5px;
+    }
+}
+
+@media (max-width:1245px){
+    header{
+        #motto {
+            display:none;
+        }
+    }
+
+}
+
+@media (min-width:1246px){
+    header{
+        #mobile_motto {
+            display:none;
+        }
+    }
+
+}
+
+@media (max-width:800px){
+    header{
+        nav {
+            display: table;
+            clear:both;
+            .button {
+                margin-top:8px;               
+            }
+        }
+    }
+
+}
+
+@media (max-width:400px){
+    header{       
+        nav {
+            padding-top:7px;
+        .button {
+            margin-top:0;               
+        }
+        .left.nav-box{
+            width:115px;
+                #btn_home {
+                    width:35px;height:25px;
+                    background: url("../../img/css/home-bg.png") no-repeat center center;
+                    background-color:#3264fa; 
+                    display: inline-block;
+                    padding:5px; margin-left:3px;
+                    vertical-align: top;
+                }
+                #btn_about {
+                    width:60px; height:35px;
+                    margin:0 3px;                    
+                    background: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    background-color:$blue;
+                    p {
+                        color:white; padding-top:15px; text-transform: uppercase; font-size:.87em; margin-left:5px;
+                    }
+                }
+                #btn_about_home {
+                    width:60px; height:35px;
+                    margin:0 3px;                    
+                    background: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    background-color:$blue;
+                    p {
+                        color:white; padding-top:15px; text-transform: uppercase; font-size:.87em; margin-left:5px;
+                    }
+                }
+                #btn_video {
+                    display:none;
+                }
+            }
+            .right.nav-box{
+                width:115px;   
+                float:left;
+                #btn_signup {
+                    width:60px; height:35px;
+                    background-color:#3264fa;
+                    margin-right:5px;
+                    p {
+                        color:white; text-align: center;
+                        margin-top:15px; font-size: .87em;
+                    }
+                }            
+                #btn_myuin {
+                    width:50px; height:35px;                
+                    margin-right:3px;
+                    background: none;
+                    background-color:#3264fa;
+                    p {
+                        color:white; text-align: center;
+                        margin-top:15px; font-size: .87em;
+                    }
+                }
+                #btn_login {
+                    width:40px; height:33px;
+                    border:#3264fa 1px solid;
+                    cursor:pointer;
+                    p{
+                        color:#3264fa; text-align: center;
+                        margin-top:15px; font-size: .87em;
+                    }
+                }
+                #btn_logout {
+                    width:50px; height:33px;
+                    border:#3264fa 1px solid;
+                    cursor:pointer;
+                    p{
+                        color:#3264fa; text-align: center;
+                        margin-top:15px; font-size: .87em;
+                    }
+                }
+            }
+            .updates-wrap.nav-box {
+                width:90px;
+                float:left;
+                #ico_new-notofications {
+                    width: 40px;
+                }
+            }
+        }
+    }
+    
+    #current-username {
+        float:right;
+        p {
+            background-color: white;
+            font-size: .76em;
+            padding-top:5px; padding-right: 5px; padding-bottom: 5px;
+        }
+    }
+}
+

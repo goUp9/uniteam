@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+            <h1>Funds have been escrowed</h1>
+            <p>Dear {{data.supplier}}</p>
+            <p>{{data.asker}} has confirmed to buy your service. Please find the details below.</p>
+            {% include 'notifications/_query_details.html.twig'%}
+            <p>Please, deliver your service accordingly, or contact {{data.asker}} for further details you need or you'd like to provide via your <a href="{{link.myuin__msgs.href}}">messages</a> in My uinteam.</p>
+            <p>Many thanks</p>
+            <p>uinteam</p>
+            
+        </div>
+        </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

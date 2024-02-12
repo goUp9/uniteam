@@ -1,0 +1,44 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+            <h1>Supplier selected</h1>
+            <p>Dear {{data.current_username}},</p>
+            <p>The Supplier for your <b>Query #{{data.queryDetails.id}}</b> has been selected.</p>
+            
+            {% if data.queryDetails.isAwaitingEscrow and data.pastDate==FALSE %}
+            <div id="paypal-btn">
+                <p><b>Please escrow the funds now.</b></p> 
+                <p class="budget">The budget is: <span>{{ data.queryDetails.finalAsker.currency}} {{ data.queryDetails.finalAsker.budget}}</span></p>
+                {% if data.paymentSettings.isLive %}
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                {%else%}
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                {% endif %}
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="{{data.paymentSettings.account}}">
+                    <input type="hidden" name="return" value="{{constant("LINKS_PRE")}}payment-made/">
+                    <input type="hidden" name="lc" value="UK">
+                    <input type="hidden" name="notify_url" value="{{constant("LINKS_PRE")}}payment-escrowed/{{data.queryDetails.id}}/">
+                    <input type="hidden" name="amount" value="{{ data.queryDetails.finalAsker.budget}}">
+                    <input type="hidden" name="currency_code" value="{{ data.queryDetails.finalAsker.currency}}">
+                    <input type="hidden" name="button_subtype" value="services">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+            {% endif %}
+            {% include 'notifications/_query_details.html.twig'%}
+        </div>
+</main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

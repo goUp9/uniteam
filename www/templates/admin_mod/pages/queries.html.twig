@@ -1,0 +1,169 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <article ng-controller="QueriesCtrl as q">              
+        <div class="search-items">
+            <label>Search queries:</label>
+            <input type="text" ng-model="q.postData.searchVal"> 
+            <label>Search by:</label>
+            <fieldset ng-repeat="field in q.searchCheckboxes">                
+                <input type="checkbox" ng-model="q.postData.fields[field.id]"/>  
+                <label>{{'{{field.name}}'}}</label>
+            </fieldset>
+            <div ng-click="q.search_queries()" id="btn__search">
+                <p>search</p>
+            </div>
+        </div>   
+        
+        
+        <table>
+            <tr>
+                <th>Query #id</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>User</th>
+                <th>What</th>
+                <th>Where</th>
+                <th>When</th>
+                <th>Additional</th>
+                <th>Suppliers Feedback</th>
+                <th>Chosen Supplier</th>
+                <th>Chosen Adviser</th>
+                <th>Status</th>
+                <th>Date Escrowed</th>
+                <th>Supplier paid</th>
+                <th>Adviser paid</th>
+                <th>uinteam paid</th>
+            </tr>
+            <tr data-ng-repeat="query in queries">
+                <td>#{{'{{query.id}}'}}</td>
+                <td>{{'{{query.dateCreated}}'}}</td>
+                <td>{{'{{query.type}}'}}</td>
+                 <td>
+                    <p>{{'{{query.idUser.username}}'}}, id: {{'{{query.idUser.id}}'}}</p>
+                </td>
+                <td>
+                    <p data-ng-repeat="whats in query.whats">{{'{{whats.tag.tag}}'}}</p>
+                </td>
+                <td>
+                    <p data-ng-repeat="wheres in query.wheres">{{'{{wheres.place.formattedAddress}}'}}</p>
+                </td>                
+                <td>
+                    <table class="inner">
+                        <tr data-ng-repeat="whenAsker in query.QueryWhenAsker">
+                        <td>Date1: {{'{{whenAsker.date1.date}}'}}</td>
+                        <td ng-if="whenAsker.date2!=null">Date2:{{'{{whenAsker.date2.date}}'}}</td>
+                        <td>Notification: {{'{{whenAsker.expDate.date}}'}}</td>
+                        <td>{{'{{whenSchedule}}'}}</td>
+                        </tr>                        
+                    </table>
+                    <table class="inner">
+                        <tr>
+                            <td data-ng-repeat="whenSchedule in query.QueryWhenSchedule">{{'{{whenSchedule.weekDay}}'}}:{{'{{whenSchedule.from}}'}}-{{'{{whenSchedule.to}}'}}</td>
+                        </tr>                        
+                    </table>
+                </td>
+                <td>
+                    <table class="inner" ng-if="query.finalAsker!=null">
+                        <tr>                            
+                            <td>budget: {{'{{query.finalAsker.currency}}'}} {{'{{query.finalAsker.budget}}'}}</td>
+                            <td>message: {{'{{query.finalAsker.msg}}'}}</td>
+                            <td>message to Adviser:{{'{{query.finalAsker.msgAdvise}}'}}</td>
+                        </tr>                        
+                    </table>
+                    <table class="inner" ng-if="query.finalSupplier!=null">
+                        <tr>
+                            <td>Experience:{{'{{query.finalSupplier.experience}}'}} years, qualification: {{'{{query.finalSupplier.qualification}}'}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table ng-hide="query.SuppliersFeedback.length==0" class="inner">
+                        <p ng-hide="query.SuppliersFeedback.length==0"  data-ng-click="edtFeedback=!edtFeedback" ng-init="edtFeedback=false">View and edit feedbacks</p>
+                        <tr  data-ng-show="edtFeedback" data-ng-repeat="feedback in query.SuppliersFeedback">                             
+                            <td class="feedback"  ng-init="q.feedbacksHideDeleted[feedback.id]=false" ng-hide="q.feedbacksHideDeleted[feedback.id]">
+                                <input type="number" min="0" max="5" ng-init="q.feedbacks[feedback.id]=feedback.feedback" ng-model="q.feedbacks[feedback.id]"/>
+                                <p>Left by {{'{{feedback.AskQuery.idUser.username}}'}} for query {{'{{feedback.AskQuery.id}}'}}</p>                                    
+                                <p class="feedbck_control_btn edit" data-ng-click="q.change_feedback(feedback.id)">Change</p>
+                                <p class="feedbck_control_btn delete" data-ng-click="q.delete_feedback(feedback.id)">Delete</p>
+                            </td>                        
+                        </tr>                        
+                    </table>
+                </td>
+                <td>
+                    <table class="inner" ng-if="query.chosenSupplier!=null">
+                        <tr>
+                            <td>id:{{'{{query.chosenSupplier.id}}'}}</td>
+                            <td>username:{{'{{query.chosenSupplier.username}}'}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="inner" ng-if="query.chosenAdviser!=null">
+                        <tr>
+                            <td>id:{{'{{query.chosenAdviser.id}}'}}</td>
+                            <td>username:{{'{{query.chosenAdviser.username}}'}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    {{'{{query.status}}'}}
+                    <table class="inner">
+                        <tr>
+                            <td ng-if="query.status=='Awaiting payment'&&!query.supplierPaid">
+                                Pay Supplier:
+                                {% if data.paymentSettings.isLive %}
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                {%else%}
+                                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                {% endif %}
+                                    <input type="hidden" name="cmd" value="_xclick">
+                                    <input type="hidden" name="business" value="{{'{{query.chosenSupplier.paypal}}'}}">
+                                    <input type="hidden" name="lc" value="UK">
+                                    <input type="hidden" name="return" value="{{constant("LINKS_PRE")}}admin/queries/">
+                                    <input type="hidden" name="notify_url" value="{{constant("LINKS_PRE")}}admin-supplier-paid/{{'{{query.id}}'}}/">
+                                    <input type="hidden" name="amount" value="{{'{{query.finalAsker.budget-query.finalAsker.budget*0.05| number:2}}'}}">
+                                    <input type="hidden" name="currency_code" value="{{'{{query.finalAsker.currency}}'}}">
+                                    <input type="hidden" name="button_subtype" value="services">
+                                    <input type="hidden" name="no_note" value="0">
+                                    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                            <td ng-if="query.status=='Awaiting payment'&&query.chosenAdviser!=null&&!query.adviserPaid">
+                                Pay Adviser:
+                                {% if data.paymentSettings.isLive %}
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                {%else%}
+                                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                {% endif %}
+                                    <input type="hidden" name="cmd" value="_xclick">
+                                    <input type="hidden" name="business" value="{{'{{query.chosenAdviser.paypal}}'}}">
+                                    <input type="hidden" name="lc" value="UK">
+                                    <input type="hidden" name="return" value="{{constant("LINKS_PRE")}}admin/queries/">
+                                    <input type="hidden" name="notify_url" value="{{constant("LINKS_PRE")}}admin-adviser-paid/{{'{{query.id}}'}}/">
+                                    <input type="hidden" ng-if="query.chosenAdviser!=null" name="amount" value="{{'{{query.finalAsker.budget*0.02| number:2}}'}}">
+                                    <input type="hidden" name="currency_code" value="{{'{{query.finalAsker.currency}}'}}">
+                                    <input type="hidden" name="button_subtype" value="services">
+                                    <input type="hidden" name="no_note" value="0">
+                                    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>{{'{{query.dateEscrowed.date}}'}}</td>
+                <td>{{'{{query.supplierPaidAmount}}'}}</td>
+                <td>{{'{{query.adviserPaidAmount}}'}}</td>
+                <td>{{'{{query.uinPaidAmount}}'}}</td>
+            </tr>            
+        </table>
+    <div class="page-nums">
+        <div ng-repeat="page in pages" data-ng-click="q.go_to_page($index)" ng-class="{current: page==q.postData.page}">
+            <p>{{ '{{page}}' }}</p>
+        </div>
+    </div>
+    </article>     
+{% endblock %}

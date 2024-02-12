@@ -1,0 +1,71 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/top-nav";
+
+@import "../widgets/switch";
+
+table.outer {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 25px;
+    tr {
+        background-color:#ebeffa;
+        border-bottom:black 1px solid; 
+        th {
+            padding: 25px;
+        }
+        td {
+            border-right:black 1px solid;
+            padding: 20px;
+        }
+        td:last-of-type{
+            border-right:none;
+        }
+    }
+    th {
+        background-color:white; 
+    }
+}
+
+table.inner {
+    tr{
+        border:none;
+        td {
+            border:none;
+            padding: 3px;
+        }
+    }
+}
+
+td.tcell__id {
+    width: 15%;
+}
+
+th.tcell__what {
+    min-height: 20px; min-width:70px;
+}
+
+th.tcell__when {
+    min-height: 20px; min-width:70px;
+}
+
+th.tcell__where {
+    min-height: 20px; min-width:70px;
+}
+
+.btn__edit div {
+    width: 60px;
+    background-color: black; color: white;
+    padding: 10px; 
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}

@@ -1,0 +1,68 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+
+
+main {
+    h1{
+        font-weight: bold; color: $blue;
+        text-align: center; font-size: 1.3em;
+        margin: 20px 0;
+    }
+    article{
+        width: 80%;
+        margin: 0 auto;
+        p {
+            margin: 10px 0;
+        }
+    }
+}
+
+.comments{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    .comment{
+        width: 98%;
+        padding: 10px 1%;
+        background-color:#E3F2FF;
+        margin: 10px 0;
+        p.user{
+            font-size: .76em;
+            color:darkgray;
+        }
+        p.text{
+            margin: 5px 0;
+        }
+    }
+    textarea{
+        width: 100%; height: 150px;
+    }
+    p.title{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    label{
+        margin: 5px 0;
+        font-family: $mainFont;
+        font-size: .87em;
+    }
+    input[type='button']{
+        width:200px; height: 30px;
+        background-color: $blue;
+        color:white;
+        font-family: $mainFont;
+        border:none;
+        cursor: pointer;
+        margin: 20px 0;
+    }
+}

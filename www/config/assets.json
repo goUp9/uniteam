@@ -1,0 +1,817 @@
+{
+    "img": [
+        {
+            "src": "deployment\/img\/mods\/admin_mod\/assets\/login_btn.png",
+            "name": "login_btn",
+            "alt": "login"
+        },
+        {
+            "src": "deployment\/img\/mods\/admin_mod\/assets\/home.png",
+            "name": "admin_home_btn",
+            "alt": "Admin Panel home page"
+        },
+        {
+            "src": "deployment\/img\/mods\/admin_mod\/assets\/CWDlogo.png",
+            "name": "CWDlogo",
+            "alt": "Compass Web Design"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/social\/facebook.png",
+            "name": "fb_link",
+            "alt": "UINteam on Facebook"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/social\/twitter.png",
+            "name": "twitter_link",
+            "alt": "UINteam on Twitter"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/social\/google.png",
+            "name": "google_link",
+            "alt": "UINteam on Google+"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/social\/linkedin.png",
+            "name": "linkedin_link",
+            "alt": "UINteam on LinkedIn"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/social\/youtube.png",
+            "name": "youtube_link",
+            "alt": "UINteam on Youtube"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/submit_btn.gif",
+            "name": "submit_btn",
+            "alt": "submit"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/submit_onWhite_btn.jpg",
+            "name": "submit_onWhite_btn",
+            "alt": "submit"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/select_btn.gif",
+            "name": "select_btn",
+            "alt": "select"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/infographics.png",
+            "name": "infographics",
+            "alt": "what-where-when"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/steps\/step_what.png",
+            "name": "step_what",
+            "alt": "what"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/steps\/step_when.png",
+            "name": "step_when",
+            "alt": "when"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/steps\/step_where.png",
+            "name": "step_where",
+            "alt": "where"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/uinSupply.jpg",
+            "name": "uin_supply",
+            "alt": "uin supply"
+        },
+        {
+            "src": "\/deployment\/img\/assets\/uinAsk.jpg",
+            "name": "uin_ask",
+            "alt": "uin ask"
+        }
+    ],
+    "path": [
+        {
+            "href": "\/data\/gallery\/fullsize\/",
+            "name": "gallery_fullsize"
+        },
+        {
+            "href": "\/data\/gallery\/big\/",
+            "name": "gallery_big"
+        },
+        {
+            "href": "\/data\/gallery\/medium\/",
+            "name": "gallery_medium"
+        },
+        {
+            "href": "\/data\/gallery\/small\/",
+            "name": "gallery_small"
+        },
+        {
+            "href": "\/data\/gallery\/thumbs\/",
+            "name": "gallery_thumbs"
+        },
+        {
+            "href": "\/data\/pictures\/fullsize\/",
+            "name": "fullsize"
+        },
+        {
+            "href": "\/data\/pictures\/big\/",
+            "name": "big"
+        },
+        {
+            "href": "\/data\/pictures\/medium\/",
+            "name": "medium"
+        },
+        {
+            "href": "\/data\/pictures\/small\/",
+            "name": "small"
+        },
+        {
+            "href": "\/data\/pictures\/thumbs\/",
+            "name": "thumbs"
+        }
+    ],
+    "link": [
+        {
+            "href": "http:\/\/compwebdesign.com\/",
+            "name": "compass_web_design"
+        },
+        {
+            "href": "http:\/\/compwebdesign.com\/",
+            "name": "cwd"
+        },
+        {
+            "href": "\/advise_new.php",
+            "name": "become_adviser"
+        },
+        {
+            "href": "\/asker.php",
+            "name": "asker"
+        },
+        {
+            "href": "\/supplier.php",
+            "name": "supplier"
+        },
+        {
+            "href": "https:\/\/www.facebook.com\/uinteam",
+            "name": "fb"
+        },
+        {
+            "href": "https:\/\/twitter.com\/uin_team",
+            "name": "twitter"
+        },
+        {
+            "href": "https:\/\/plus.google.com\/+Uinteamcom\/videos",
+            "name": "googleplus"
+        },
+        {
+            "href": "http:\/\/uk.linkedin.com\/in\/uinteam",
+            "name": "linkedin"
+        },
+        {
+            "href": "https:\/\/www.youtube.com\/channel\/UC3dUPxEHqrobcyUQRNwwUAA",
+            "name": "youtube"
+        },
+        {
+            "href": "admin\/ajax\/delete-feedback\/",
+            "name": "admin__ajax__delete_feedback"
+        },
+        {
+            "href": "admin\/ajax\/edit-feedback\/",
+            "name": "admin__ajax__edit_feedback"
+        },
+        {
+            "href": "admin\/ajax\/filter-users\/",
+            "name": "admin__ajax__filter_users"
+        },
+        {
+            "href": "admin\/ajax\/get-queries\/",
+            "name": "admin__ajax__get_queries"
+        },
+        {
+            "href": "admin\/ajax\/get-taggroups\/",
+            "name": "admin__ajax__get_taggroups"
+        },
+        {
+            "href": "admin\/ajax\/get-tags\/",
+            "name": "admin__ajax__get_tags"
+        },
+        {
+            "href": "admin\/ajax\/get-users\/",
+            "name": "admin__ajax__get_users"
+        },
+        {
+            "href": "admin\/ajax\/save-tag-change\/",
+            "name": "admin__ajax__save_tag_change"
+        },
+        {
+            "href": "admin\/ajax\/save-taggroup-change\/",
+            "name": "admin__ajax__save_taggroup_change"
+        },
+        {
+            "href": "admin\/ajax\/save-user-change\/",
+            "name": "admin__ajax__save_user_change"
+        },
+        {
+            "href": "admin\/ajax\/search-queries\/",
+            "name": "admin__ajax__search_queries"
+        },
+        {
+            "href": "admin\/ajax\/search-users\/",
+            "name": "admin__ajax__search_users"
+        },
+        {
+            "href": "admin\/blog\/",
+            "name": "admin__blog"
+        },
+        {
+            "href": "admin\/delete-blog-article\/",
+            "name": "admin__delete_blog_article"
+        },
+        {
+            "href": "admin\/delete-blog-comment\/",
+            "name": "admin__delete_blog_comment"
+        },
+        {
+            "href": "admin\/delete-stories-article\/",
+            "name": "admin__delete_stories_article"
+        },
+        {
+            "href": "admin\/get-blog-articles\/",
+            "name": "admin__get_blog_articles"
+        },
+        {
+            "href": "admin\/get-blog-comments\/",
+            "name": "admin__get_blog_comments"
+        },
+        {
+            "href": "admin\/get-stories-articles\/",
+            "name": "admin__get_stories_articles"
+        },
+        {
+            "href": "admin\/login\/",
+            "name": "admin__login"
+        },
+        {
+            "href": "admin\/manage-blog-article\/",
+            "name": "admin__manage_blog_article"
+        },
+        {
+            "href": "admin\/manage-stories-article\/",
+            "name": "admin__manage_stories_article"
+        },
+        {
+            "href": "admin\/payment-settings\/",
+            "name": "admin__payment_settings"
+        },
+        {
+            "href": "admin\/queries\/",
+            "name": "admin__queries"
+        },
+        {
+            "href": "admin\/stories\/",
+            "name": "admin__stories"
+        },
+        {
+            "href": "admin\/tags\/",
+            "name": "admin__tags"
+        },
+        {
+            "href": "admin\/upload-stories-cover\/",
+            "name": "admin__upload_stories_cover"
+        },
+        {
+            "href": "admin\/user-queries\/",
+            "name": "admin__user_queries"
+        },
+        {
+            "href": "admin\/users\/",
+            "name": "admin__users"
+        },
+        {
+            "href": "admin\/videos\/",
+            "name": "admin__videos"
+        },
+        {
+            "href": "admin\/home\/",
+            "name": "admin__home"
+        },
+        {
+            "href": "admin\/logout\/",
+            "name": "admin__logout"
+        },
+        {
+            "href": "admin\/section\/",
+            "name": "admin__section"
+        },
+        {
+            "href": "cwd-system-ajax-gettemplate\/",
+            "name": "cwd_system_ajax_gettemplate"
+        },
+        {
+            "href": "admin\/ajax\/general-texts-form-action\/",
+            "name": "admin__ajax__general_texts_form_action"
+        },
+        {
+            "href": "admin\/default-text-manager-edit\/",
+            "name": "admin__default_text_manager_edit"
+        },
+        {
+            "href": "admin\/default-text-manager\/",
+            "name": "admin__default_text_manager"
+        },
+        {
+            "href": "admin\/ajax\/delete-default-texts-manager\/",
+            "name": "admin__ajax__delete_default_texts_manager"
+        },
+        {
+            "href": "about\/",
+            "name": "about"
+        },
+        {
+            "href": "accept-asker-request\/",
+            "name": "accept_asker_request"
+        },
+        {
+            "href": "admin-adviser-paid\/",
+            "name": "admin_adviser_paid"
+        },
+        {
+            "href": "admin-payment-reminder\/",
+            "name": "admin_payment_reminder"
+        },
+        {
+            "href": "admin-supplier-paid\/",
+            "name": "admin_supplier_paid"
+        },
+        {
+            "href": "advise\/when\/",
+            "name": "advise__when"
+        },
+        {
+            "href": "advise\/where\/",
+            "name": "advise__where"
+        },
+        {
+            "href": "ajax\/add-tag\/",
+            "name": "ajax__add_tag"
+        },
+        {
+            "href": "ajax\/add-tags-to-session\/",
+            "name": "ajax__add_tags_to_session"
+        },
+        {
+            "href": "ajax\/supply\/when\/",
+            "name": "ajax__supply__when"
+        },
+        {
+            "href": "ajax\/advise\/where\/",
+            "name": "ajax__advise__where"
+        },
+        {
+            "href": "ajax\/ask\/final\/",
+            "name": "ajax__ask__final"
+        },
+        {
+            "href": "ajax\/ask\/for-advise\/",
+            "name": "ajax__ask__for_advise"
+        },
+        {
+            "href": "ajax\/ask\/get-when\/",
+            "name": "ajax__ask__get_when"
+        },
+        {
+            "href": "ajax\/ask\/when\/",
+            "name": "ajax__ask__when"
+        },
+        {
+            "href": "ajax\/ask\/where\/",
+            "name": "ajax__ask__where"
+        },
+        {
+            "href": "ajax\/confirm-what\/",
+            "name": "ajax__confirm_what"
+        },
+        {
+            "href": "ajax\/delete-videos\/",
+            "name": "ajax__delete_videos"
+        },
+        {
+            "href": "ajax\/edit-personal\/",
+            "name": "ajax__edit_personal"
+        },
+        {
+            "href": "ajax\/edit-what\/",
+            "name": "ajax__edit_what"
+        },
+        {
+            "href": "ajax\/edit-where\/",
+            "name": "ajax__edit_where"
+        },
+        {
+            "href": "ajax\/finalise\/",
+            "name": "ajax__finalise"
+        },
+        {
+            "href": "ajax\/get-notifications\/",
+            "name": "ajax__get_notifications"
+        },
+        {
+            "href": "ajax\/get-archived-notifications\/",
+            "name": "ajax__get_archived_notifications"
+        },
+        {
+            "href": "ajax\/get-contacts\/",
+            "name": "ajax__get_contacts"
+        },
+        {
+            "href": "ajax\/get-notifications\/",
+            "name": "ajax__get_notifications"
+        },
+        {
+            "href": "ajax\/get-pm\/",
+            "name": "ajax__get_pm"
+        },
+        {
+            "href": "ajax\/get-pm-outbox\/",
+            "name": "ajax__get_pm_outbox"
+        },
+        {
+            "href": "ajax\/get-timezone\/",
+            "name": "ajax__get_timezone"
+        },
+        {
+            "href": "ajax\/get-videos\/",
+            "name": "ajax__get_videos"
+        },
+        {
+            "href": "ajax\/google-plus-auth\/",
+            "name": "ajax__google_plus_auth"
+        },
+        {
+            "href": "ajax\/is-logged\/",
+            "name": "ajax__is_logged"
+        },
+        {
+            "href": "ajax\/login\/",
+            "name": "ajax__login"
+        },
+        {
+            "href": "ajax\/login-w-fb\/",
+            "name": "ajax__login_w_fb"
+        },
+        {
+            "href": "ajax\/logout\/",
+            "name": "ajax__logout"
+        },
+        {
+            "href": "ajax\/match_advisers\/",
+            "name": "ajax__match_advisers"
+        },
+        {
+            "href": "ajax\/match_suppliers\/",
+            "name": "ajax__match_suppliers"
+        },
+        {
+            "href": "ajax\/myuin-advise-unarchive-query\/",
+            "name": "ajax__myuin_advise_unarchive_query"
+        },
+        {
+            "href": "ajax\/myuin-ask-archive-notification\/",
+            "name": "ajax__myuin_ask_archive_notification"
+        },
+        {
+            "href": "ajax\/myuin-ask-archive-query\/",
+            "name": "ajax__myuin_ask_archive_query"
+        },
+        {
+            "href": "ajax\/myuin-ask-unarchive-query\/",
+            "name": "ajax__myuin_ask_unarchive_query"
+        },
+        {
+            "href": "ajax\/myuin-get-advices\/",
+            "name": "ajax__myuin_get_advices"
+        },
+        {
+            "href": "ajax\/myuin-get-advise-details\/",
+            "name": "ajax__myuin_get_advise_details"
+        },
+        {
+            "href": "ajax\/myuin-get-advises-archived\/",
+            "name": "ajax__myuin_get_advises_archived"
+        },
+        {
+            "href": "ajax\/myuin-get-ask-details\/",
+            "name": "ajax__myuin_get_ask_details"
+        },
+        {
+            "href": "ajax\/myuin-get-asks\/",
+            "name": "ajax__myuin_get_asks"
+        },
+        {
+            "href": "ajax\/myuin-get-asks-archived\/",
+            "name": "ajax__myuin_get_asks_archived"
+        },
+        {
+            "href": "ajax\/myuin-get-supplies\/",
+            "name": "ajax__myuin_get_supplies"
+        },
+        {
+            "href": "ajax\/myuin-unarchive-notification\/",
+            "name": "ajax__myuin_unarchive_notification"
+        },
+        {
+            "href": "ajax\/new-password-request\/",
+            "name": "ajax__new_password_request"
+        },
+        {
+            "href": "ajax\/newsletter-prompted\/",
+            "name": "ajax__newsletter_prompted"
+        },
+        {
+            "href": "ajax\/register\/",
+            "name": "ajax__register"
+        },
+        {
+            "href": "ajax\/register-w-fb\/",
+            "name": "ajax__register_w_fb"
+        },
+        {
+            "href": "ajax\/reset-password\/",
+            "name": "ajax__reset_password"
+        },
+        {
+            "href": "ajax\/search-what\/",
+            "name": "ajax__search_what"
+        },
+        {
+            "href": "ajax\/select-suppliers\/",
+            "name": "ajax__select_suppliers"
+        },
+        {
+            "href": "ajax\/send-feedback\/",
+            "name": "ajax__send_feedback"
+        },
+        {
+            "href": "ajax\/send-pm\/",
+            "name": "ajax__send_pm"
+        },
+        {
+            "href": "ajax\/set-unread-notification\/",
+            "name": "ajax__set_unread_notification"
+        },
+        {
+            "href": "ajax\/set-videos\/",
+            "name": "ajax__set_videos"
+        },
+        {
+            "href": "ajax\/supply\/final\/",
+            "name": "ajax__supply__final"
+        },
+        {
+            "href": "ajax\/supply\/get-existing-locations\/",
+            "name": "ajax__supply__get_existing_locations"
+        },
+        {
+            "href": "ajax\/supply\/get-schedule\/",
+            "name": "ajax__supply__get_schedule"
+        },
+        {
+            "href": "ajax\/supply\/remove-location\/",
+            "name": "ajax__supply__remove_location"
+        },
+        {
+            "href": "ajax\/advise\/when\/",
+            "name": "ajax__advise__when"
+        },
+        {
+            "href": "ajax\/supply\/where\/",
+            "name": "ajax__supply__where"
+        },
+        {
+            "href": "ajax\/twitter-auth\/",
+            "name": "ajax__twitter_auth"
+        },
+        {
+            "href": "ajax\/update-msg-data\/",
+            "name": "ajax__update_msg_data"
+        },
+        {
+            "href": "ajax\/update-notification-data\/",
+            "name": "ajax__update_notification_data"
+        },
+        {
+            "href": "ask\/final\/",
+            "name": "ask__final"
+        },
+        {
+            "href": "ask\/when\/",
+            "name": "ask__when"
+        },
+        {
+            "href": "ask\/where\/",
+            "name": "ask__where"
+        },
+        {
+            "href": "blog-add-comment\/",
+            "name": "blog_add_comment"
+        },
+        {
+            "href": "blog-article\/",
+            "name": "blog_article"
+        },
+        {
+            "href": "blog-get-comments\/",
+            "name": "blog_get_comments"
+        },
+        {
+            "href": "edit-supply-final\/",
+            "name": "edit_supply_final"
+        },
+        {
+            "href": "feedback-blocked\/",
+            "name": "feedback_blocked"
+        },
+        {
+            "href": "leave-feedback\/",
+            "name": "leave_feedback"
+        },
+        {
+            "href": "give-advice\/",
+            "name": "give_advice"
+        },
+        {
+            "href": "home\/",
+            "name": "home"
+        },
+        {
+            "href": "login-with-social-networks\/",
+            "name": "login_with_social_networks"
+        },
+        {
+            "href": "match-suppliers-with-adviser\/",
+            "name": "match_suppliers_with_adviser"
+        },
+        {
+            "href": "myuin\/advising-archive\/",
+            "name": "myuin__advising_archive"
+        },
+        {
+            "href": "myuin\/advising\/",
+            "name": "myuin__advising"
+        },
+        {
+            "href": "myuin\/asking\/",
+            "name": "myuin__asking"
+        },
+        {
+            "href": "myuin\/asking-archive\/",
+            "name": "myuin__asking_archive"
+        },
+        {
+            "href": "myuin\/edit-schedule\/",
+            "name": "myuin__edit_schedule"
+        },
+        {
+            "href": "myuin\/edit-what\/",
+            "name": "myuin__edit_what"
+        },
+        {
+            "href": "myuin\/edit-where\/",
+            "name": "myuin__edit_where"
+        },
+        {
+            "href": "myuin\/help\/",
+            "name": "myuin__help"
+        },
+        {
+            "href": "myuin\/msgs\/",
+            "name": "myuin__msgs"
+        },
+        {
+            "href": "myuin\/notifications\/",
+            "name": "myuin__notifications"
+        },
+        {
+            "href": "myuin\/personal\/",
+            "name": "myuin__personal"
+        },
+        {
+            "href": "myuin\/reset-password\/",
+            "name": "myuin__reset_password"
+        },
+        {
+            "href": "myuin\/send-msg\/",
+            "name": "myuin__send_msg"
+        },
+        {
+            "href": "myuin\/supplying\/",
+            "name": "myuin__supplying"
+        },
+        {
+            "href": "n\/adviser-paid\/",
+            "name": "n__adviser_paid"
+        },
+        {
+            "href": "n\/confirmation-for-asker\/",
+            "name": "n__confirmation_for_asker"
+        },
+        {
+            "href": "n\/funds-escrowed\/",
+            "name": "n__funds_escrowed"
+        },
+        {
+            "href": "n\/give-feedback\/",
+            "name": "n__give_feedback"
+        },
+        {
+            "href": "n\/new-advice\/",
+            "name": "n__new_advice"
+        },
+        {
+            "href": "n\/new-advice-request\/",
+            "name": "n__new_advice_request"
+        },
+        {
+            "href": "n\/new-asker-request\/",
+            "name": "n__new_asker_request"
+        },
+        {
+            "href": "n\/supplier-paid\/",
+            "name": "n__supplier_paid"
+        },
+        {
+            "href": "n\/supplier-selected\/",
+            "name": "n__supplier_selected"
+        },
+        {
+            "href": "n\/zero-feedback\/",
+            "name": "n__zero_feedback"
+        },
+        {
+            "href": "notifications\/",
+            "name": "notifications"
+        },
+        {
+            "href": "myuin\/notifications-archive\/",
+            "name": "myuin__notifications_archive"
+        },
+        {
+            "href": "payment-escrowed\/",
+            "name": "payment_escrowed"
+        },
+        {
+            "href": "payment-made\/",
+            "name": "payment_made"
+        },
+        {
+            "href": "privacy-policy\/",
+            "name": "privacy_policy"
+        },
+        {
+            "href": "registration\/",
+            "name": "registration"
+        },
+        {
+            "href": "request_password_restore\/",
+            "name": "request_password_restore"
+        },
+        {
+            "href": "send-feedback-notification\/",
+            "name": "send_feedback_notification"
+        },
+        {
+            "href": "supply\/final\/",
+            "name": "supply__final"
+        },
+        {
+            "href": "supply\/when\/",
+            "name": "supply__when"
+        },
+        {
+            "href": "supply\/where\/",
+            "name": "supply__where"
+        },
+        {
+            "href": "terms\/",
+            "name": "terms"
+        },
+        {
+            "href": "testimonials\/",
+            "name": "testimonials"
+        },
+        {
+            "href": "testimonials-article\/",
+            "name": "testimonials_article"
+        },
+        {
+            "href": "twitter-register\/",
+            "name": "twitter_register"
+        },
+        {
+            "href": "updates\/",
+            "name": "updates"
+        },
+        {
+            "href": "verify-email\/",
+            "name": "verify_email"
+        }
+    ]
+}

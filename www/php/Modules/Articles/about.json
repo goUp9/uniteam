@@ -1,0 +1,11 @@
+{
+    "id":"0002",
+    "title": "Articles",
+    "descr": "Standard Articles Module",
+    "controller":"",
+    "config":"",
+    "entities": [""],
+    "templates":"",
+    "common assets":"",
+    "database tables":[""]
+}

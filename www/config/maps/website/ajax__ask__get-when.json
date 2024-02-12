@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/ask/get-when",
+        "controller": "When\/Asker:get_when",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

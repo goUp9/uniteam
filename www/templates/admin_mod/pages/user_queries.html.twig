@@ -1,0 +1,72 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main>
+        <table class="outer">
+                <tr>
+                    <th>Query Ref. Number</th>
+                    <th class="tcell__what">What</th>
+                    <th class="tcell__where">Where</th>
+                    <th class="tcell__when">When</th>
+                    <th class="tcell__when">Additional</th>
+                </tr>
+                {% for query in data.queries %}
+                <tr>
+                    <td class="tcell__id">
+                        {{query.id}} 
+                    </td>
+                    <td>
+                        <table class="inner">
+                            {% for tags in query.whats %}
+                             <tr>
+                                <td>{{tags.tag.tag}}</td>                                
+                            </tr> 
+                            {% endfor %}
+                        </table>                        
+                    </td>
+                    <td>
+                       <table class="inner">                           
+                           {% for locations in query.wheres %}
+                            <tr>
+                                <td>Within {{locations.radius}} miles of
+                                <br/>
+                                {{locations.place.formattedAddress}}                                
+                                </td>                                
+                            </tr> 
+                            {% endfor %}
+                        </table>                         
+                    </td>
+                    <td>
+                         <table class="inner">
+                            {% if query.QueryWhenSchedule is not empty %}
+                                {% for schedule in query.QueryWhenSchedule %}
+                                <tr>
+                                    <td>{{schedule.weekDay}}: from {{ schedule.from }} to {{ schedule.to }}</td>                                
+                                </tr> 
+                                {% endfor %}
+                            {% endif %}
+                            {% if query.QueryWhenAsker is not empty %}
+                                <tr>
+                                    <td><p>{{query.QueryWhenAsker[0].date1.date}}</p><p>{{query.QueryWhenAsker[0].date2.date}}</p><p>expires:{{query.QueryWhenAsker[0].expDate.date}}</p></td>
+                                </tr>
+                            {% endif %}
+                        </table>                      
+                    </td>
+                    <td>
+                        <table class="inner">
+                            {% if query.finalSupplier is not empty %}
+                            <tr>
+                                <td><p>experience: {{query.finalSupplier.experience}}</p><p>qualification: {{query.finalSupplier.qualifName}}</p></td>                                
+                            </tr> 
+                            {%endif %}
+                            {% if query.finalAsker is not empty %}
+                            <tr>
+                                <td><p>budget: {{query.finalAsker.budget}}</p></td>                                
+                            </tr> 
+                            {% endif %}
+                        </table> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+    </main> 
+{% endblock %}

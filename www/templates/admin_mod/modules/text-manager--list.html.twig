@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{parent()}}
+    {% endblock %}    
+        <h1>Texts Manager:</h1>
+        <h2>New Text:</h2>
+        {{forms.new_text|raw}}
+        <h2>All Texts:</h2>
+        <div id="texts">
+            {% for item in data.texts %}
+                <ul>
+                    <li><a href="{{link.default_text_manager_edit_text.href}}{{item.id}}/">{{item.id}}</a>----<a href="{{link.admin_texts_manager_delete_text.href}}{{item.id}}/">DELETE</a></li>
+                </ul>
+            {% endfor %}
+        </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+<div id="login-popup" login-pop-up data-ng-show="showLoginPanel">
+    <p class="btn__close"  data-ng-click="showLoginPanel=!showLoginPanel;">X</p>
+    <p>Login into your account:</p>
+    <p><a href="{{link.request_password_restore.href}}">Forgot your password?</a></p>
+    <p class="invalid" ng-show="l.loginFailed.flag" style="font-size:.76em; color:red">{{'{{l.loginFailed.msg}}'}}</p>
+    {{forms.login  | raw}}
+    <p><a href="{{link.login_with_social_networks.href}}">Or login with social networks</a></p>
+</div>

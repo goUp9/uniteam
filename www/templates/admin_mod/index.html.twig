@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <nav class="main"> 
+        {% for section in data.sections|keys %}            
+            <section data-clickable>                
+                <h1><a href="{{link.admin__section.href}}{{section|replace({" ":"_"})}}/" class="nostyle">{{section|capitalize}}</a></h1>            
+            </section>
+        {% endfor %}        
+    </nav>
+    <nav class="quick-links">
+        <section data-clickable id="texts-mngr">
+            <h1><a href="{{link.admin__default_text_manager.href}}" class="nostyle">Texts<br/>Manager</a></h1>            
+        </section>
+    </nav>
+{% endblock %}

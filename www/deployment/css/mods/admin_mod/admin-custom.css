@@ -1,0 +1,54 @@
+form#project {
+    width:600px;
+    margin: 0 auto;
+}
+
+form#project input[type="text"]{
+    width:600px; height:35px;
+    margin-bottom: 20px;
+}
+
+form#project textarea {
+    width:600px; height: 150px;
+}
+
+.after-pictures, .before-pictures, .pic-manager {
+    width:100%; min-width: 600px;
+    background-color: #FFCCBA;
+    margin-bottom: 40px; margin-top: 40px;
+    float:none; clear:both;
+    display: table;
+}
+
+.after-pictures h2, .before-pictures h2, .pic-manager h2{
+    font-weight: normal; text-align: center;
+    padding:3px;
+}
+
+.after-pictures img, .before-pictures img, .pic-manager img {
+    float:left; 
+    display:block;
+    margin:10px;
+}
+
+
+#pictures {
+    width: 100%;
+    clear:both; float:none;
+}
+
+#pictures .image {    
+    float:left;
+    margin:10px;
+}
+
+#pictures .image img, #pictures .image input  {
+    clear:both; float:none;
+    display: block;
+}
+
+#pictures .image input {
+    width:188px; height:35px;
+    padding:3px;
+    margin-bottom: 20px;
+}

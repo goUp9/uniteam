@@ -1,0 +1,15 @@
+<h1>Please leave your feedback for the Supplier of your Query #{{idQuery}}</h1>
+<p>Query details: required the {{what}} in {{where}} on the {{when}}, delievered by {{supplier}}</p>
+<form method="POST" action="{{constant('LINKS_PRE')}}leave-feedback/"> 
+    <select name="feedback">        
+        <option value="0">0 (Service undelivered)</option>    
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3">3</option> 
+        <option value="4">4</option>
+        <option value="5">5</option> 
+    </select>
+    <input type="hidden" value="{{idSupplier}}" name="idSupplier"/>
+    <input type="hidden" value="{{idQuery}}" name="idAskQuery"/>
+    <input type="submit" value="Submit">
+</form>

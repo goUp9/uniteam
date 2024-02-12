@@ -1,0 +1,20 @@
+{
+    "route": {
+        "request": "ajax/edit-where",
+        "controller": "Where\/EditWhere:edit_data",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

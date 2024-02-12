@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-get-advices",
+        "controller": "MyUin\/Advise:ajax_get_advices",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

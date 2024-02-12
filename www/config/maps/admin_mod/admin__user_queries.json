@@ -1,0 +1,31 @@
+{
+    "route": {
+        "request": "admin/user-queries",
+        "controller": "Users\/Admin:list_queries",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{"idUser":"","type":""},
+        "tpl":"/pages/user_queries.html.twig",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            "http://fonts.googleapis.com/css?family=Molle:400italic",
+            "http://fonts.googleapis.com/css?family=Monda:700",
+            "http://css-spinners.com/css/spinner/throbber.css",
+            "/deployment/css/mods/admin/pages/user_queries.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "/js/Vendors/angular.min.js",
+            "/js/Modules/ngUtils.js",
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "\/js\/Vendors\/ngDialog.js",
+            "/js/Mods/Admin_mod/definitions.js",
+            "/js/App/Users/Admin/Users.controller.js"
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

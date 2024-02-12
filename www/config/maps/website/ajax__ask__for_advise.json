@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/ask/for-advise",
+        "controller": "FinalStep\/Asker:confirm_for_advice",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

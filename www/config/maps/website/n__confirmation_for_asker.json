@@ -1,0 +1,45 @@
+{
+    "route": {
+        "request": "n/confirmation-for-asker",
+        "controller": "Notifications\/Notifications:confirmation_for_asker",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages"
+            ],
+        "params":{"idQuery":"","idNotification":""},
+        "tpl":"/notifications/confirmation_for_asker.html.twig",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[
+            "Users:remember_user",
+            "Communication:get_unread_notifications",
+            "Communication:get_unread_msgs"
+            ],
+        "css":[
+            "https://rawgit.com/Bluefieldscom/intl-tel-input/master/build/css/intlTelInput.css",
+            "http://css-spinners.com/css/spinner/throbber.css",
+            "deployment/css/pages/notification.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js",
+            "/js/Modules/ngUtils.js",
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "/js/Vendors/ngDialog.js", 
+            "/js/Vendors/angucomplete.js",
+            "/js/Vendors/textAngular-sanitize.min.js",
+            "/js/Vendors/textAngular.min.js",
+            "/js/Vendors/international_phone_number/intlTelInput.min.js",            
+            "/js/Vendors/international_phone_number/utils.js", 
+            "/js/Vendors/international_phone_number/international-phone-numbers.js",            
+            "/js/App/definitions.js",
+            "/js/App/Users/loginform.controller.js",
+            "/js/App/Notifications/Notification.controller.js"
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

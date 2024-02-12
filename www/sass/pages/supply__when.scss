@@ -1,0 +1,136 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+@import "../widgets/feedbck";
+
+#query-type{
+    width: 320px;
+    margin: 0 auto 15px;
+    h1 {
+        text-align: center; font-size: 2.5em; font-weight: bold; color:$blue;
+        margin: 12px 0 10px 10px;
+        vertical-align:top;
+        display:inline-block;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+    img {
+        width:70px; height:92px;
+        display:inline-block;
+    }
+}
+
+.steps-heading {
+        width: 100%;
+        margin: 0 auto 10px;
+        text-align:center;
+        div {
+            display: inline-block;
+            vertical-align: top;
+            text-align:left;
+            p {
+                font-size:5em; color:$blue;
+                display: inline;
+            }
+            p.grayscale {
+                color:lightgray;
+            }
+        }
+        .grayscale {
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            -o-filter: grayscale(1);
+            -ms-filter: grayscale(1);
+        }
+        
+        .opacity {
+            opacity: 0.3;
+        }
+}
+
+@media (max-width:385px){
+    main{
+        .steps-heading {
+            div {            
+                p {
+                    font-size:2em;
+                }
+            }
+        }
+    }
+}
+
+input.time {
+    width: 50px;
+    font-family: $mainFont;
+    margin: 20px 0;
+    text-align:left;
+}
+
+.closed {
+    font-size: .76em;
+}
+
+.hint {
+    font-size: .86em;
+    margin-top: 15px;
+}
+
+.hint#quick-select {
+    cursor: pointer; text-decoration: underline;
+}
+
+.set-ups {
+    ul{
+        margin: 10px 0;
+        li{
+            display: inline;
+            color:blue; text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+#form {
+    text-align: center;
+    ul {
+        display:inline-block;
+        li {
+            display: inline-block;
+            margin: 2%;
+            p {
+                color:$blue;
+                margin: 10px 0px 5px;
+            }
+            hr {
+                width: 35px; height: 1px;
+                margin: 0 auto 10px;
+                color:$blue; background-color: $blue;
+                border:none;
+                display:block;
+            }
+        }
+    }
+    
+}
+
+#btn__save{
+    width:150px; height:35px;
+    background-color:$blue;
+    margin: 10px auto;
+    cursor:pointer;
+    p {
+        font-family: $mainFont; color:white;
+        text-align:center;
+        padding-top:10px;
+    }
+}

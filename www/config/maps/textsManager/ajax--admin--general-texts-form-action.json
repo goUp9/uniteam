@@ -1,0 +1,16 @@
+{
+    "route": {
+        "request": "admin/ajax/general-texts-form-action",
+        "controller": "Admin\/GeneralTextsManager:ajax_form_action",
+        "injections":[],
+        "params":{},
+        "dependancies": ["Admin\/Login"],
+        "tpl":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "route": {
+        "request": "ajax/select-suppliers",
+        "controller": "Matching\/Selection",
+        "injections": [],
+        "dependancies": [
+            "Communication\/Notifications",
+             "Users\/Users",
+             "Payments\/Escrow"
+        ],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

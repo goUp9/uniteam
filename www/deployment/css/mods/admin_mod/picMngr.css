@@ -1,0 +1,17 @@
+#pictures {
+    width: 90%;
+    margin: 0 auto;
+    float:none; clear:both;
+    display: table;
+}
+
+#pictures .image {
+    border-right: 1px solid #fc7e40;  border-bottom: 1px solid #fc7e40;
+    padding: 20px 2%;
+}
+
+form#PicturesManager {
+    width: 320px;
+    margin: 0 auto; padding-top: 30px; padding-bottom: 20px;
+}
+

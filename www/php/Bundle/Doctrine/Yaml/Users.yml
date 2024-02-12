@@ -1,0 +1,19 @@
+Bundle\Doctrine\Entities\Users:
+  type: entity
+  repositoryClass: Bundle\Doctrine\Entities\Users
+  table: Users
+  namedQueries:
+    all: "SELECT u FROM __CLASS__ u"
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    username:
+      type: string
+      nullable: true
+    password:
+      type: string
+      nullable: true
+  

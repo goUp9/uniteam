@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<!--vendors-->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!--vendors-->
+{% block meta %}
+<meta name="description" content="{{meta.description}}">
+<meta name="keywords" content="{{meta.keywords}}">
+{% endblock %}
+{% block includes %}
+    {% for item in meta.css %}
+        {{ item |  raw }}
+    {% endfor %}
+    {% for item in meta.js %}
+        {{ item |  raw }}
+    {% endfor %}
+{% endblock %}
+
+<title>{{ meta.title }}</title>
+</head>
+<body ng-app="Admin">
+<div id="wrapper">
+	{% include "commons/header.html.twig" %}
+    <div id="main"> 
+        {% block main %}            
+        {% endblock %}
+    </div>
+    <div id="push-footer">
+    </div>    
+</div>
+{% include "commons/footer.html.twig" %}
+</body>
+</html>

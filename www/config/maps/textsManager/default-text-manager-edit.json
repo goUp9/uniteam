@@ -1,0 +1,25 @@
+{
+    "route": {
+        "request": "admin/default-text-manager-edit",
+        "controller": "Admin\/DefaultTextsManager:edit_text",
+        "params":{"id":""},
+        "tpl":"standard/standard_single_form.html.twig",
+        "dependancies": ["Admin\/Login"],
+        "css":[
+            "http://fonts.googleapis.com/css?family=Molle:400italic",
+            "http://fonts.googleapis.com/css?family=Monda:700",
+            "deployment/css/mods/admin/pages/default_text_manager.css",
+            "deployment/css/mods/admin/interface.css",
+            "deployment/css/mods/admin/standardForms.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "/js/Vendors/angular.min.js",
+            "/js/Modules/ngUtils.js",
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "\/js\/Vendors\/ngDialog.js",
+            "/js/Mods/Admin_mod/definitions.js",
+            "/js/Mods/Admin_mod/Items/item.js"
+        ]
+    }
+}

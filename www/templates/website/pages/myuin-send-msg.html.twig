@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main ng-controller="MsgCtrl as m"> 
+        <h1>My uin - send message</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        <div id="msg"> 
+            <div class="usr-msg error" ng-show="errorShow">
+                <p>{{'{{m.errorMsg}}'}}</p>
+            </div>
+            {{forms.msg| raw}}
+        </div>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

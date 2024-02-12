@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+<h1>The payment to your account has been made for your services</h1>
+<p>Amount paid:{{ data.queryDetails.finalAsker.currency}} {{data.queryDetails.supplierPaidAmount}}</p>
+{% include 'notifications/_query_details.html.twig'%}
+
+</div>
+
+</main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

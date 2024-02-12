@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-advise-unarchive-query",
+        "controller": "MyUin\/Advise:unarchive_query",
+        "injections": [],
+        "dependancies": [],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

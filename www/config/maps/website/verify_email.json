@@ -1,0 +1,48 @@
+{
+    "route": {
+        "request": "verify-email",
+        "controller": "Users\/Registration:email_varification",
+        "injections": [            
+        ],
+        "dependancies": [
+            "Users\/RegistrationForm",
+            "Users\/LoginForm",
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Commons\/Users"
+        ],
+        "params":{},
+        "tpl":"/pages/verify_email.html.twig",
+        "tplBasePath":"",
+        "forms":{
+            "login":{"form class":"Users\/LoginForm","action":""}
+            },
+        "calls":["Users:remember_user"],
+        "css":[
+            "https://rawgit.com/Bluefieldscom/intl-tel-input/master/build/css/intlTelInput.css",
+            "http://css-spinners.com/css/spinner/throbber.css",
+            "deployment/css/vendors/angucomplete.css",
+            "deployment/css/pages/verify-email.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js",
+            "/js/Modules/ngUtils.js",
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "/js/Vendors/ngDialog.js",
+            "/js/Vendors/angucomplete.js",
+            "/js/Vendors/textAngular-sanitize.min.js",
+             "/js/Vendors/textAngular.min.js",
+            "/js/Vendors/international_phone_number/intlTelInput.min.js",            
+            "/js/Vendors/international_phone_number/utils.js", 
+            "/js/Vendors/international_phone_number/international-phone-numbers.js",            
+            "/js/App/definitions.js",
+            "/js/App/Users/loginform.controller.js",
+            "/js/App/Users/loginpopup.directive.js"
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

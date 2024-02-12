@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main data-ng-controller="BlogCtrl as blog">
+            <h1>uinteam blog</h1>
+            <div id="items">
+                <div class="item" data-ng-repeat="item in items">
+                    <p class="title">{{'{{item.title}}'}}</p>
+                    <p class="date">{{'{{item.dateCreated}}'}}</p>
+                    <p class="read-article"><a href="{{link.blog_article.href}}{{'{{item.id}}'}}/">read article</a></p>
+                </div>
+                <div id="pages" data-ng-show="pages.length>0">
+                    <p>Go to page:</p>
+                    <div class="page" data-ng-click="switch_page(p.page)" data-ng-repeat="p in pages">
+                        <p>{{'{{p.page}}'}}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

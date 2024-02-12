@@ -1,0 +1,54 @@
+{
+    "route": {
+        "request": "login-with-social-networks",
+        "controller": "Users\/Social_Login",
+        "injections": [],
+        "dependancies": [
+            "Users\/LoginForm",
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Commons\/Users"
+        ],
+        "params":{},
+        "tpl":"/pages/login_w_social.html.twig",
+        "tplBasePath":"",
+        "forms":{
+            "login":{"form class":"Users\/LoginForm","action":""}
+            },
+        "calls":[
+            ],
+        "css":[
+            "https://rawgit.com/Bluefieldscom/intl-tel-input/master/build/css/intlTelInput.css",
+            "http://css-spinners.com/css/spinner/throbber.css",
+            "deployment/css/vendors/angucomplete.css",
+            "deployment/css/vendors/select2.css",
+            "deployment/css/pages/login_w_social.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js",
+            "https://apis.google.com/js/platform.js",
+            "/js/Modules/ngUtils.js",            
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "/js/Vendors/ngDialog.js",
+            "/js/Vendors/angucomplete.js",
+            "/js/Vendors/textAngular-sanitize.min.js",
+            "/js/Vendors/textAngular.min.js",
+            "/js/Vendors/international_phone_number/intlTelInput.min.js",            
+            "/js/Vendors/international_phone_number/utils.js", 
+            "/js/Vendors/international_phone_number/international-phone-numbers.js",
+            "/js/Vendors/select2.js",
+            "/js/Vendors/Facebook.js",
+            "/js/Vendors/angular-country-select.js",
+            "/js/Vendors/textAngular.min.js",
+            "/js/App/definitions-registration.js",
+            "/js/Mods/Auth/App/socialNetworks.controller.js",
+            "/js/App/Users/loginform.controller.js",
+            "/js/App/Users/loginpopup.directive.js"
+        ],
+        "title":"Login with social networks",
+        "keywords":["Asker","Supplier","Adviser","Provider","Freelance","Startup","entrepreneur","Experience","qualification", "Feedback","Advice","Register","Join"],
+        "description":"user, customer, asker to join to find service provider, business, supplier, freelance, startup, entrepreneur based on feedback, experience and qualification. Advisers provide advices"
+    }
+}

@@ -1,0 +1,12 @@
+<p>{{data.textManager.feedback_text| raw}}</p>
+<form ng-controller="FeedbackCtrl as feedbck" id="form__feedbck" ng-submit="feedbck.submit()">
+    <fieldset>
+        <label>Your email:</label>
+        <input type="email" required ng-model="feedbck.formData.email">
+    </fieldset>
+    <fieldset>
+        <label>Your message:</label>
+        <textarea required ng-model="feedbck.formData.msg"></textarea>
+    </fieldset>
+    <input type="submit" value="submit"/>
+</form>

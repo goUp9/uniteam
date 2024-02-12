@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="AdviseSearchCtrl as where">
+        <h1 class="heading">Advise</h1>
+        <div class="steps-heading">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><img src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/><p>&RightArrow;</p></div>
+            <div><img src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></div>
+        </div>        
+        <div id="form">
+        {{forms.where| raw}}        
+        </div>
+        <div class="row">  
+            <art-location geodata="geoData"></art-location>
+            <div id="locations">
+                <h2>Added Locations:</h2>
+                <ul>                
+                    <li data-ng-repeat="loc in locs">
+                        Within {{'{{loc.radius}}'}} miles of {{'{{loc.place.formattedAddress}}'}}
+                        (<span data-ng-click="where.remove_loc($index)">remove</span>)
+                    </li>
+                </ul>
+                        <div class="btn" ng-click="where.next_step()" ng-class="{'grayscale':!where.continueFlag}"><p>Continue</p></div>
+            </div>
+        </div>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

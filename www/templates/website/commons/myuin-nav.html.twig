@@ -1,0 +1,11 @@
+<nav class="profile">
+            <ul>                                             
+                <li {% if data.route=="myuin/personal"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.myuin__personal.href}}">personal details</a></li>
+                <li {% if data.route=="myuin/supplying"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.myuin__supplying.href}}">supplying</a></li>
+                <li {% if data.route=="myuin/asking"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.myuin__asking.href}}">asking</a></li>
+                <li {% if data.route=="myuin/advising"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.myuin__advising.href}}">advising</a></li>
+                <li {% if data.route=="notifications"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.notifications.href}}">notifications ({{data.unread_notifications}} unread)</a></li>
+                <li {% if data.route=="myuin/msgs"%} class="nav-selected"{%endif%}><a class="nocolor" href="{{link.myuin__msgs.href}}">messages ({{data.unread_msgs}} unread)</a></li>
+                <li class="green{% if data.route=="myuin/help"%} nav-selected{%endif%}"><a class="nocolor" href="{{link.myuin__help.href}}">see how it works</a></li>
+            </ul>
+</nav>

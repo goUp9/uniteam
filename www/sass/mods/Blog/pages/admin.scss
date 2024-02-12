@@ -1,0 +1,73 @@
+@import "../../Admin/defaults/normalize";
+@import "../../Admin/defaults/links";
+@import "../../Admin/defaults/settings";
+@import "../../Admin/defaults/force-footer";
+
+@import "../../Admin/modules/fonts";
+@import "../../Admin/modules/colors";
+
+@import "../../Admin/partials/header";
+@import "../../Admin/partials/footer";
+@import "../../Admin/partials/top-nav";
+
+#items{
+    .item{
+        width: 80%;
+        border: gray 2px solid;
+        border-radius: 5px;
+        margin: 20px 2%;
+        padding: 10px 1%;
+        p{
+           font-family: $mainFont;
+           margin: 10px 0
+        }
+        p.title{
+           font-weight: bold;
+        }
+        p.date{
+           font-size:.80em;
+           color:#555555;
+        }
+    }
+}
+
+#comments{
+    .comments{
+        border-bottom: 1px solid gray;
+        padding: 20px 3px;
+        p{
+            margin: 5px;
+        }
+        p.text{
+            
+        }
+        p.user{
+            font-size: .86em;
+            color: gray;
+        }
+    }
+}
+
+#edit_item {
+    width: 70%;
+    margin: 0 auto;
+    input[type="text"]{
+        width:100%;
+        height: 30px;
+    }
+}
+
+label{
+    display:block;
+}
+
+#pages {
+    padding: 0px 0px 0px 40px;
+    p {
+        color: blue; text-decoration: underline;
+        display: inline-block;
+        margin: 5px 10px;
+        cursor: pointer;
+    }
+    
+}

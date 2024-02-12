@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/ask/final",
+        "controller": "FinalStep\/Asker:confirm",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

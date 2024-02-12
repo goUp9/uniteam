@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/set-unread-notification",
+        "controller": "Notifications\/Notifications:set_unread",
+        "injections": [],
+        "dependancies": [],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

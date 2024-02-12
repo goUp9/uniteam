@@ -1,0 +1,8 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{parent()}}
+    {% endblock %}    
+        <h1>Edit web site text:</h1>
+        {{forms.edit_text|raw}}        
+{% endblock %}

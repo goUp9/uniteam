@@ -1,0 +1,28 @@
+{
+    "route": {
+        "request": "match-suppliers-with-adviser",
+        "controller": "Matching\/Process",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Users\/Users"
+        ],
+        "params":{"id":"","forward":"true"},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

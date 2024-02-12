@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/newsletter-prompted",
+        "controller": "Users\/Users:newsletter_prompted",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

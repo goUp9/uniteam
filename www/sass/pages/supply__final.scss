@@ -1,0 +1,74 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+@import "../widgets/feedbck";
+
+#query-type{
+    width: 320px;
+    margin: 0 auto 15px;
+    h1 {
+        text-align: center; font-size: 2.5em; font-weight: bold; color:$blue;
+        margin: 12px 0 10px 10px;
+        vertical-align:top;
+        display:inline-block;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+    img {
+        width:70px; height:92px;
+        display:inline-block;
+    }
+}
+
+.steps-heading {
+        width: 100%;
+        margin: 0 auto 10px;
+        text-align:center;
+        div {
+            display: inline-block;
+            vertical-align: top;
+            text-align:left;
+            p {
+                font-size:5em; color:$blue;
+                display: inline;
+            }
+            p.grayscale {
+                color:lightgray;
+            }
+        }
+        .grayscale {
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            -o-filter: grayscale(1);
+            -ms-filter: grayscale(1);
+        }
+        
+        .opacity {
+            opacity: 0.3;
+        }
+}
+
+#form {
+    text-align: center;
+}
+
+#btn__save{
+    width:150px; height:35px;
+    background-color:$blue;
+    margin: 10px auto;
+    cursor:pointer;
+    p {
+        font-family: $mainFont; color:white;
+        text-align:center;
+        padding-top:10px;
+    }
+}

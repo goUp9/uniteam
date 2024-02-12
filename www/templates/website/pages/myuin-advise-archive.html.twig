@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>     
+        <h1>My uin - Asking</h1>        
+        {% include 'commons/myuin-nav.html.twig'%}  
+        <div clickable class="btn__new">
+            <p><a href="{{link.home.href}}" class="nostyle">Create a new Advice query</a></p>
+        </div>
+        <div>
+            <p class="link"><a href="{{link.myuin__advising.href}}">View Queries</a></p>
+        </div>
+        <div id="queries" ng-controller="AdviseArchivedCtrl as ask">
+            <div class="query" data-ng-repeat="q in queries">                
+                <p>Query #{{'{{q.id}}'}} &boxh;</p>
+                <p  class="view-details" data-ng-hide="detailsFlag[$index]" data-ng-click="ask.get_details(q.id,$index)">View details</p>
+                <div class="unarchive_btn" data-ng-click="ask.unarchive(q.id)"><p>Unarchive</p></div>
+                <div class="details" data-ng-show="detailsFlag[$index]">
+                    <div class="d_what">
+                        <p><b>What:</b></p><p ng-repeat="tags in details[$index].whats"> {{ '{{tags.tag.tag}}' }}, <p>
+                    </div>
+                     <div class="d_where">
+                        <p ng-if="details[$index].wheres.length<1"><b>Where:</b> Anywhere</p>
+                        <p ng-if="details[$index].wheres.length>0"><b>Where:</b> Within {{ '{{details[$index].wheres[0].radius}}' }} miles of
+                        <br/>
+                        {{ '{{details[$index].wheres[0].place.formattedAddress}}' }}</p>
+                    </div>
+                    <div class="d_when">
+                        <p><b>When:</b></p>
+                        <p ng-repeat="schedule in details[$index].QueryWhenSchedule">{{ '{{schedule.weekDay}}' }}: from {{ '{{schedule.from}}' }} to {{ '{{schedule.to}}' }}, </p>                                
+                             
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

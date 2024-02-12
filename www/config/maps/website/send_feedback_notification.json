@@ -1,0 +1,29 @@
+{
+    "route": {
+        "request": "send-feedback-notification",
+        "controller": "Matching\/SuppliersFeedback:send_notification",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Users\/Users",
+            "Communication\/Notifications",
+            "Communication\/Messages"
+        ],
+        "params":{"idQuery":"","idSupplier":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[
+            
+            ],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

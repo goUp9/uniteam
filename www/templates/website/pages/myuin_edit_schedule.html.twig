@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+        
+            <main>   
+                <h1>My uin - Edit Query</h1>        
+                {% include 'commons/myuin-nav.html.twig'%} 
+                <div class="tools">
+                    <div class="btn" id="btn__back" clickable><p><a href="{{constant('LINKS_PRE')}}myuin/{{data.linkBack}}/" class="nostyle">Back to queries</a></p></div>
+                </div>
+            	<div id="form" data-ng-controller="SupplySearchCtrl as when">
+                <h1>Please set up your opening hours:</h1>
+                <div class="set-ups">
+                    <p class="hint">Quick-select days:</p>
+                    <ul>
+                        <li data-ng-click="when.set_alldays()">24/7</li>
+                        <li data-ng-click="when.weekends()">Weekends</li>
+                        <li data-ng-click="when.weekdays()">Weekdays</li>
+                    </ul>
+                </div>
+                <p class="hint">Choose working hours:</p>
+                <ul>                
+                    <li data-ng-repeat="day in weekDays"><p>{{'{{day.title}}'}}:</p>
+                        <input type="checkbox" data-ng-click="when.setClosedFlag($index)" data-ng-model="when.closedFlags[$index]" data-ng-init="when.closedFlags[$index]=false"/><label class="closed">Closed</label><br/>
+                        <label>from </label>
+                        <hour-select selected="when.formData[$index].from.hours"></hour-select>
+                    <minutes-select selected="when.formData[$index].from.minutes"></minutes-select>
+                        <label>to </label>
+                        <hour-select selected="when.formData[$index].to.hours"></hour-select>
+                    <minutes-select selected="when.formData[$index].to.minutes"></minutes-select>
+                        <hr/>
+                    </li>
+                </ul>
+                <div class="btn" id="btn__save" data-ng-click="when.submit()">
+                    <p>Save</p>
+                </div>
+            </div>               
+            </main>
+
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

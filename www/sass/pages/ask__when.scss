@@ -1,0 +1,397 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+@import "../widgets/feedbck";
+
+#query-type{
+    width: 320px;
+    margin: 0 auto 15px;
+    h1 {
+        text-align: center; font-size: 2.5em; font-weight: bold; color:$blue;
+        margin: 12px 0 10px 10px;
+        vertical-align:top;
+        display:inline-block;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+    img {
+        width:70px; height:92px;
+        display:inline-block;
+    }
+}
+
+.steps-heading {
+        width: 100%;
+        margin: 0 auto 10px;
+        text-align:center;
+        div {
+            display: inline-block;
+            vertical-align: top;
+            text-align:left;
+            p {
+                font-size:5em; color:$blue;
+                display: inline;
+            }
+            p.grayscale {
+                color:lightgray;
+            }
+        }
+        .grayscale {
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(1);
+            -o-filter: grayscale(1);
+            -ms-filter: grayscale(1);
+        }
+        
+        .opacity {
+            opacity: 0.3;
+        }
+}
+
+@media (max-width:385px){
+    main{
+        .steps-heading {
+            div {            
+                p {
+                    font-size:2em;
+                }
+            }
+        }
+    }
+}
+
+label {
+        font-family: $mainFont;
+    }
+
+#form {
+    text-align: center;
+    li {
+        display:inline;
+        margin: 0 10px 0 0;
+    }
+}
+
+#date1-holder, #date2-holder {
+    width: 40%;
+    display: inline-block;
+    vertical-align:top;
+    .time {
+        width: 100%;
+        display:block;
+        clear:both; float:none;
+    }
+    calendar {
+        clear:both; float:none;
+    }
+}
+
+.date-holder {
+    width:300px;
+    display:inline-block;
+    margin: 15px 0;    
+    input[type='text']{
+        width:290px;
+        font-family: $mainFont;
+        padding: 5px;
+    }
+    p {
+        text-align: right; font-size: .87em;
+        margin: 3px 0;
+    }
+}
+
+.time {
+    input[type="number"]{
+        width: 50px;
+    }
+}
+
+hr {
+    height:1px; border:none;
+    color:$blue; background-color: $blue;
+}
+
+@mixin vertical-centre ($height) {
+    height:$height;
+    line-height:$height !important;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+@mixin border-box {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+main {
+    form {
+        h1 {
+            font-weight: bold; font-size: 1.2em;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+#btn__save{
+    width:150px; height:35px;
+    background-color:$blue;
+    margin: 10px auto;
+    cursor:pointer;
+    p {
+        font-family: $mainFont; color:white;
+        text-align:center;
+        padding-top:10px;
+    }
+}
+
+.error-msg {
+    p {
+        color:red;
+    }
+}
+    
+    $border-colour:#CCC;
+calendar {
+    float:left;
+    display:block;
+    @include border-box;
+    background:white;
+    width:200px;
+    border:solid 1px $border-colour;
+    margin-bottom:10px;
+    
+    $secondary-colour:$blue;
+    $spacing:5px;
+    $icon-width:20px;
+    $header-height:20px;
+
+    >div.header {
+        float:left;
+        width:100%;
+        background:$secondary-colour;
+        height:$header-height;
+        color:white;
+        
+        >* { 
+            @include vertical-centre($header-height);
+        }
+        
+        >i {
+            float:left;
+            width:$icon-width;
+            font-size:1em;
+            font-weight:bold;
+            position:relative;
+            @include border-box;
+            padding:0 $spacing;
+            cursor:pointer;
+        }
+        
+        >i.fa-angle-left {
+            text-align:left;
+        }
+        
+        >i.fa-angle-right {
+            text-align:right;
+            margin-left:$icon-width*-1;
+        }
+        
+        >span { 
+            float:left;
+            width:100%;
+            font-weight:bold;
+            text-transform:uppercase;
+            @include border-box;
+            padding-left:$icon-width+$spacing;
+            margin-left:$icon-width*-1;
+            text-align:center;
+            padding-right:$icon-width;
+            color:inherit;
+        }
+    }
+    >div.week {
+        float:left;
+        width:100%;
+        border-top:solid 1px $border-colour;
+        
+        &:first-child {
+            border-top:none;
+        }
+        
+        >span.day {
+            float:left;
+            width:calc(100%/7);
+            @include border-box;
+            border-left:solid 1px $border-colour;
+            font-size:.76em;
+            font-family: $mainFont;
+            text-align:center;
+            @include vertical-centre(20px);
+            background:white;
+            cursor:pointer;
+            color:black;
+            
+            &:first-child {
+                border-left:none;
+            }
+            
+            &.today {
+                background:#E3F2FF;
+            }
+            
+            &.different-month {
+                color:#C0C0C0;
+            }
+            
+            &.selected {
+                background:$secondary-colour;
+                color:white;
+            }
+        }
+        
+        &.names>span {
+            color:$secondary-colour;
+            font-weight:bold;
+        }
+    }
+    
+    #btn__save{
+        width:150px; height:35px;
+        background-color:$blue;
+        margin: 10px auto;
+        p {
+            font-family: $mainFont; color:white;
+            text-align:center;
+            padding-top:10px;
+        }
+    }
+}
+
+/*calendar {
+    float:left;
+    display:block;
+    @include border-box;
+    background:white;
+    width:300px;
+    border:solid 1px $border-colour;
+    margin-bottom:10px;
+    
+    $secondary-colour:$blue;
+    $spacing:10px;
+    $icon-width:40px;
+    $header-height:40px;
+
+    >div.header {
+        float:left;
+        width:100%;
+        background:$secondary-colour;
+        height:$header-height;
+        color:white;
+        
+        >* { 
+            @include vertical-centre($header-height);
+        }
+        
+        >i {
+            float:left;
+            width:$icon-width;
+            font-size:1.125em;
+            font-weight:bold;
+            position:relative;
+            @include border-box;
+            padding:0 $spacing;
+            cursor:pointer;
+        }
+        
+        >i.fa-angle-left {
+            text-align:left;
+        }
+        
+        >i.fa-angle-right {
+            text-align:right;
+            margin-left:$icon-width*-1;
+        }
+        
+        >span { 
+            float:left;
+            width:100%;
+            font-weight:bold;
+            text-transform:uppercase;
+            @include border-box;
+            padding-left:$icon-width+$spacing;
+            margin-left:$icon-width*-1;
+            text-align:center;
+            padding-right:$icon-width;
+            color:inherit;
+        }
+    }
+    >div.week {
+        float:left;
+        width:100%;
+        border-top:solid 1px $border-colour;
+        
+        &:first-child {
+            border-top:none;
+        }
+        
+        >span.day {
+            float:left;
+            width:calc(100%/7);
+            @include border-box;
+            border-left:solid 1px $border-colour;
+            font-size:1em;
+            font-family: $mainFont;
+            text-align:center;
+            @include vertical-centre(30px);
+            background:white;
+            cursor:pointer;
+            color:black;
+            
+            &:first-child {
+                border-left:none;
+            }
+            
+            &.today {
+                background:#E3F2FF;
+            }
+            
+            &.different-month {
+                color:#C0C0C0;
+            }
+            
+            &.selected {
+                background:$secondary-colour;
+                color:white;
+            }
+        }
+        
+        &.names>span {
+            color:$secondary-colour;
+            font-weight:bold;
+        }
+    }
+    
+    #btn__save{
+        width:150px; height:35px;
+        background-color:$blue;
+        margin: 10px auto;
+        p {
+            font-family: $mainFont; color:white;
+            text-align:center;
+            padding-top:10px;
+        }
+    }
+}*/

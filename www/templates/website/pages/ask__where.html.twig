@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="AskSearchCtrl as where">
+        <div id="query-type">
+            <img src="{{img.uin_ask.src}}" alt="{{img.uin_ask.alt}}" /><h1>asking</h1>
+        </div>
+        <div class="steps-heading">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><img src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/><p>&RightArrow;</p></div>
+            <div><img src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></div>
+        </div>
+        <div id="form">
+        {{forms.where| raw}}  
+        </div>
+        <art-location geodata="geoData"></art-location>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

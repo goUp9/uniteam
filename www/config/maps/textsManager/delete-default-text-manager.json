@@ -1,0 +1,7 @@
+{
+    "route": {
+        "request": "admin/ajax/delete-default-texts-manager",
+        "controller": "Admin\/DefaultTextsManager:delete",
+        "dependancies": ["Admin\/Login"]
+    }
+}

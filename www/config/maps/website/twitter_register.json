@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "twitter-register",
+        "controller": "Users\/Registration:twitter_registration_success",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

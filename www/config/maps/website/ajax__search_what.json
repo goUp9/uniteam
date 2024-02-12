@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/search-what",
+        "controller": "Index\/WhatSearch:ajax_get_tags",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

@@ -1,0 +1,56 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/top-nav";
+
+
+nav.main {
+    width: 95%;
+    margin: 0 auto;
+    clear:both;
+    section {
+        width:280px; height: 280px;
+        background-color: #fc7e40;
+        float:left;
+        margin: 1%;
+        background-image:url(../../img/admin_mod/css/main-nav.png); background-repeat: no-repeat; background-position: center 17px;
+        h1 {
+            color:white; font-family: $mainFont; font-weight: normal; font-size: 2.25em;
+            text-align: center;
+            padding-top: 125px;
+        }
+    }
+} 
+
+nav.quick-links {
+    width: 95%;
+    clear: both;
+    margin:0 auto; padding-top: 60px;
+    section {
+        width: 280px; height: 70px;
+        float:left; 
+        background-color: $orange;
+        margin:1%;
+        border-radius:10px;
+        h1 {
+            color:white; font-family: $mainFont; font-weight: normal; font-size: 1.25em;
+            text-align: center;
+            line-height: 1;
+            padding-top:12px;
+        }
+    }
+    section#pictures-mngr {
+        background-image:url(../../img/admin_mod/css/pictures-mngr.png); background-repeat: no-repeat; background-position: 20px center;
+    }
+    section#texts-mngr {
+        background-image:url(../../img/admin_mod/css/texts-mngr.png); background-repeat: no-repeat; background-position: 20px center;
+    }
+}
+

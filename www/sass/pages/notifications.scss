@@ -1,0 +1,227 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+
+@import "../widgets/login_panel";
+.link {
+    text-align:right;
+    margin: 20px 10px;
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+#notifications-list {
+    width: 100%;
+    tr {
+        width:100%; height: 40px;
+        td,th {
+            padding-top: 10px;
+        }
+        th {
+            cursor: pointer;
+        }
+    }
+    .item {        
+        border-bottom: 1px #d5d5e0 solid;        
+        .date {
+            width: 15%;
+            padding: 0 5px;
+            text-align: center;
+            p {
+                color:$blue; font-weight: normal; font-size: .86em;
+                text-decoration: underline;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
+        }
+        .type {
+            width: 15%;
+            width:300px;
+            text-align: center;
+        }
+        .data {
+            width:35%;
+            text-align: right;
+        }
+        .whats{
+            width:35%;
+            text-align: left;
+        }
+    }
+    .item {        
+        border-bottom: 1px #d5d5e0 solid;
+        td.date {
+            color: #5d5d63;
+            padding: 0 5px;
+            text-align: center;
+        }
+        td.type {
+            width:300px;
+            text-align: center;
+        }
+        td.data {            
+            color: #353539;
+            text-align: right;
+        }
+        td.whats{
+            text-align: left;
+            color: #353539;
+            span{
+                font-style: italic;
+            }
+        }
+    }
+    .item {        
+        border-bottom: 1px #d5d5e0 solid;
+        th {
+            color:$blue; text-decoration: underline;
+        }
+        th.date {
+            padding: 0 5px;
+            text-align: center;
+        }
+        th.type {
+            width:300px;
+            text-align: center;
+        }
+        th.data {      
+            text-align: right;
+        }
+        th.whats{
+            text-align: right;
+            padding-right: 5px;
+        }
+    }
+    
+    .pointer {
+        cursor: pointer;
+    }
+    
+    
+    .item.read{
+        
+    }
+    .item.unread{
+        background-color: #e4eaf5;
+        font-weight: bold;
+    }
+}
+
+.internal-link{ 
+    display: inline-block;
+    vertical-align: top;
+    background-color: $blue;
+    margin: 20px 10px;
+    cursor: pointer;
+    p{
+        color:white;
+        margin: 10px 5px;   
+        display: inline-block;                
+    } 
+    span{
+        width: 15px; height: 20px;
+        display: block;
+        float:left;
+        padding: 0 0 0 5px;
+        margin: 0 5px;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 20px;
+        color:$blue;
+    }
+}
+
+#videos{
+    width: 100%;
+    padding: 5px 0;
+    text-align:center;
+    .video{
+        display: inline-block;
+        iframe{
+            display: inline-block;
+        }
+        p{
+            color:$blue;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media(max-width:695px){
+    #notifications-list {
+        width: 100%;
+        tr {
+            width:100%; min-height: 40px; height: auto;
+            td,th {
+                padding-top: 10px;
+            }
+        }
+        .item {        
+            border-bottom: 1px #d5d5e0 solid;
+            .date {
+                width: 100%;
+                text-align: center;
+                display:block;
+            }
+            .type {
+                width: 100%;
+                text-align: center;
+                display:block;
+            }
+            .data {
+                width: 100%;
+                text-align: center;
+                display:block;
+            }
+            .whats{
+                width: 100%;
+                text-align: center;
+                display:block;
+            }
+        }
+        .item {        
+            border-bottom: 1px #d5d5e0 solid;
+            td.date {
+                padding: 0;
+                text-align: center;
+            }
+            td.type {
+                width:100%;
+                text-align: center;
+            }
+            td.data {      
+                text-align: center;
+            }
+            td.whats{
+                text-align: center;
+            }
+        }
+        .item {        
+            border-bottom: 1px #d5d5e0 solid;           
+            th.date {
+                padding: 0;
+                text-align: center;
+            }
+            th.type {
+                width:100%;
+                text-align: center;
+            }
+            th.data {      
+                text-align: center;
+            }
+            th.whats{
+                text-align: center;
+                padding-right: 0;
+            }
+        }
+    }
+}

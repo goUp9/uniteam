@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "admin/ajax/edit-feedback",
+        "controller": "Matching\/SuppliersFeedback:edit",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

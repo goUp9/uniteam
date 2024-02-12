@@ -1,0 +1,30 @@
+{
+    "route": {
+        "request": "payment-escrowed",
+        "controller": "Payments\/Escrowed",
+        "injections": [],
+         "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Where\/Form",
+            "Users\/Users"
+            ],
+        "params":{"idQuery":""},
+        "forms":{},
+        "tpl":"",
+        "css":[
+            
+        ],
+        "js":[
+                        
+        ],
+        "calls":[
+                       
+            ],
+        "title":"",
+        "keywords":[],
+        "description":[]
+    }
+}

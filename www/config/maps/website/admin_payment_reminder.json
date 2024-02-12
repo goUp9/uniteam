@@ -1,0 +1,29 @@
+{
+    "route": {
+        "request": "admin-payment-reminder",
+        "controller": "Payments\/Admin:reminder",
+        "injections": [],
+         "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Users\/Users"
+            ],
+        "params":{"idQuery":""},
+        "forms":{},
+        "tpl":"",
+        "css":[
+            
+        ],
+        "js":[
+                        
+        ],
+        "calls":[
+                       
+            ],
+        "title":"",
+        "keywords":[],
+        "description":[]
+    }
+}

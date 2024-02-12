@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <section id="search-tool" ng-controller="EditWhatCtrl as what">          
+            <main>   
+                <h1>My uin - Edit Query</h1>        
+                {% include 'commons/myuin-nav.html.twig'%} 
+                <div class="tools">
+                    <div class="btn" id="btn__back" clickable><p><a href="{{constant('LINKS_PRE')}}myuin/{{data.linkBack}}/" class="nostyle">Back to queries</a></p></div>
+                </div>
+            	<div id="search-box">
+                    	{{forms.search| raw}}                                       
+                </div>                
+            </main>
+    </section> 
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

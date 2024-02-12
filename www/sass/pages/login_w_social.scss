@@ -1,0 +1,26 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/social-logins";
+
+@import "../widgets/login_panel";
+
+
+
+#social-networks-login{
+    text-align:center;
+    h2{
+        color:$blue; font-size:1.2em; text-align: center; 
+        font-family: $mainFont;
+        padding: 10px 0;
+        margin-top:7px;
+    }
+}
+

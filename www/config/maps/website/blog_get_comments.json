@@ -1,0 +1,33 @@
+{
+    "route": {
+        "request": "blog-get-comments",
+        "controller": "Index\/Updates:get_comments",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Index\/HomeForm",
+            "Admin\/DefaultTextsManager"
+            ],
+        "params":{"idArticle":""},
+        "forms":{"login":{"form class":"Users\/LoginForm","action":""}},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "calls":[
+            "Users:remember_user",
+            "Communication:get_unread_notifications",
+            "Communication:get_unread_msgs"            
+            ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

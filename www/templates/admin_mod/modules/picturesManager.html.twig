@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{parent()}}
+    {% endblock %}    
+        <h1 class="heading">Pictures Manager:</h1>
+        {{ forms.picManager |raw }}
+        <div id="pictures">
+            {% for item in data.pictures %}
+                <div class="image" ng-controller="item as i" ng-hide="i.hide">
+                    <img src="{{path.thumbs.href}}{{item.picture}}"/>
+                    <label>Thumb:</label>
+                    <input class="cwd-copy-link" type="text" name="{{item.picture}}" value="{{path.thumbs.href}}{{item.picture}}"/>
+                    <label>Small</label>
+                    <input class="cwd-copy-link" type="text" name="{{item.picture}}" value="{{path.small.href}}{{item.picture}}"/>
+                    <label>Medium</label>
+                    <input class="cwd-copy-link" type="text" name="{{item.picture}}" value="{{path.medium.href}}{{item.picture}}"/>
+                    <label>Big</label>
+                    <input class="cwd-copy-link" type="text" name="{{item.picture}}" value="{{path.big.href}}{{item.picture}}"/>
+                    <label>Fullsize</label>
+                    <input class="cwd-copy-link" type="text" name="{{item.picture}}" value="{{path.fullsize.href}}{{item.picture}}"/>
+                    <div class="item-tools">
+                        <div class="btn_delete" ng-click="i.del({{item.id}},'{{data.delLink}}')"><p>Delete</p></div>                        
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+{% endblock %}

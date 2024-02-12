@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main>
+            <article>
+                {{data.textManager.privacy|raw}}
+            </article>
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

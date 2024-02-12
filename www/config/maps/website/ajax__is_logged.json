@@ -1,0 +1,21 @@
+{
+    "route": {
+        "request": "ajax/is-logged",
+        "controller": "Users\/Login:ajax_is_logged",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

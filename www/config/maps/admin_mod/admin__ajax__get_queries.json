@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "admin/ajax/get-queries",
+        "controller": "UserQueries\/Admin:get_queries",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{"page":"1"},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

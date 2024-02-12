@@ -1,0 +1,15 @@
+{
+    "route": {
+        "request": "admin/logout",
+        "controller": "Admin\/Login:action_logout",
+        "injections":["entityManager"],
+        "params":{},
+        "dependancies": [],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ]
+    }
+}

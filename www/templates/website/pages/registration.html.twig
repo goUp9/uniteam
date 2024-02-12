@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>        
+        <div id="signup_form" data-ng-controller="RegFormCtrl as s">  
+            <h1>New user registration</h1>
+            <div class="usr-msg error" ng-show="showError">
+                <p>{{'{{validationMsg}}'}}</p>
+            </div>
+            <div class="usr-msg" ng-bind-html="success.msg" ng-show="success.flag">                
+            </div>
+            {{forms.registration| raw}}
+        </div>
+        <div id="social-networks-login" data-ng-controller="socialNetworksCtrl as sn" data-ng-show="socialNetworkFlag">
+            <div class="overlay">
+                <div class="wrap">
+                    <div class="close" data-ng-click="socialNetworkFlag=!socialNetworkFlag"><p>X</p></div>
+                    <h2>Sign-up with social networks:</h2>
+                    <div class="social-login-btns facebook-social-signin-btn" data-ng-click="facebook_login()"><p>Login with facebook</p></div>
+                    <div class="g-signin2" data-onsuccess="on_sign_in"></div>
+                    <div data-ng-click="twitter_sign_in()" class="social-login-btns twitter-social-signin-btn"><p>Sign in with Twitter</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="additinal_login" data-ng-controller="LoginFormCtrl as l">
+            <h2>Already have an account? Login:</h2>
+            <p class="invalid" ng-show="l.loginFailed.flag" style="font-size:.76em; color:red">{{'{{l.loginFailed.msg}}'}}</p>
+            {{forms.login| raw}} 
+            <p><a href="{{link.request_password_restore.href}}">Forgot your password?</a></p>
+        </div>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

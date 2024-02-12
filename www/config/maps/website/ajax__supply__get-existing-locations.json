@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/supply/get-existing-locations",
+        "controller": "Where\/Supplier:get_existing_locations",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

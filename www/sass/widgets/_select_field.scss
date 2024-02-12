@@ -1,0 +1,22 @@
+/* settings */
+$selectedBackgroundColor:#3264fa;
+$selectedColor:white;
+
+.select_field {
+    .select {
+        img {
+            cursor:pointer;
+        }
+    }
+    .options {
+        li {
+            width:98%;
+            padding: 5px 1%;
+        }
+        li.selected {            
+            background-color: $selectedBackgroundColor;
+            color:$selectedColor;             
+        }
+    }
+}
+

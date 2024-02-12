@@ -1,0 +1,133 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/top-nav";
+
+@import "../widgets/switch";
+
+#tools {
+    width: 90%; height: 50px;
+    margin: 0 auto; padding-top:10px;
+    p {
+        display:inline-block;
+        color:blue; text-decoration: underline;
+        margin-right: 30px;
+    }
+}
+
+.search-items {
+    width: 70%;
+    margin: 20px auto;
+    input[type="text"]{
+        width: 100%;        
+        display: block;
+    }
+    #btn__search {
+        width:100px; height: 40px;
+        background-color: #006699;
+        margin: 5px;
+        float:none;
+        p{
+            color:white; padding-top:10px; text-align: center;
+        }
+    }
+    fieldset {
+        display:inline-block;
+        margin-right: 20px;
+    }
+}
+
+#filters {
+    width: 90%; height: 50px;
+    margin: 0 auto; padding-top:10px;
+    p {
+        display: block; float:left;
+        text-decoration: underline;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+
+article {
+    table {
+        width: 90%;
+        font-family: $mainFont;        
+        border-collapse: collapse;
+        margin: 0 auto; margin-top:25px;
+        th {
+            height:30px;
+            background-color:#f3f1f0; 
+            padding-top:30px; padding-left: 5px; padding-right: 5px;
+            border: 1px solid gray;
+        }
+        td {
+            height:30px;
+            background-color:white; 
+            padding-top:10px; padding-left: 5px; padding-right: 5px;
+            border: 1px solid gray;
+        }
+    }
+    .page-nums {
+        width: 70%;
+        margin: 0 auto;
+        clear:both; float:none;
+        margin-top:10px;
+        div {
+            width:45px; height:35px;
+            margin: 3px 10px;
+            display:inline-block;
+            border-radius: 10px;
+            background-color:gray; 
+            cursor:pointer;
+            p {
+                padding-top:10px; text-align:center;
+                font-size: .76em; font-weight: bold; color:white;
+            }            
+        }  
+        div.current{
+                background-color: $orange;
+        }
+    }
+}
+
+article {
+    #edit_form {
+        width:80%; 
+        margin:7px auto;
+        form {  
+            .wrap {
+                width:240px;
+                display:inline-block;
+                padding: 10px;
+                vertical-align:top;
+            }
+            .wrap.btns {
+                display:block;
+                clear:both; float:none;
+                margin: 0 auto;
+            }
+            input[type="text"],input[type="email"],input[type="password"]{
+                width:214px; height:30px;
+                border:1px solid $orange;
+                margin:5px 0 15px; 
+                padding: 0 3px;
+            }
+            label {
+                font-family: $mainFont; color:$orange; font-size:.76em;
+                font-style: italic; font-weight: bold;
+
+            }
+            .intl-tel-input input, .intl-tel-input input[type="text"], .intl-tel-input input[type="tel"]{
+                margin:10px 0 !important;
+                padding-left: 48px;
+            }
+        }
+    }
+}

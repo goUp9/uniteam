@@ -1,0 +1,25 @@
+{
+    "route": {
+        "request": "ajax/match_advisers",
+        "controller": "Matching\/Process:advisers_main",
+        "injections": [],
+        "dependancies": [
+            "Communication\/Notifications",
+            "Users\/Users"
+        ],
+        "params":{"id":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

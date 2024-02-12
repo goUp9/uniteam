@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main data-ng-controller="StoriesArticleCtrl as blog">
+            <article>
+            <h1>{{data.article.title}}</h1>
+            {{data.article.text|raw}}
+            </article>
+            
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

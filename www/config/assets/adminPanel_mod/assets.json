@@ -1,0 +1,10 @@
+{
+    "img": [ 
+        {"src":"deployment/img/mods/admin_mod/assets/login_btn.png","name":"login_btn","alt":"login"},
+        {"src":"deployment/img/mods/admin_mod/assets/home.png","name":"admin_home_btn","alt":"Admin Panel home page"},
+        {"src":"deployment/img/mods/admin_mod/assets/CWDlogo.png","name":"CWDlogo","alt":"Compass Web Design"} 
+    ],
+    "link": [
+        {"href":"http://compwebdesign.com/","name":"compass_web_design"}
+    ]
+}

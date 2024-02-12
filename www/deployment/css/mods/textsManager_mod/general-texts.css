@@ -1,0 +1,11 @@
+.editing {
+    background-color: #3A4EE5;
+}
+
+.ngdialog {    
+    background-color: #ccffcc !important;
+}
+
+.popup p {
+    font-size: 2em; font-family: 'Monda', sans-serif; text-align: center;
+}

@@ -1,0 +1,20 @@
+{
+    "route": {
+        "request": "ajax/register",
+        "controller": "Users\/Registration:action_register",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

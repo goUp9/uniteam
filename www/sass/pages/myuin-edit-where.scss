@@ -1,0 +1,58 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+
+@import "../widgets/login_panel";
+
+.tools {
+    #btn__back {
+        width: 150px;
+        background-color: $blue;
+        padding: 10px 5px; margin: 10px;
+        p {
+            color:white; text-align: center;
+        }
+    }
+}
+
+b {
+    font-weight: bold;
+}
+
+form {
+    width: 70%;
+    margin: 30px auto;
+    input[type="text"]{
+       width: 280px; border: 1px solid $blue; 
+       margin: 5px;
+       
+    }
+    
+    .angucomplete-holder {
+       width: 280px; max-width: 500px; min-width: 180px;
+       float:left;
+       margin: 5px;
+    }
+    input[type="submit"]{
+        height: 33px;
+        float:left;
+        margin-left: 20px;
+        background-color: $blue; color:white; font-family: $mainFont;
+        border:none;
+        margin: 5px;
+    }
+}
+
+@media (max-width:490px){
+    form {
+        width: 100%;
+    }
+}

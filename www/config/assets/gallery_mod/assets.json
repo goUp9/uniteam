@@ -1,0 +1,24 @@
+{
+   "path":[
+        {
+            "href": "/data/gallery/fullsize/",
+            "name": "gallery_fullsize"
+        },
+        {
+            "href": "/data/gallery/big/",
+            "name": "gallery_big"
+        },
+        {
+            "href": "/data/gallery/medium/",
+            "name": "gallery_medium"
+        },
+        {
+            "href": "/data/gallery/small/",
+            "name": "gallery_small"
+        },
+        {
+            "href": "/data/gallery/thumbs/",
+            "name": "gallery_thumbs"
+        }
+    ]
+}

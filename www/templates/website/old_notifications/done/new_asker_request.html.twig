@@ -1,0 +1,17 @@
+<h1>New request from an Asker</h1>
+<p>What:<strong>{{tags}}</strong></p>
+    {% if wheres is not empty %}        
+<p>Where: around <strong>{{wheres[0].radius}}</strong> miles from <strong>{{wheres[0].place.formattedAddress}}</strong></p>
+    {% endif %}
+<p>When:<strong>{{whens[0].dateType}}</strong> <strong>{{date1}} GMT {% if date1_timezone is not empty %} ({{date1_timezone}} local time){%endif%}</strong>
+    {% if date2 is not empty %}        
+            <strong>{{date2}} GMT {% if date2_timezone is not empty %}({{date2_timezone}} local time){%endif%}</strong>
+    {% endif %}
+        </p>
+<p>Budget:  <strong>{{finalAsker.currency}} {{finalAsker.budget}}</strong></p> 
+<p>Additional info: <strong>{{finalAsker.msg}}</strong></p>
+{% if finalAsker.advice is not empty %}
+<p>Advice from the Adviser: <strong>{{finalAsker.advice}}</strong></p>
+{% endif %}
+<p>Expires on: {{expDate}}</p>
+<div><p><a href="{{constant('LINKS_PRE')}}accept-asker-request/{{idQuery}}/">Accept</a></p></div>

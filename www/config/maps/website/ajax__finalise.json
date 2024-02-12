@@ -1,0 +1,24 @@
+{
+    "route": {
+        "request": "ajax/finalise",
+        "controller": "UserQueries\/Finalize",
+        "injections": [],
+        "dependancies": [
+            "Users\/Login"
+        ],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

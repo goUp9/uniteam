@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main>
+        <h1 class="title">{{data.title|capitalize}}</h1>    
+        {% for action in data.actions %}
+            <section class="action" data-clickable>
+                <p><a class="nostyle" href="{{action.link.href}}">{{action.title}}</a></p>
+            </section>
+        {%endfor%}
+    </main>
+    
+{% endblock %}
+

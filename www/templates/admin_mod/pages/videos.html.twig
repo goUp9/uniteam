@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <main data-ng-controller="VideosCtrl as mC">
+        <div id="new-item-form-wrap">
+            <form>
+                <label>Title</label>
+                <input type="text" class="form-control" data-ng-model="itemData.title"/>
+                <label>Video link</label>
+                <textarea class="form-control"data-ng-model="itemData.video"></textarea>
+                <input type="button" data-ng-click="set_videos()" value="add" class="btn btn-success" />
+            </form>
+        </div>
+        <div class="items">
+            <div class="item" data-ng-repeat="item in items">
+                <form>
+                    <label>Title</label>
+                <input type="text" class="form-control" data-ng-model="item.title"/>
+                <label>Video link</label>
+                <textarea class="form-control" data-ng-model="item.video"></textarea>                
+                <input type="button" data-ng-click="edit_videos($index)" value="edit" class="btn btn-primary btn-sm" />
+                <input type="button" data-ng-click="delete_videos($index)" value="delete" class="btn btn-danger btn-sm" /> 
+                </form>
+            </div>
+        </div>
+    </main> 
+{% endblock %}

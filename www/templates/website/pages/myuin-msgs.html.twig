@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main ng-controller="MsgsCtrl as m">
+        <h1>My uin - messages - {{'{{m.boxType}}'}}</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        <div class="btns">
+            <div ng-hide="m.readMsg" id="create-new-msg" class="btn" clickable> 
+                <p><a class="nostyle" href="{{link.myuin__send_msg.href}}">write a new message</a></p> 
+            </div>
+            <div ng-click="m.back_to_msgs()" ng-show="m.readMsg" id="back-to-msgs" class="btn"> 
+                <p>Back to messages</p> 
+            </div>
+            <div ng-show="m.readMsg&&m.boxType=='inbox'" id="reply" class="btn" clickable> 
+                <p><a class="nostyle" href="{{link.myuin__send_msg.href}}?username={{'{{m.readingMsg.username}}'}}">Reply</a></p> 
+            </div>  
+            <div ng-click="m.mark_unread()" ng-show="m.readMsg" id="mark-unread" class="btn"> 
+                <p>Mark as unread</p> 
+            </div>
+            <div class="outbox-inbox">
+                <p data-ng-click="m.get_msgs('inbox')">Inbox</p>
+                <p data-ng-click="m.get_msgs('outbox')">Outbox</p>
+            </div>
+        </div> 
+        <article ng-hide="m.readMsg">
+            <p>{{'{{m.userMsg}}'}}</p>
+            <div title="Read Message" class="msgs-item" ng-class="{read: msg.read}" ng-click="m.read_msg($index)" ng-repeat="msg in msgs">
+                <p class="msg-from">from:{{'{{msg.username}}'}}</p>
+                <p class="msg-body">{{'{{msg.preview}}'}}...</p>
+            </div>
+        </article>
+        <div ng-hide="m.readMsg" class="page-nums">
+            <div ng-repeat="page in pages" data-ng-click="m.go_to_page($index)" ng-class="{current: page==m.postData.page}">
+                <p>{{ '{{page}}' }}</p>
+            </div>
+        </div>
+        <article ng-show="m.readMsg">
+            <p class="msg-from">from:{{'{{m.readingMsg.username}}'}}</p>
+            <div id="current-msg" ng-bind-html="m.readingMsg.msg"></div>
+        </article>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

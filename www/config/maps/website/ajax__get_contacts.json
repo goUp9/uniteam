@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/get-contacts",
+        "controller": "Communication\/Contacts:ajax_get_contacts",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

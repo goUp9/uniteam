@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+            <h1>New Advice request from an Asker</h1>
+            <p>An advice is requested for the <b>Query #{{data.queryDetails.id}}</b>:</p>
+            {% if data.queryDetails.finalAsker.adviceMsg %}
+                <p>The message from the Asker is: "{{data.queryDetails.finalAsker.adviceMsg}}"</p>
+            {% endif %}
+            {% if data.queryDetails.finalAsker.isAdviseOnBudgetNeeded %}
+                <p>The advice on budget was also requested.</p>
+            {% else %}
+                <p>The advice on budget was NOT requested.</p>
+            {% endif %}
+            {% include 'notifications/_query_details.html.twig'%}
+            {% if data.queryDetails.isExpired == true or data.alreadyAcceptedFlag==true %}
+            {% else %}
+                <div id="take-action-form">
+                    <form method="POST" action="{{constant('LINKS_PRE')}}give-advice/">
+                        <fieldset>
+                            <label>Budget:</label><br/>
+                            {{ data.queryDetails.finalAsker.currency}}   
+                            <input type="number" name="budget" value="{{ data.queryDetails.finalAsker.budget}}"/>
+                        </fieldset>
+                        <fieldset>
+                        <label>Message:</label><br/>
+                        <textarea placeholder="your advice" name="advice"></textarea>
+                        </fieldset>
+                        <input type="hidden" value="{{data.queryDetails.id}}" name="idQuery"/>
+                        <input type="hidden" value="{{data.adviser}}" name="adviser"/>
+                        <input type="submit" value="advise">
+                    </form>
+                </div>
+            {% endif %}        
+</div>
+</main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

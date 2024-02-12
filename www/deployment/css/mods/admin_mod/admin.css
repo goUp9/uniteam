@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* FOOTER */
+
+
+
+/* MAIN NAV */
+
+
+
+/* ACTIONS */
+
+
+
+
+
+        
+
+
+div#web-site-view iframe{
+    width: 1000px;    
+}
+
+div#delete-list {
+    width:960px;
+    margin: 0 auto;
+}
+
+div#delete-list h1 {
+    color:black; font-weight: normal;
+}
+
+div#delete-list ul li{
+    padding:7px; margin:10px;
+    background-color: #da6a61;
+    color:black;
+    cursor: pointer;
+}
+

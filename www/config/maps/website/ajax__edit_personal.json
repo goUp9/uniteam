@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/edit-personal",
+        "controller": "MyUin\/Personal:edit",
+        "injections": [],
+        "dependancies": ["Users\/Login"],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":["Users:remember_user"],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "route": {
+        "request": "admin/manage-stories-article",
+        "controller": "Stories\/Admin:manage_article",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{"id":null},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+        ],
+        "js":[
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

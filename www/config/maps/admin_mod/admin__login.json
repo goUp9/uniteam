@@ -1,0 +1,24 @@
+{
+    "route": {
+        "request": "admin/login",
+        "controller": "Admin\/Login",
+        "injections": [],
+        "dependancies": ["Admin\/LoginForm"],
+        "params":{},
+        "tpl":"login.html.twig",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            "http://fonts.googleapis.com/css?family=Molle:400italic",
+            "http://fonts.googleapis.com/css?family=Monda:700",
+            "/deployment/css/mods/admin/pages/login.css"
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

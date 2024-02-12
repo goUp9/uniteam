@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/add-tags-to-session",
+        "controller": "Index\/WhatSearch:ajax_add_tags_to_session",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

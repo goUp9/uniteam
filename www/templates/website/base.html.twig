@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="910088293704-i3gh39mt8u97pfq4d4v94844top88ed2.apps.googleusercontent.com">
+{% block meta %}
+    <meta name="description" content="{{meta.HtmlMeta.descr}}">
+    <meta name="keywords" content="{{meta.HtmlMeta.keywords}}">
+{% endblock %}
+{% block includes %}
+    {% for item in meta.css %}
+        {{ item |  raw }}
+    {% endfor %}
+    {% for item in meta.js %}
+        {{ item |  raw }}
+    {% endfor %}
+{% endblock %}
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f4afe8de-ecfc-4b2f-8509-ba45f7c0f5dc", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<title>{{ meta.HtmlMeta.title }}</title>
+</head>
+
+<body ng-app="App">
+        {% block content %}            
+        {% endblock %}
+</body>
+</html>

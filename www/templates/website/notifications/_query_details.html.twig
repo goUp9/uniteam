@@ -1,0 +1,16 @@
+        <div id="query-details">
+            <h2>Query details:</h2>
+            <p class="s_what">{% for tag in data.queryDetails.whats[0] %} {{tag.tag}},{% endfor %}</p>
+            <p class="s_where">{% if data.queryDetails.wheres is not empty %} {{ data.queryDetails.wheres[0].place.formattedAddress}} {% else %} Anywhere {% endif %}</p>
+            <p class="s_when">{{data.queryDetails.QueryWhenAsker[0].date1|date('H:i d-m-Y',data.queryDetails['timezone'])}} {% if data.queryDetails.ueryWhenAsker[0].date2 is not empty %} - {{data.queryDetails.QueryWhenAsker[0].date2|date('H:i d-m-Y',data.queryDetails['timezone'])}} {% endif %}</p>
+            <p>Timezone: {{data.queryDetails['timezone']}}</p>
+            <p>Expires: {{data.queryDetails.QueryWhenAsker[0].expDate|date('H:i d-m-Y',data.queryDetails['timezone'])}}</p>
+            <p>Budget:{{ data.queryDetails.finalAsker.currency}} {{ data.queryDetails.finalAsker.budget}}</p>
+            {% if data.queryDetails.finalAsker.msg is not empty %}
+                <p>Additional comments:{{ data.queryDetails.finalAsker.msg}}</p>           
+            {% endif %}
+            {% if data.queryDetails.finalAsker.advice is not empty %}
+                <p>Additional comments:{{ data.queryDetails.finalAsker.advice}}</p>           
+            {% endif %}
+             <p>Query status: {{data.queryDetails.status}}</p>
+        </div>

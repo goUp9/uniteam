@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{ parent()}}
+    {% endblock %}
+    <div class="btn_new-item" ng-click="isFilterTypesOpen = !isFilterTypesOpen">
+        <p><span>+</span>Add a new item</p>
+    </div>
+    <div id="new_item" ng-show="isFilterTypesOpen">
+        {{forms.newItem|raw}}
+    </div>
+    <div id="standard-list">          
+        {% for item in data.data %}
+            {% if loop.index is odd %}
+            <div class="item odd" ng-controller="item as i" ng-hide="i.hide">
+            {% else %}
+            <div class="item" ng-controller="item as i" ng-hide="i.hide">
+            {% endif %}
+                <div class="item-tools">
+                    <div class="btn_delete" ng-click="i.del({{item.id}},'{{data.delLink}}')"><p>Delete</p></div>
+                    <div class="btn_edit" data-clickable><p><a href="{{constant('LINKS_PRE')}}{{data.link_base.href}}{{item.id}}/" class="nostyle">Edit</a></p></div>
+                </div>
+                    {% if item.pic|length %}
+                        <img src="{{constant('LINKS_PRE')}}{{data.picPath}}{{item.pic}}" alt="{{item.title}}"/>
+                    {% endif %}
+                <p>{{ item.title|raw }}
+                 {% if item.status is same as (1)%}
+                        <span>- published</span>
+                 {% elseif item.status is same as (0) %}
+                        <span>- not published</span>
+                 {%endif%}</p>           
+            </div>
+        {% endfor %}
+    </div>
+    <section class="pages-nums">
+            <p>Go to page:</p>
+            {% for page in data.pages %}
+                {% if page.selected %}
+                    <div class="selected"><p>{{page.num}}</p></div>
+                {% else %}
+                    <div clickable><p><a href="{{constant('LINKS_PRE')}}{{data.page_link_base.href}}{{page.num}}/" class="nostyle">{{page.num}}</a></p></div>
+                {% endif %}
+            {% endfor %}
+    </section>
+{% endblock %}

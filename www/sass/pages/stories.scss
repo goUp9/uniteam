@@ -1,0 +1,72 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+
+main {
+    width: 100%;    
+}
+
+h1 {
+   font-size: 1.3em;
+   color: $blue;
+   text-align: center;
+   margin: 20px 0;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+#items{
+    .item{
+        width:150px; height:180px;
+        overflow: hidden;
+        margin: 15px; padding: 10px 1%;
+        border: 1px $blue solid;
+        display:inline-block;
+        p {
+            margin: 5px 0;
+            text-align: center;
+        }
+        p.title{                
+            font-size: .76em;
+        }
+        p.title::after {
+            content: "...";
+        }
+    }
+    #pages{
+        width:70%;
+        margin: 0 auto;
+        padding: 15px 0;
+        &>p{
+            
+        }
+        .page{
+            width: 20px; height: 20px;
+            display: inline-block;
+            margin: 10px 5px; 
+            background-color: gray;
+            font-weight: bold;
+            text-align: center;
+            cursor:pointer;
+            p{
+                margin-top:2px;
+            }
+        }
+    }
+}
+

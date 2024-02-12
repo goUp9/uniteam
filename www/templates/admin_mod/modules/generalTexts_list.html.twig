@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{ parent()}}
+    {% endblock %}
+    <div ng-controller="GeneralTexts as gt">
+    <select ng-model="gt.repo" ng-change="gt.update()">
+        <option ng-repeat="option in options" value="{{ '{{option.repo}}' }}">{{ '{{option.title}}' }}</option>
+    </select>
+    <div class="btn_new-item" ng-click="gt.new_show_form()">
+        <p><span>+</span>Add a new item</p>
+    </div>
+    <div id="new_item" ng-show="isFilterTypesOpen" compile-html="gt.newItemForm">
+       
+    </div>
+    <div id="standard-list">            
+            <div class="item" data-ng-class="{'editing':gt.editingMode[$index]==true}" ng-repeat="text in texts">
+                <div class="item-tools">
+                    <div class="btn_delete" data-ng-click="gt.del($index,'{{data.delLink}}')"><p>Delete</p></div>
+                    <div class="btn_edit" data-ng-click="gt.edit($index)"><p>Edit</p></div>
+                </div>
+                <p>{{ '{{text.listPreview| limitTo:150}}' }}...</p>           
+            </div>
+    </div>
+    <section class="pages-nums">
+            <p>Go to page:</p>            
+                    <div data-ng-class="{'selected':p==gt.page}" ng-repeat="p in pages" data-ng-click="gt.setPage(p)"><p>{{ '{{p}}' }}</p></div>
+    </section>
+    </div>
+{% endblock %}

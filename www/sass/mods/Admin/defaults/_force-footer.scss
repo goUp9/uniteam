@@ -1,0 +1,19 @@
+@import "../defaults/settings";
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+    width:100%; min-height: 100%;
+}
+
+#push-footer {
+     	height:$footerHeight;        
+} 
+
+footer {
+		width:100%; height:$footerHeight;
+		margin-top:-$footerHeight;                
+                clear:both; float:none;
+}

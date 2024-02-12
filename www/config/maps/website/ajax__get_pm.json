@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/get-pm",
+        "controller": "Communication\/Messages:get_messages_for_user",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

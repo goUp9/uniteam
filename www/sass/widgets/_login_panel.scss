@@ -1,0 +1,88 @@
+@import "../modules/fonts";
+@import "../modules/colors";
+
+#login-popup {
+    width:300px;
+    padding: 10px;
+    background-color:white;
+    position:absolute; z-index:999;
+    top:10%; left:50%; margin-left:-170px; 
+    margin-top:60px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    form{        
+        .wrap {
+            width:90%;
+            margin: 0 auto;
+            input[type="text"],input[type="password"]{
+                width:99%;height:43px;
+                margin: 5px auto;
+                padding-left: 1%;
+                border:$blue 1px solid;
+            }
+            input[type="checkbox"]{
+                -webkit-appearance:checkbox;
+                padding-top:25px;
+                border:$blue 1px solid;
+            }
+            label {
+                padding-left:10px;
+                font-family: $mainFont;
+                font-size:.87em;
+            }
+            input[type="image"]{
+                width:130px;
+                margin: 10px auto;           
+            }
+        }        
+    }
+    p.btn__close {
+        text-align:right; margin-right:10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:370px){
+    #login-popup {
+    width:260px;
+    padding: 10px;
+    position:absolute; z-index:999;
+    top:10%; left:0; margin-left:0; 
+    margin-top:60px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    form{        
+        .wrap {
+            width:90%;
+            margin: 0 auto;
+            input[type="text"],input[type="password"]{
+                width:99%;height:43px;
+                margin: 5px auto;
+                padding-left: 1%;
+                border:$blue 1px solid;
+            }
+            input[type="checkbox"]{
+                -webkit-appearance:checkbox;
+                padding-top:25px;
+                border:$blue 1px solid;
+            }
+            label {
+                padding-left:10px;
+                font-family: $mainFont;
+                font-size:.87em;
+            }
+            input[type="image"]{
+                width:130px;
+                margin: 10px auto;           
+            }
+        }        
+    }
+    p.btn__close {
+        text-align:right; margin-right:10px;
+        cursor: pointer;
+    }
+}
+}
+

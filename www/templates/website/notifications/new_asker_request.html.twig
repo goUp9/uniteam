@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+<h1>New request from an Asker</h1>
+
+{% include 'notifications/_query_details.html.twig'%}
+
+<div id="take-action-form">
+    {% if data.queryDetails.isExpired == true or data.alreadyAcceptedFlag==true %}
+    {% else %}
+    <div class="btn" clickable>
+        <p><a class="nostyle" href="{{constant('LINKS_PRE')}}accept-asker-request/{{data.queryDetails.id}}/">Accept</a></p>
+    </div>
+    {% endif %}
+</div>
+</div>
+
+</main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/ask/where",
+        "controller": "Where\/Asker:confirm",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

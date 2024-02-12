@@ -1,0 +1,30 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/top-nav";
+
+
+h1.title {
+    font-size:3.75em; font-family: 'Molle', cursive;
+    margin-left:40px; margin-top: 30px;
+}
+
+section.action {
+    width: 95px; min-height:95px;
+    float:left;
+    margin: 1%;
+    background-image:url(../../img/admin_mod/css/action.png); background-repeat: no-repeat; background-position: center 0;
+    p {
+        text-align:center;
+        font-size:1.25em;
+        padding-top: 105px;
+    }
+}
+

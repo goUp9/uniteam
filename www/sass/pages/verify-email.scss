@@ -1,0 +1,67 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+
+.usr-msg {
+        width:300px;
+        margin: 10px auto;
+        padding:10px;
+        border: 5px solid $blue;
+        border-radius: 20px;
+        p {
+            font-family: $mainFont;
+            margin: 20px; 
+            line-height: 1.5;
+        }        
+}
+.usr-msg.error{
+    border: 5px solid red;
+    p {
+        color:red;
+    }
+}
+
+#additinal_login {
+    h2{
+        color:$blue; font-size:1.2em; text-align: center; 
+        font-family: $mainFont;
+        padding: 10px 0;
+        margin-top:7px;
+    }
+    form{        
+        .wrap {
+            width:280px;
+            margin: 0 auto;
+            input[type="text"],input[type="password"]{
+                width:99%;height:43px;
+                margin: 5px auto;
+                padding-left: 1%;
+                border:$blue 1px solid;
+            }
+            input[type="checkbox"]{
+                -webkit-appearance:checkbox;
+                padding-top:25px;
+                border:$blue 1px solid;
+            }
+            label {
+                padding-left:10px;
+                font-family: $mainFont;
+                font-size:.87em;
+            }
+            input[type="image"]{
+                width:130px;
+                margin: 10px auto;           
+            }
+        }        
+    }
+}
+

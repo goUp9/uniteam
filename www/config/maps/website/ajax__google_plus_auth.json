@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/google-plus-auth",
+        "controller": "Users\/Registration:register_with_google_plus",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

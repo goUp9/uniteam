@@ -1,0 +1,20 @@
+{
+    "route": {
+        "request": "ajax/edit-what",
+        "controller": "MyUin\/EditWhat:action_edit",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

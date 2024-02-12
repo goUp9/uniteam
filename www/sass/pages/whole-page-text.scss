@@ -1,0 +1,35 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    b,strong {
+        font-weight: bold;
+    }
+    i,em {
+        font-style: italic;
+    }
+    h1 {
+       font-family: $secondFont; font-size:1.5em;
+       padding-top:10px; text-align:center;
+    }  
+    h2 {
+       font-family: $secondFont; font-size:1.25em;
+       margin-top:17px; margin-bottom:12px;
+    }
+    p {
+        margin: 10px auto;
+    }
+}
+

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:/php/
+Disallow:/js/
+Disallow:/templates/
+Disallow:/deployment/
+Disallow:/config/

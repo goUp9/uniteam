@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "admin/ajax/save-taggroup-change",
+        "controller": "Tags\/Admin:save_taggroup_change",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

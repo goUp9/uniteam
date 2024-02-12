@@ -1,0 +1,32 @@
+/* HEADER */
+
+header {
+    width: 100%; height:50px;
+    background-color: #fc7e40;
+    #logo {
+        width:320px; height:50px;
+        background-color: #f17234;
+        float:left;
+        p{
+            font-size:1.37em; font-family: 'Monda', sans-serif;
+            color:#FFF;
+            text-align: center; font-style: italic;
+            span{
+                font-family: 'Molle', cursive; font-size:1.5em; font-style: normal;
+            }
+        }
+    }
+       
+
+    #version {
+         height:50px;
+         float:right;
+         padding-right: 8px;
+         p {
+            color:#FFF; font-size: .68em;  
+        }
+    }
+}
+
+
+

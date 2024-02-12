@@ -1,0 +1,4790 @@
+{
+    "routes": [
+        {
+            "request": "admin\/ajax\/delete-feedback",
+            "controller": "Matching\/SuppliersFeedback:delete",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/edit-feedback",
+            "controller": "Matching\/SuppliersFeedback:edit",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/filter-users",
+            "controller": "Users\/Admin:filter",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "type": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/get-queries",
+            "controller": "UserQueries\/Admin:get_queries",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/get-taggroups",
+            "controller": "Tags\/Admin:get_taggroups",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/get-tags",
+            "controller": "Tags\/Admin:get_tags",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/get-users",
+            "controller": "Users\/Admin:get_users",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/save-tag-change",
+            "controller": "Tags\/Admin:save_change",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/save-taggroup-change",
+            "controller": "Tags\/Admin:save_taggroup_change",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/save-user-change",
+            "controller": "Users\/Admin:save_change",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/search-queries",
+            "controller": "UserQueries\/Admin:search_queries",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/ajax\/search-users",
+            "controller": "Users\/Admin:search_users",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/blog",
+            "controller": "Blog\/Admin",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "pages\/blog.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "deployment\/css\/mods\/admin\/pages\/default_text_manager.css",
+                "deployment\/css\/mods\/admin\/interface.css",
+                "deployment\/css\/mods\/Blog\/pages\/admin.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Blog\/BlogAdmin.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/delete-blog-article",
+            "controller": "Blog\/Admin:delete_blog_article",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/delete-blog-comment",
+            "controller": "Blog\/Admin:delete_comment",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/delete-stories-article",
+            "controller": "Stories\/Admin:delete_stories_article",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/get-blog-articles",
+            "controller": "Blog\/Admin:get_articles",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/get-blog-comments",
+            "controller": "Blog\/Admin:get_comments",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "idArticle": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/get-stories-articles",
+            "controller": "Stories\/Admin:get_articles",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/login",
+            "controller": "Admin\/Login",
+            "injections": [],
+            "dependancies": [
+                "Admin\/LoginForm"
+            ],
+            "params": [],
+            "tpl": "login.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "\/deployment\/css\/mods\/admin\/pages\/login.css"
+            ],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/manage-blog-article",
+            "controller": "Blog\/Admin:manage_article",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "id": null
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/manage-stories-article",
+            "controller": "Stories\/Admin:manage_article",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "id": null
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/payment-settings",
+            "controller": "Payments\/Admin:settings",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "\/pages\/payment-settings.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "\/deployment\/css\/mods\/admin\/pages\/queries.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Queries\/Admin\/Admin.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/queries",
+            "controller": "UserQueries\/Admin:list_queries",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "\/pages\/queries.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "\/deployment\/css\/mods\/admin\/pages\/queries.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Queries\/Admin\/Admin.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/stories",
+            "controller": "Stories\/Admin",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "pages\/stories.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "deployment\/css\/mods\/admin\/pages\/default_text_manager.css",
+                "deployment\/css\/mods\/admin\/interface.css",
+                "deployment\/css\/mods\/Blog\/pages\/admin.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Stories\/StoriesAdmin.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/tags",
+            "controller": "Tags\/Admin:list_tags",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "\/pages\/tags.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "\/deployment\/css\/mods\/admin\/pages\/tags.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Tags\/Admin\/Tags.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/upload-stories-cover",
+            "controller": "Stories\/Admin:upload_cover",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/user-queries",
+            "controller": "Users\/Admin:list_queries",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "idUser": "",
+                "type": ""
+            },
+            "tpl": "\/pages\/user_queries.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "\/deployment\/css\/mods\/admin\/pages\/user_queries.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Users\/Admin\/Users.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/users",
+            "controller": "Users\/Admin:list_users",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login",
+                "Users\/EditUserForm"
+            ],
+            "params": [],
+            "tpl": "\/pages\/users.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "\/deployment\/css\/mods\/admin\/pages\/users.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Users\/Admin\/Users.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/videos",
+            "controller": "MyUin\/Videos:admin",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": [],
+            "tpl": "\/pages\/videos.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/bootstrap\/bootstrap.css",
+                "deployment\/css\/vendors\/bootstrap\/bootstrap-theme.css",
+                "\/deployment\/css\/mods\/admin\/pages\/videos.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/App\/Users\/Admin\/Videos.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin\/home",
+            "controller": "Admin\/Index",
+            "title": "Administration Panel",
+            "injections": [],
+            "tpl": "index.html.twig",
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "\/deployment\/css\/mods\/admin\/pages\/home.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js"
+            ],
+            "keywords": [
+                "administration panel",
+                "admin panel"
+            ],
+            "description": "Web site administration panel"
+        },
+        {
+            "request": "admin\/logout",
+            "controller": "Admin\/Login:action_logout",
+            "injections": [
+                "entityManager"
+            ],
+            "params": [],
+            "dependancies": [],
+            "css": [],
+            "js": []
+        },
+        {
+            "request": "admin\/section",
+            "controller": "Admin\/Index:section",
+            "injections": [],
+            "params": {
+                "title": ""
+            },
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "tpl": "section.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "\/deployment\/css\/mods\/admin\/pages\/section.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js"
+            ]
+        },
+        {
+            "request": "cwd-system-ajax-gettemplate",
+            "controller": "Ajax\/Templates:get_template",
+            "dependancies": [
+                "Admin\/DefaultTextsManager"
+            ]
+        },
+        {
+            "request": "admin\/ajax\/general-texts-form-action",
+            "controller": "Admin\/GeneralTextsManager:ajax_form_action",
+            "injections": [],
+            "params": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "tpl": "",
+            "css": [],
+            "js": []
+        },
+        {
+            "request": "admin\/default-text-manager-edit",
+            "controller": "Admin\/DefaultTextsManager:edit_text",
+            "params": {
+                "id": ""
+            },
+            "tpl": "standard\/standard_single_form.html.twig",
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "deployment\/css\/mods\/admin\/pages\/default_text_manager.css",
+                "deployment\/css\/mods\/admin\/interface.css",
+                "deployment\/css\/mods\/admin\/standardForms.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/Mods\/Admin_mod\/Items\/item.js"
+            ]
+        },
+        {
+            "request": "admin\/default-text-manager",
+            "controller": "Admin\/DefaultTextsManager:all_texts",
+            "injections": [
+                "entityManager"
+            ],
+            "params": {
+                "page": "1"
+            },
+            "tpl": "standard\/standard_list.html.twig",
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=Molle:400italic",
+                "http:\/\/fonts.googleapis.com\/css?family=Monda:700",
+                "deployment\/css\/mods\/admin\/pages\/default_text_manager.css",
+                "deployment\/css\/mods\/admin\/interface.css",
+                "deployment\/css\/mods\/admin\/standardList.css",
+                "deployment\/css\/mods\/admin\/standardForms.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "\/js\/Vendors\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Mods\/Admin_mod\/definitions.js",
+                "\/js\/Mods\/Admin_mod\/Items\/item.js"
+            ]
+        },
+        {
+            "request": "admin\/ajax\/delete-default-texts-manager",
+            "controller": "Admin\/DefaultTextsManager:delete",
+            "dependancies": [
+                "Admin\/Login"
+            ]
+        },
+        {
+            "request": "about",
+            "controller": "Index\/Index:about",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/about.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/about.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "About uinteam",
+            "keywords": [
+                "you",
+                "Team",
+                "uinteam.com",
+                "online",
+                "marketplace",
+                "crowdsourced",
+                "on-demand",
+                "Dynamic",
+                "Automatic",
+                "Easy",
+                "Fast",
+                "User-friendly",
+                "Sustainable",
+                "Selection process",
+                "academic research",
+                "Professional",
+                "Social responsibility",
+                "Bespoke",
+                "Improvement"
+            ],
+            "description": "uinteam.com is\u00a0a new generation free online marketplace for you to dynamically provide a global, crowdsourced and automatic\u00a0on-demand platform to be customised by the users as a team"
+        },
+        {
+            "request": "accept-asker-request",
+            "controller": "Matching\/AcceptBySupplier",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "tpl": "\/pages\/myuin-asker-request-accepted.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/accept_asker_request.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "admin-adviser-paid",
+            "controller": "Payments\/Admin:adviser_paid",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "forms": [],
+            "tpl": "",
+            "css": [],
+            "js": [],
+            "calls": [],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "admin-payment-reminder",
+            "controller": "Payments\/Admin:reminder",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Users\/Users"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "forms": [],
+            "tpl": "",
+            "css": [],
+            "js": [],
+            "calls": [],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "admin-supplier-paid",
+            "controller": "Payments\/Admin:supplier_paid",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "forms": [],
+            "tpl": "",
+            "css": [],
+            "js": [],
+            "calls": [],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "advise\/when",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/advise__when.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/pages\/advise__when.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/When\/hourSelect.directive.js",
+                "\/js\/App\/When\/minutesSelect.directive.js",
+                "\/js\/App\/When\/AdviseSearch.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "advise\/where",
+            "controller": "Where\/Adviser",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/advise__where.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/vendors\/art_location.css",
+                "\/deployment\/css\/pages\/advise__where.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Where\/AdviseSearch.controller.js",
+                "\/js\/App\/Where\/geoHelper.directive.js",
+                "\/js\/App\/Where\/artLocation.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "ajax\/add-tag",
+            "controller": "Index\/WhatSearch:ajax_add_tag",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/add-tags-to-session",
+            "controller": "Index\/WhatSearch:ajax_add_tags_to_session",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/when",
+            "controller": "When\/Supplier:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/advise\/where",
+            "controller": "Where\/Adviser:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/ask\/final",
+            "controller": "FinalStep\/Asker:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/ask\/for-advise",
+            "controller": "FinalStep\/Asker:confirm_for_advice",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/ask\/get-when",
+            "controller": "When\/Asker:get_when",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/ask\/when",
+            "controller": "When\/Asker:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/ask\/where",
+            "controller": "Where\/Asker:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/confirm-what",
+            "controller": "Index\/WhatSearch:ajax_confirm",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/delete-videos",
+            "controller": "MyUin\/Videos:delete_video",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "id": null
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/edit-personal",
+            "controller": "MyUin\/Personal:edit",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user"
+            ],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/edit-what",
+            "controller": "MyUin\/EditWhat:action_edit",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/edit-where",
+            "controller": "Where\/EditWhere:edit_data",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/finalise",
+            "controller": "UserQueries\/Finalize",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-notifications",
+            "controller": "Notifications\/Notifications:get_by_user",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "sortBy": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-archived-notifications",
+            "controller": "Notifications\/Notifications:get_by_user_archived",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "sortBy": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-contacts",
+            "controller": "Communication\/Contacts:ajax_get_contacts",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-notifications",
+            "controller": "Communication\/Notifications:get_messages_for_user",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-pm",
+            "controller": "Communication\/Messages:get_messages_for_user",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-pm-outbox",
+            "controller": "Communication\/Messages:get_messages_from_user",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-timezone",
+            "controller": "When\/Asker:get_timezone",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/get-videos",
+            "controller": "MyUin\/Videos:get_videos",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/google-plus-auth",
+            "controller": "Users\/Registration:register_with_google_plus",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/is-logged",
+            "controller": "Users\/Login:ajax_is_logged",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/login",
+            "controller": "Users\/Login:action_login",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/login-w-fb",
+            "controller": "Users\/Registration:login_w_facebook",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/logout",
+            "controller": "Users\/Login:action_logout",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/match_advisers",
+            "controller": "Matching\/Process:advisers_main",
+            "injections": [],
+            "dependancies": [
+                "Communication\/Notifications",
+                "Users\/Users"
+            ],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/match_suppliers",
+            "controller": "Matching\/Process",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": {
+                "id": "",
+                "forward": "false"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-advise-unarchive-query",
+            "controller": "MyUin\/Advise:unarchive_query",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-ask-archive-notification",
+            "controller": "Notifications\/Notifications:archive_notification",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-ask-archive-query",
+            "controller": "MyUin\/Ask:archive_query",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-ask-unarchive-query",
+            "controller": "MyUin\/Ask:unarchive_query",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-advices",
+            "controller": "MyUin\/Advise:ajax_get_advices",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-advise-details",
+            "controller": "MyUin\/Advise:ajax_get_details",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-advises-archived",
+            "controller": "MyUin\/Advise:ajax_get_archived",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-ask-details",
+            "controller": "MyUin\/Ask:ajax_get_details",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-asks",
+            "controller": "MyUin\/Ask:ajax_get_asks",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-asks-archived",
+            "controller": "MyUin\/Ask:ajax_get_archived",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-get-supplies",
+            "controller": "MyUin\/Supply:ajax_get_supplies",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/myuin-unarchive-notification",
+            "controller": "Notifications\/Notifications:unarchive_notification",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/new-password-request",
+            "controller": "Users\/PasswordRestore:action_request",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/newsletter-prompted",
+            "controller": "Users\/Users:newsletter_prompted",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/register",
+            "controller": "Users\/Registration:action_register",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/register-w-fb",
+            "controller": "Users\/Registration:register_w_facebook",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/reset-password",
+            "controller": "Users\/PasswordRestore:action_set_password",
+            "injections": [],
+            "dependancies": [
+                "Users\/Users",
+                "Users\/Login"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/search-what",
+            "controller": "Index\/WhatSearch:ajax_get_tags",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/select-suppliers",
+            "controller": "Matching\/Selection",
+            "injections": [],
+            "dependancies": [
+                "Communication\/Notifications",
+                "Users\/Users",
+                "Payments\/Escrow"
+            ],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/send-feedback",
+            "controller": "Feedback\/Send",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/send-pm",
+            "controller": "Communication\/Messages:action_send_pm",
+            "injections": [],
+            "dependancies": [
+                "Users\/Users"
+            ],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/set-unread-notification",
+            "controller": "Notifications\/Notifications:set_unread",
+            "injections": [],
+            "dependancies": [],
+            "params": {
+                "id": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/set-videos",
+            "controller": "MyUin\/Videos:set_video",
+            "injections": [],
+            "dependancies": [
+                "Admin\/Login"
+            ],
+            "params": {
+                "id": null
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/final",
+            "controller": "FinalStep\/Supplier:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/get-existing-locations",
+            "controller": "Where\/Supplier:get_existing_locations",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/get-schedule",
+            "controller": "When\/Supplier:get_schedule",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/remove-location",
+            "controller": "Where\/Supplier:remove_location",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/advise\/when",
+            "controller": "When\/Supplier:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/supply\/where",
+            "controller": "Where\/Supplier:confirm",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/twitter-auth",
+            "controller": "Users\/Registration:register_with_twitter",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/update-msg-data",
+            "controller": "Communication\/Messages:update_message_data",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ajax\/update-notification-data",
+            "controller": "Communication\/Notifications:update_notification_data",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "ask\/final",
+            "controller": "FinalStep\/Asker",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/ask__final.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/pages\/ask__final.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/When\/calendar.directive.js",
+                "\/js\/App\/FinalStep\/AskFinal.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "ask\/when",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/ask__when.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/pages\/ask__when.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/moment-timezone.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/When\/calendar.directive.js",
+                "\/js\/App\/When\/hourSelect.directive.js",
+                "\/js\/App\/When\/minutesSelect.directive.js",
+                "\/js\/App\/When\/AskSearch.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "ask\/where",
+            "controller": "Where\/Asker",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/ask__where.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/vendors\/art_location.css",
+                "deployment\/css\/pages\/ask__where.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Where\/AskSearch.controller.js",
+                "\/js\/App\/Where\/geoHelper.directive.js",
+                "\/js\/App\/Where\/artLocation.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "blog-add-comment",
+            "controller": "Index\/Updates:add_comment",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": {
+                "": ""
+            },
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "blog-article",
+            "controller": "Index\/Updates:article",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": {
+                "idArticle": ""
+            },
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/blog_article.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/blog-article.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Blog\/BlogArticle.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "blog-get-comments",
+            "controller": "Index\/Updates:get_comments",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": {
+                "idArticle": ""
+            },
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "edit-supply-final",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/edit_supply_final.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/pages\/supply__final.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/FinalStep\/SupplyFinal.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "feedback-blocked",
+            "controller": "Feedback\/Blocked",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "tpl": "\/pages\/feedback-blocked.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/accept_asker_request.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "leave-feedback",
+            "controller": "Matching\/SuppliersFeedback",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Users\/Users",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "tpl": "\/pages\/myuin-feedback-left.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/accept_asker_request.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "give-advice",
+            "controller": "Advice\/Give",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Users\/Users",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "css": [],
+            "js": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "home",
+            "controller": "Index\/Index",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Index\/WhatSearch",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/index.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/home.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/NewslettersPromt\/NewslettersPromt.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Search\/What.controller.js",
+                "\/js\/App\/Feedback\/Feedback.controller.js",
+                "\/js\/App\/Home\/video.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "NewsletterPromt:promt",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "uinteam",
+            "keywords": [
+                "Ask",
+                "Supply",
+                "advise",
+                "search",
+                "Hire",
+                "Choice",
+                "service",
+                "tag",
+                "task",
+                "job",
+                "Work",
+                "result",
+                "Merit",
+                "unbiased",
+                "time-consuming",
+                "best",
+                "deliver",
+                "procurement",
+                "what",
+                "where",
+                "anywhere",
+                "everywhere",
+                "when",
+                "Time",
+                "anytime",
+                "budget"
+            ],
+            "description": "uinteam is unbiased selecting on merit. No time-consuming search, but hire the best to deliver the service Simply Ask or supply or advise, and choose or create new tags, where, When and budget"
+        },
+        {
+            "request": "login-with-social-networks",
+            "controller": "Users\/Social_Login",
+            "injections": [],
+            "dependancies": [
+                "Users\/LoginForm",
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Commons\/Users"
+            ],
+            "params": [],
+            "tpl": "\/pages\/login_w_social.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/select2.css",
+                "deployment\/css\/pages\/login_w_social.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "https:\/\/apis.google.com\/js\/platform.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/Vendors\/select2.js",
+                "\/js\/Vendors\/Facebook.js",
+                "\/js\/Vendors\/angular-country-select.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/App\/definitions-registration.js",
+                "\/js\/Mods\/Auth\/App\/socialNetworks.controller.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "title": "Login with social networks",
+            "keywords": [
+                "Asker",
+                "Supplier",
+                "Adviser",
+                "Provider",
+                "Freelance",
+                "Startup",
+                "entrepreneur",
+                "Experience",
+                "qualification",
+                "Feedback",
+                "Advice",
+                "Register",
+                "Join"
+            ],
+            "description": "user, customer, asker to join to find service provider, business, supplier, freelance, startup, entrepreneur based on feedback, experience and qualification. Advisers provide advices"
+        },
+        {
+            "request": "match-suppliers-with-adviser",
+            "controller": "Matching\/Process",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Users\/Users"
+            ],
+            "params": {
+                "id": "",
+                "forward": "true"
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/advising-archive",
+            "controller": "MyUin\/Advise:archive",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-advise-archive.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-ask-archive.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/AdviseArchived.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/advising",
+            "controller": "MyUin\/Advise",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-advise.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-advise.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/Advise.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/asking",
+            "controller": "MyUin\/Ask",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-ask.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-ask.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/Ask.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/asking-archive",
+            "controller": "MyUin\/Ask:archive",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-ask-archive.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-ask-archive.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/AskArchived.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/edit-schedule",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Where\/EditForm"
+            ],
+            "params": [],
+            "forms": [],
+            "tpl": "\/pages\/myuin_edit_schedule.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "\/deployment\/css\/pages\/myuin-edit-schedule.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_edt_w_tags.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/When\/hourSelect.directive.js",
+                "\/js\/App\/When\/minutesSelect.directive.js",
+                "\/js\/App\/When\/SupplySearch.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "myuin\/edit-what",
+            "controller": "MyUin\/EditWhat",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/EditWhatForm",
+                "Index\/WhatSearch",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": [],
+            "tpl": "\/pages\/myuin_edit_what.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/myuin-edit-what.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_edt_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Search\/EditWhat.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "myuin\/edit-where",
+            "controller": "Where\/EditWhere",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Where\/EditForm"
+            ],
+            "params": [],
+            "forms": [],
+            "tpl": "\/pages\/myuin_edit_where.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/vendors\/art_location.css",
+                "\/deployment\/css\/pages\/myuin-edit-where.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_edt_w_tags.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Where\/geoHelper.directive.js",
+                "\/js\/App\/Search\/EditWhere.controller.js",
+                "\/js\/App\/Where\/artLocation.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "myuin\/help",
+            "controller": "MyUin\/Ask",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin__help.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-help.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/msgs",
+            "controller": "Communication\/Messages",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-msgs.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/my-uin-msgs.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Communication\/Msgs.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/notifications",
+            "controller": "Communication\/Notifications",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-notifications.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/my-uin-notifications.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Communication\/Notifications.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/personal",
+            "controller": "MyUin\/Personal",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "MyUin\/ProfileForm",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "NewsletterPromt:promt",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/select2.css",
+                "deployment\/css\/pages\/my-uin.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/select2.js",
+                "\/js\/Vendors\/angular-country-select.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions-registration.js",
+                "\/js\/App\/NewslettersPromt\/NewslettersPromt.controller.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/Personal.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/reset-password",
+            "controller": "Users\/PasswordRestore:reseting",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Users\/ResetPasswordForm",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Personal"
+            ],
+            "params": [],
+            "tpl": "\/pages\/my_uin_reset_password.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/my-uin-reset-password.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/ResetPassword.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/send-msg",
+            "controller": "Communication\/Messages:send_msg",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/MessageForm",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-send-msg.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/font-awesome.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/textAngular.css",
+                "deployment\/css\/pages\/myuin-send-msg.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Communication\/Msg.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/supplying",
+            "controller": "MyUin\/Supply",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/myuin-supply.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/myuin-supply.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Profile\/Supply.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/adviser-paid",
+            "controller": "Notifications\/Notifications:adviser_paid",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/adviser_paid.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/confirmation-for-asker",
+            "controller": "Notifications\/Notifications:confirmation_for_asker",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/confirmation_for_asker.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/funds-escrowed",
+            "controller": "Notifications\/Notifications:funds_escrowed",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/funds_escrowed.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/give-feedback",
+            "controller": "Notifications\/Notifications:give_feedback",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/give_feedback.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/new-advice",
+            "controller": "Notifications\/Notifications:new_advice",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/new_advice.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/new-advice-request",
+            "controller": "Notifications\/Notifications:new_advice_request",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/new_advice_request.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/new-asker-request",
+            "controller": "Notifications\/Notifications:new_asker_request",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/new_asker_request.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/supplier-paid",
+            "controller": "Notifications\/Notifications:supplier_paid",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/supplier_paid.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/supplier-selected",
+            "controller": "Notifications\/Notifications:supplier_selected",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/supplier_selected.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "n\/zero-feedback",
+            "controller": "Notifications\/Notifications:zero_feedback",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idNotification": ""
+            },
+            "tpl": "\/notifications\/zero_feedback.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notification.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notification.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "notifications",
+            "controller": "Notifications\/Notifications",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/notifications.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notifications.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/Notifications.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "myuin\/notifications-archive",
+            "controller": "Notifications\/Notifications",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "MyUin\/Videos"
+            ],
+            "params": [],
+            "tpl": "\/pages\/notifications_archive.html.twig",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/pages\/notifications.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Notifications\/NotificationsArchive.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "payment-escrowed",
+            "controller": "Payments\/Escrowed",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form",
+                "Users\/Users"
+            ],
+            "params": {
+                "idQuery": ""
+            },
+            "forms": [],
+            "tpl": "",
+            "css": [],
+            "js": [],
+            "calls": [],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "payment-made",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Users\/Users",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm"
+            ],
+            "params": [],
+            "tpl": "\/pages\/payment-made.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "\/deployment\/css\/pages\/accept_asker_request.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "privacy-policy",
+            "controller": "Index\/Index:privacy",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/privacy-policy.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/whole-page-text.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "registration",
+            "controller": "Users\/Registration",
+            "injections": [],
+            "dependancies": [
+                "Users\/RegistrationForm",
+                "Users\/LoginForm",
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Commons\/Users"
+            ],
+            "params": [],
+            "tpl": "\/pages\/registration.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "registration": {
+                    "form class": "Users\/RegistrationForm",
+                    "action": ""
+                },
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/select2.css",
+                "deployment\/css\/pages\/registration.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "https:\/\/apis.google.com\/js\/platform.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/Vendors\/select2.js",
+                "\/js\/Vendors\/Facebook.js",
+                "\/js\/Vendors\/angular-country-select.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/App\/definitions-registration.js",
+                "\/js\/Mods\/Auth\/App\/socialNetworks.controller.js",
+                "\/js\/App\/Users\/regform.controller.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "title": "Register on uinteam",
+            "keywords": [
+                "Asker",
+                "Supplier",
+                "Adviser",
+                "Provider",
+                "Freelance",
+                "Startup",
+                "entrepreneur",
+                "Experience",
+                "qualification",
+                "Feedback",
+                "Advice",
+                "Register",
+                "Join"
+            ],
+            "description": "user, customer, asker to join to find service provider, business, supplier, freelance, startup, entrepreneur based on feedback, experience and qualification. Advisers provide advices"
+        },
+        {
+            "request": "request_password_restore",
+            "controller": "Users\/PasswordRestore:restoring",
+            "injections": [],
+            "dependancies": [
+                "Users\/RestorePasswordForm",
+                "Users\/LoginForm",
+                "Users\/Login",
+                "Commons\/Users"
+            ],
+            "params": [],
+            "tpl": "\/pages\/request_password_restore.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/restore-password.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Users\/requestPassword.controller.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "send-feedback-notification",
+            "controller": "Matching\/SuppliersFeedback:send_notification",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Users\/Users",
+                "Communication\/Notifications",
+                "Communication\/Messages"
+            ],
+            "params": {
+                "idQuery": "",
+                "idSupplier": ""
+            },
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "supply\/final",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/supply__final.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/pages\/supply__final.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/FinalStep\/SupplyFinal.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "supply\/when",
+            "controller": "",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/supply__when.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "http:\/\/netdna.bootstrapcdn.com\/font-awesome\/4.0.3\/css\/font-awesome.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/pages\/supply__when.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/moment.min.js",
+                "https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/moment.js\/2.10.6\/locale\/en-gb.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/When\/hourSelect.directive.js",
+                "\/js\/App\/When\/minutesSelect.directive.js",
+                "\/js\/App\/When\/SupplySearch.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "supply\/where",
+            "controller": "Where\/Supplier",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Where\/Form"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/supply__where.html.twig",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/vendors\/ngDialog.css",
+                "deployment\/css\/vendors\/ngDialog-theme.css",
+                "deployment\/css\/vendors\/geocomplete.css",
+                "deployment\/css\/vendors\/art_location.css",
+                "\/deployment\/css\/pages\/supply__where.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "http:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/jquery.geocomplete.min.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete_w_tags.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Where\/SupplySearch.controller.js",
+                "\/js\/App\/Where\/geoHelper.directive.js",
+                "\/js\/App\/Where\/artLocation.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": []
+        },
+        {
+            "request": "terms",
+            "controller": "Index\/Index:terms",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/terms.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/whole-page-text.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "testimonials",
+            "controller": "Index\/Index:updates",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/stories.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/stories.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Stories\/Stories.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "testimonials-article",
+            "controller": "Index\/Stories:article",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": {
+                "idArticle": ""
+            },
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/stories_article.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/blog-article.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Stories\/StoriesArticle.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "twitter-register",
+            "controller": "Users\/Registration:twitter_registration_success",
+            "injections": [],
+            "dependancies": [],
+            "params": [],
+            "tpl": "",
+            "tplBasePath": "",
+            "forms": [],
+            "calls": [],
+            "css": [],
+            "js": [],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "updates",
+            "controller": "Index\/Index:updates",
+            "injections": [],
+            "dependancies": [
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Users\/LoginForm",
+                "Index\/HomeForm",
+                "Admin\/DefaultTextsManager"
+            ],
+            "params": [],
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "tpl": "\/pages\/updates.html.twig",
+            "tplBasePath": "",
+            "css": [
+                "http:\/\/fonts.googleapis.com\/css?family=ABeeZee",
+                "http:\/\/fonts.googleapis.com\/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+                "\/deployment\/css\/pages\/blog.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Home\/home.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js",
+                "\/js\/App\/Blog\/Blog.controller.js"
+            ],
+            "calls": [
+                "Users:remember_user",
+                "Communication:get_unread_notifications",
+                "Communication:get_unread_msgs"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        },
+        {
+            "request": "verify-email",
+            "controller": "Users\/Registration:email_varification",
+            "injections": [],
+            "dependancies": [
+                "Users\/RegistrationForm",
+                "Users\/LoginForm",
+                "Users\/Login",
+                "Communication\/Notifications",
+                "Communication\/Messages",
+                "Commons\/Users"
+            ],
+            "params": [],
+            "tpl": "\/pages\/verify_email.html.twig",
+            "tplBasePath": "",
+            "forms": {
+                "login": {
+                    "form class": "Users\/LoginForm",
+                    "action": ""
+                }
+            },
+            "calls": [
+                "Users:remember_user"
+            ],
+            "css": [
+                "https:\/\/rawgit.com\/Bluefieldscom\/intl-tel-input\/master\/build\/css\/intlTelInput.css",
+                "http:\/\/css-spinners.com\/css\/spinner\/throbber.css",
+                "deployment\/css\/vendors\/angucomplete.css",
+                "deployment\/css\/pages\/verify-email.css"
+            ],
+            "js": [
+                "\/js\/Vendors\/jquery-2.1.1.min.js",
+                "https:\/\/ajax.googleapis.com\/ajax\/libs\/angularjs\/1.3.15\/angular.min.js",
+                "\/js\/Modules\/ngUtils.js",
+                "\/js\/Vendors\/ckeditor\/ckeditor.js",
+                "\/js\/Vendors\/ngDialog.js",
+                "\/js\/Vendors\/angucomplete.js",
+                "\/js\/Vendors\/textAngular-sanitize.min.js",
+                "\/js\/Vendors\/textAngular.min.js",
+                "\/js\/Vendors\/international_phone_number\/intlTelInput.min.js",
+                "\/js\/Vendors\/international_phone_number\/utils.js",
+                "\/js\/Vendors\/international_phone_number\/international-phone-numbers.js",
+                "\/js\/App\/definitions.js",
+                "\/js\/App\/Users\/loginform.controller.js",
+                "\/js\/App\/Users\/loginpopup.directive.js"
+            ],
+            "title": "",
+            "keywords": [],
+            "description": ""
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main data-ng-controller="BlogArticleCtrl as blog">
+            <article>
+            <h1>{{data.article.title}}</h1>
+            {{data.article.text|raw}}
+            </article>
+            <div class="comments" data-ng-init="get_comments({{data.article.id}})"> 
+                    <p class="title">Comments:</p>
+                    <div class="comment" data-ng-repeat="comment in comments">
+                        <p class="user">Comment by: {{'{{comment.idUser.username}}'}}</p>
+                        <p class="text">{{'{{comment.text}}'}}</p>
+                    </div>
+                {% if session.user.id is not empty%}
+                <form>
+                    <label>Add your comment:</label>
+                    <textarea data-ng-model="newComment.text" placeholder="Comment on this post"></textarea>
+                    <input type="button" value="comment" data-ng-click="add_comment({{data.article.id}})"/>
+                </form>
+                {% else %}
+                    <p class="btn-register"><a href="{{link.registration.href}}">Register to comment</a></p>
+                {% endif %}
+            </div>
+            
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

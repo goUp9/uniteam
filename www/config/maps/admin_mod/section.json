@@ -1,0 +1,23 @@
+{
+    "route": {
+        "request": "admin/section",
+        "controller": "Admin\/Index:section",
+        "injections":[],
+        "params":{"title":""},
+        "dependancies": ["Admin\/Login"],
+        "tpl":"section.html.twig",
+        "css":[
+            "http://fonts.googleapis.com/css?family=Molle:400italic",
+            "http://fonts.googleapis.com/css?family=Monda:700",
+            "/deployment/css/mods/admin/pages/section.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "/js/Vendors/angular.min.js",
+            "/js/Modules/ngUtils.js",
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "\/js\/Vendors\/ngDialog.js",
+            "/js/Mods/Admin_mod/definitions.js"
+        ]
+    }
+}

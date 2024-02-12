@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    {% if data.newsletterPromtFlag %}
+        {% include 'commons/newsletterPromt.html.twig'%}
+    {% endif %}
+    {% include 'widgets/feedback.html.twig'%}    
+    <div id="wrapper">    
+    {% include 'commons/header_home.html.twig'%}
+    <div class="video" ng-controller="VideoCtrl as v" ng-show="showFlag">
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/NKSEZe58a04" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section class="left white-bg" id="search-tool" ng-controller="WhatCtrl as what"> 
+            <main>
+            	<div id="search-box">
+                    <div class="top"></div>
+                    <div class="middle">
+                    	{{forms.search| raw}}
+                    </div>
+                    <div class="bottom" data-ng-click="what.focus_on_search()">
+                        <!--<div id="search_arrow"></div>-->
+                        {{'{{searchActiveFlag}}'}}
+                        <div id="ask_or_supply"> 
+                            <p>Ask&rarr;<br/>or<br/>Supply&rarr;</p>
+                        </div> 
+                        <div id="and_get">
+                            <p>...and get the job done by the best supplier</br>...and get paid by askers once the job is done</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div id="adviser-box">
+                    <p><span>Or</span></p>
+                    <div class="button" ng-click="what.advice()">
+                        <p>Become an <span>Adviser</span></p>
+                    </div>
+                </div>
+            </main>
+    </section> 
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

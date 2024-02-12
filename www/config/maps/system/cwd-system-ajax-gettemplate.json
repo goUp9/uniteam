@@ -1,0 +1,9 @@
+{
+    "route": {
+        "request":"cwd-system-ajax-gettemplate",
+        "controller":"Ajax\/Templates:get_template",
+        "dependancies":[
+            "Admin\/DefaultTextsManager"
+        ]
+    }
+}

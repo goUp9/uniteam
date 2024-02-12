@@ -1,0 +1,165 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+
+@import "../widgets/login_panel";
+
+main {    
+    display:flex;
+    padding-top:11px;
+    vertical-align: top;
+    b,strong {
+        font-weight: bold;
+    }
+    i,em {
+        font-style: italic;
+    }
+        article#col1{
+            width:320px;
+            margin-left: 28px;
+            vertical-align: top;
+            flex:1 0 auto;
+            #logo {
+/*                width:320px;
+                padding-top:100px;
+                background: url("../../img/css/logo_about.gif") no-repeat top left;*/
+                h1 {
+                    font-family: $secondFont; color:$blue; font-size:.87em;
+                }
+            }
+            #youtube-video {
+                width:320px;
+            }
+            .text {
+                width:320px;
+                padding-top:15px;
+                p {
+                    font-size:.75em; line-height: 1.5; 
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        #col2 {
+            width:300px;
+            vertical-align: top;
+            flex:2;
+            .heading {
+                background-color:$blue; width:300px; height:47px;
+                h1 {
+                   color:white; font-family: $secondFont; font-size:1.5em;
+                   padding-top:10px; text-align:center;
+                }                
+            }
+            h2 {
+                   font-family: $secondFont; font-size:1.25em;
+                   margin-top:17px; margin-bottom:12px;
+            }
+            p {
+                width:300px;
+                font-size:.75em; line-height: 1.5; 
+                margin-bottom: 10px;
+            }
+            p.bold {
+                font-weight: bold;
+            }
+        }
+        #col3 {
+            width: 300px;
+            flex: 0 0 auto;
+            vertical-align: top;
+            margin-right: 44px;
+            .heading {
+                background-color:$blue; width:300px; height:47px;
+                h1 {
+                   color:white; font-family: $secondFont; font-size:1.5em;
+                   padding-top:10px; text-align:center;
+                }
+            }
+            h2 {
+                   font-family: $secondFont; font-size:1.25em;
+                   margin-top:17px; margin-bottom:12px;
+            }
+            &>p {
+                width:300px;
+                font-size:.75em; line-height: 1.5; 
+                margin-bottom: 10px;
+            }
+            &>p.bold {
+                font-weight: bold;
+            }
+            #adviser-box {
+                width:210px;
+                margin: 35px auto;
+                text-align:center;
+                p {
+                    color:#3264fa; text-align:center;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                .button{
+                    width:208px; height:57px;
+                    border:$blue 1px solid;
+                    margin-top:12px;
+                    p{
+                        margin-top:22px; text-align: center; font-size: 1em;
+                    }
+                }
+            }
+        }    
+}
+
+@media (max-width:1200px){
+    main {    
+    display:block;
+        article#col1{
+            float:left;            
+        }
+        #col2 { 
+            float:left;
+            margin: 0 10px;
+        }
+        #col3 {
+            float:right;           
+        }    
+    }
+}
+
+@media (max-width:355px){
+    main {    
+    display:block;    
+        article#col1{
+            float:none; 
+            margin:0;
+        }
+        #col2 { 
+            float:none;
+            margin: 0;
+        }
+        #col3 {
+            float:none;  
+            margin: 0;
+        }    
+    }
+}
+
+@media (max-width:800px){
+    header{
+        nav {
+            display: table;
+            clear:both;
+            .button {
+                margin-top:8px;               
+            }
+        }
+    }
+
+}
+

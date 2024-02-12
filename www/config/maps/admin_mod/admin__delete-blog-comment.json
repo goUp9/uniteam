@@ -1,0 +1,20 @@
+{
+    "route": {
+        "request": "admin/delete-blog-comment",
+        "controller": "Blog\/Admin:delete_comment",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+        ],
+        "js":[
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

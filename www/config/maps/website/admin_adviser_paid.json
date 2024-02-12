@@ -1,0 +1,29 @@
+{
+    "route": {
+        "request": "admin-adviser-paid",
+        "controller": "Payments\/Admin:adviser_paid",
+        "injections": [],
+         "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Where\/Form"
+            ],
+        "params":{"idQuery":""},
+        "forms":{},
+        "tpl":"",
+        "css":[
+            
+        ],
+        "js":[
+                        
+        ],
+        "calls":[
+                       
+            ],
+        "title":"",
+        "keywords":[],
+        "description":[]
+    }
+}

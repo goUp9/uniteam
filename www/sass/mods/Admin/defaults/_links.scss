@@ -1,0 +1,23 @@
+a.nostyle {
+	text-decoration:none; color:inherit;
+}
+
+a.nocolor {
+	color:inherit;
+}
+
+a.nounderline {
+	text-decoration:none;
+}
+
+a.internal {
+	border-bottom:1px dashed;
+	text-decoration:none;
+	color:#000066;
+	cursor:pointer;
+}
+
+*[clickable]{
+    cursor:pointer;
+}
+

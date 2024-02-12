@@ -1,0 +1,97 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="AskSearchCtrl as when">
+        <div id="query-type">
+            <img src="{{img.uin_ask.src}}" alt="{{img.uin_ask.alt}}" /><h1>asking</h1>
+        </div>
+        <div class="steps-heading" ng-if="when.headingFlag">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.ask__where.href}}"><img class="grayscale opacity" src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><img src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></div>
+        </div>
+        <p>Current GMT (Greenwich Meantime): {{'{{now_uk_hours}}'}}:{{'{{now_uk_minutes}}'}}</p>
+        <p>Your timezone: {{'{{timezone}}'}}</p>
+        <div ng-if="!when.headingFlag">
+            <p>Current "When" is:</p>
+            <p>{{'{{when.initData.date1.date}}'}}</p>
+            <p>{{'{{when.initData.date2.date}}'}}</p>
+            <p>{{'{{when.initData.dateType}}'}}</p>
+            <p>Get notified by {{'{{when.initData.expDate.date}}'}}</p>
+        </div>
+        <div id="form">
+            <h1 ng-if="!when.headingFlag">Change "When":</h1>
+            <div class="error-msg" ng-show="when.errorMsgFlag">
+                <p>The dates are not valid</p>
+                <p>Please note that the Notification Time needs to be before the service time</p>
+            </div>
+            <ul>
+                <li><input data-ng-click="when.show_hide_second()" type="radio" ng-model="when.type" value="on this day"/>On the day:</li>
+                <li><input data-ng-click="when.show_hide_second()" type="radio" ng-model="when.type" value="before"/>Before:</li>
+                <li><input data-ng-click="when.show_hide_second()" type="radio" ng-model="when.type" value="range"/>From-to:</li>
+            </ul>
+            <div id="date1-holder">               
+               <div class="date-holder">
+                   <label>Please choose the date:</label>
+                   <input ng-disabled="showCalsFlag[0]" ng-focus="showCalsFlag[0]=!showCalsFlag[0]" type="text" value="{{'{{day| formatDateCal}}'}}"/>
+                   <p ng-show="showCalsFlag[0]" ng-click="showCalsFlag[0]=!showCalsFlag[0]">Close calendar (x)</p>
+                    <calendar ng-show="showCalsFlag[0]" selected="day" showflag="showCalsFlag[0]"></calendar>
+               </div>
+                    <div class="time">
+                        <p>At this time:</p>
+                        <label>Hours</label>                        
+                        <hour-select selected="when.formData.date1.hours"></hour-select>
+                        <label>Minutes</label>
+                        <minutes-select selected="when.formData.date1.minutes"></minutes-select>                         
+                    </div>
+                
+            </div>
+            <div id="date2-holder" ng-show="when.secondFlag">
+                <div class="date-holder">
+                    <label>Please choose the date:</label>
+                    <input ng-disabled="showCalsFlag[1]" ng-focus="showCalsFlag[1]=!showCalsFlag[1]" type="text" value="{{'{{day2| formatDateCal}}'}}"/>
+                    <p ng-show="showCalsFlag[1]" ng-click="showCalsFlag[1]=!showCalsFlag[1]">Close calendar (x)</p>
+                    <calendar ng-show="showCalsFlag[1]" selected="day2" showflag="showCalsFlag[1]"></calendar>
+                </div>
+                    <div class="time">
+                        <p>At this time:</p>                        
+                        <label>Hours</label>
+                        <hour-select selected="when.formData.date2.hours"></hour-select>
+                        <label>Minutes</label>
+                        <minutes-select selected="when.formData.date2.minutes"></minutes-select>
+                    </div>
+                
+            </div>
+            <hr/>
+            <div id="expiary-holder">
+                <p>Get notified by:</p>
+                <div class="date-holder">
+                    <label>Please choose the date:</label>
+                    <input  ng-disabled="showCalsFlag[2]" ng-focus="showCalsFlag[2]=!showCalsFlag[2]" type="text" value="{{'{{day3| formatDateCal}}'}}"/>
+                    <p ng-show="showCalsFlag[2]" ng-click="showCalsFlag[2]=!showCalsFlag[2]">Close calendar (x)</p>
+                    <calendar ng-show="showCalsFlag[2]" selected="day3" showflag="showCalsFlag[2]"></calendar>
+                </div>
+                    <div class="time">
+                        <p>At this time:</p>
+                        <label>Hours</label>
+                        <hour-select selected="when.formData.exp.hours"></hour-select>                        
+                        <label>Minutes</label>
+                        <minutes-select selected="when.formData.exp.minutes"></minutes-select>
+                        <!--<input type="number" ng-focus="when.prepare_time('exp','minutes')" ng-blur="when.refresh_time('exp','minutes')" ng-change="when.validate_mins3()" min="0" max="59" data-ng-model="when.formData.exp.minutes"/>-->
+                    </div>
+            </div>
+            
+            <div class="btn" id="btn__save" data-ng-click="when.submit()">
+                    <p>Continue</p>
+            </div>
+            
+            
+            
+        </div>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

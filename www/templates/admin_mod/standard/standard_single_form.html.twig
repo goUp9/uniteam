@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    {% block nav %}
+        {{ parent()}}
+    {% endblock %}
+    <div id="form">
+        {% if data.pic|length %}
+            <img class="preview" src="{{constant('LINKS_PRE')}}{{data.picPath}}{{data.pic}}"/>
+            <img class="preview" src="{{constant('LINKS_PRE')}}{{data.picPathThumb}}{{data.pic}}"/>
+        {% endif %}
+        {{forms.form|raw}}
+    </div>    
+{% endblock %}

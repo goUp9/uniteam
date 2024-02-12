@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+                <h1>Please leave Feedback</h1>
+                <p>Please leave your feedback for the Supplier of your Query #{{data.queryDetails.id}}</p>
+                <p><b>Query #{{data.queryDetails.id}}</b> has been delievered by {{data.supplier}}</p>
+                <div id="take-action-form">
+                <form method="POST" action="{{constant('LINKS_PRE')}}leave-feedback/"> 
+                    <fieldset>
+                        <select name="feedback">        
+                            <option value="0">0 (Service undelivered)</option>    
+                            <option value="1">1</option> 
+                            <option value="2">2</option> 
+                            <option value="3">3</option> 
+                            <option value="4">4</option>
+                            <option value="5">5</option> 
+                        </select>
+                    </fieldset>
+                    <input type="hidden" value="{{data.idSupplier}}" name="idSupplier"/>
+                    <input type="hidden" value="{{data.queryDetails.id}}" name="idAskQuery"/>
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+                {% include 'notifications/_query_details.html.twig'%}
+        </div>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

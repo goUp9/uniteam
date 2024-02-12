@@ -1,0 +1,44 @@
+{
+    "users": [
+                {
+                    "title":"Edit Users",
+                    "link":"admin__users"
+                }
+            ],
+    "tags": [
+        {
+            "title":"Edit Tags",
+            "link":"admin__tags"
+        }
+    ],
+    "queries": [
+        {
+            "title":"Edit Queries",
+            "link":"admin__queries"
+        }
+    ],
+    "payment settings": [
+        {
+            "title":"Payment Settings",
+            "link":"admin__payment_settings"
+        }
+    ],
+    "blog": [
+        {
+            "title":"Blog",
+            "link":"admin__blog"
+        }
+    ],
+    "stories": [
+        {
+            "title":"Stories",
+            "link":"admin__stories"
+        }
+    ],
+    "videos": [
+        {
+            "title":"Videos",
+            "link":"admin__videos"
+        }
+    ]
+}

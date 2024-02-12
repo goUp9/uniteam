@@ -1,0 +1,59 @@
+{
+    "route": {
+        "request": "advise/when",
+        "controller": "",
+        "injections": [],
+         "dependancies": [
+            "Users\/Login",
+            "Communication\/Notifications",
+            "Communication\/Messages",
+            "Users\/LoginForm",
+            "Where\/Form"
+            ],
+        "params":{},
+        "forms":{"login":{"form class":"Users\/LoginForm","action":""}},
+        "tpl":"/pages/advise__when.html.twig",
+        "css":[
+            "http://fonts.googleapis.com/css?family=ABeeZee",
+            "http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic",
+            "deployment/css/vendors/angucomplete.css",
+            "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css",
+            "deployment/css/vendors/ngDialog.css",
+            "deployment/css/vendors/ngDialog-theme.css",
+            "deployment/css/vendors/geocomplete.css",
+            "deployment/css/pages/advise__when.css"
+        ],
+        "js":[
+            "/js/Vendors/jquery-2.1.1.min.js",
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js",
+            "http://maps.googleapis.com/maps/api/js?libraries=places",
+            "/js/Modules/ngUtils.js",            
+            "/js/Vendors/ckeditor/ckeditor.js",
+            "/js/Vendors/jquery.geocomplete.min.js",
+            "/js/Vendors/ngDialog.js", 
+            "/js/Vendors/angucomplete_w_tags.js",
+            "/js/Vendors/textAngular-sanitize.min.js",
+            "/js/Vendors/textAngular.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/en-gb.js",
+            "/js/Vendors/international_phone_number/intlTelInput.min.js",            
+            "/js/Vendors/international_phone_number/utils.js", 
+            "/js/Vendors/international_phone_number/international-phone-numbers.js",            
+            "/js/App/definitions.js",
+            "/js/App/Users/loginform.controller.js",
+            "/js/App/Users/loginpopup.directive.js",
+            "/js/App/When/hourSelect.directive.js",
+            "/js/App/When/minutesSelect.directive.js",
+            "/js/App/When/AdviseSearch.controller.js"
+            
+        ],
+        "calls":[
+            "Users:remember_user",
+            "Communication:get_unread_notifications",
+            "Communication:get_unread_msgs"            
+            ],
+        "title":"",
+        "keywords":[],
+        "description":[]
+    }
+}

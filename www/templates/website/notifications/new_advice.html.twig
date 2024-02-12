@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main data-ng-controller="NotificationCtrl as n">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        {% include 'notifications/_back_to_n.html.twig'%}
+        {% include 'notifications/_set_unread.html.twig'%}
+        <div id="notification">
+            <h1>New Advice</h1>
+            {% if data.msg is not empty %}
+                <p>The Advicer advises you to "{{ data.msg }}"</p>  
+            {% endif %}
+            {% if data.budget is not empty %}
+                <p>The Adviser suggests the budget of:{{ data.queryDetails.finalAsker.currency}}{{data.budget}}</p> 
+            {% endif %}
+            
+            {% if data.queryDetails.isExpired==true %}
+                <p>This Query has expired.</p>
+            {% elseif data.queryDetails.isPending==true %}
+                <p>This Query is already pending.</p>
+            {% else %}
+                <p>If you are happy with this advice - accept this advice and confirm your request</p>
+                <div id="take-action-form">
+                    <form method="POST" action="{{constant('LINKS_PRE')}}match-suppliers-with-adviser/{{data.queryDetails.id}}/true/"> 
+                        <input type="hidden" value="{{data.budget}}" name="budget"/>
+                        <input type="hidden" value="{{data.msg}}" name="advice"/>
+                        <input type="hidden" value="{{data.adviser}}" name="adviser"/>
+                        <input type="submit" value="Accept and Confirm">
+                    </form>
+                </div>
+            {% endif %}            
+            
+            {% include 'notifications/_query_details.html.twig'%}
+        </div>
+    </main>
+        <div id="push-footer"></div>    
+        </div>
+    {% endblock %}

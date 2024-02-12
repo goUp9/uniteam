@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "admin/ajax/get-tags",
+        "controller": "Tags\/Admin:get_tags",
+        "injections": [],
+        "dependancies": ["Admin\/Login"],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

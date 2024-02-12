@@ -1,0 +1,33 @@
+    <header>
+        <nav>
+            	<div class="left nav-box">
+                        <div id="btn_home" class="button" clickable><a href="{{constant('LINKS_PRE')}}"></a></div>
+                        <div id="btn_about_home" clickable class="button"><p><a class="nostyle"  href="{{link.about.href}}">About</a></p></div>
+                        <div id="btn_video" ng-controller="VideoCtrl as v" ng-click="v.show_hide_video()" class="button"></div>
+                </div> 
+                <div id="motto">{{data.textManager.motto|raw}}</div>                
+                <div class="right nav-box">                     
+                    {% if session.user.id is empty%}
+                    <div id="btn_signup" class="button" clickable><p><a class="nostyle"  href="{{link.registration.href}}">Sign Up</a><p></div>
+                    <div id="login-wrap" data-ng-controller="LoginFormCtrl as l">
+                        <div id="btn_login" class="button" data-ng-click="showLoginPanel=!showLoginPanel;"><p>Login</p></div>
+                        {% include 'widgets/login.html.twig'%}
+                    </div> 
+                </div>
+                    {% else %}                    
+                    <div id="btn_myuin" class="button" clickable><p><a class="nostyle" href="{{link.myuin__personal.href}}">My uin</a><p></div>
+                    <div id="login-wrap" data-ng-controller="LoginFormCtrl as l">
+                        <div id="btn_logout" class="button" data-ng-click="l.logout()"><p>Logout</p></div>
+                    </div>                    
+                </div>
+                <div class="updates-wrap nav-box">
+                        <div clickable id="ico_new-notofications">{% if data.unread_notifications!=0 %}<p>{%else%}<p class="none">{%endif%}<a class="nostyle" href="{{link.notifications.href}}">{{data.unread_notifications}}</a></p></div>                    
+                        <div clickable id="ico_new-mail">{% if data.unread_msgs!=0 %}<p>{%else%}<p class="none">{%endif%}<a class="nostyle" href="{{link.myuin__msgs.href}}">{{data.unread_msgs}}</a></p></div>
+                </div>
+                <div id="current-username"><p>Hi, {{data.current_username}}!</p></div>
+                    {% endif %}
+                
+                
+        </nav>
+        <div id="mobile_motto">{{data.textManager.motto|raw}}</div>
+    </header>

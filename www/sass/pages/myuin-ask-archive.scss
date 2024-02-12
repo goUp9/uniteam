@@ -1,0 +1,78 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+
+@import "../widgets/login_panel";
+
+.link {
+    text-align:center;
+    margin-top: 20px;
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+b{
+    font-weight: bold;
+}
+
+.btn__new {
+    width: 160px;
+    background-color: $blue; color: white;
+    padding: 10px; margin:15px auto 5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+.btn {
+    width: 60px;
+    background-color: $blue; color: white;
+    padding: 10px; margin: 5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+#queries{
+    width: 90%;
+    margin: 0 auto;
+    .query{
+        border-bottom: $blue 1px solid;
+        padding: 10px 5px;
+        p {
+            display:inline-block;
+        }
+        .unarchive_btn{
+            width: 100px; height: 45px;
+            background-color: $blue;
+            text-align: center;
+            display: inline-block; 
+            cursor:pointer;
+            p{
+                color:white; font-size: .87em;
+                font-weight: bold;
+                padding-top:15px;
+            }
+        }
+        .view-details{
+            border-bottom: $blue dashed 1px;
+            color: $blue;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: .87em;
+        }
+        .details {
+            p{
+                display: inline;
+            }
+        }
+    }
+}
+

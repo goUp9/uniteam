@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/get-archived-notifications",
+        "controller": "Notifications\/Notifications:get_by_user_archived",
+        "injections": [],
+        "dependancies": [],
+        "params":{"sortBy":""},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

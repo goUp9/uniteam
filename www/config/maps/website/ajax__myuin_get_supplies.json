@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-get-supplies",
+        "controller": "MyUin\/Supply:ajax_get_supplies",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

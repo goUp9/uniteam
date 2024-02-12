@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+    {% include 'commons/header.html.twig'%}
+        <main>
+            <article id="col1">
+                <div id="logo">
+                    <h1>Matching clients and service providers worldwide</h1>
+                </div>
+                <div id="youtube-video">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/NKSEZe58a04" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="text">
+                    <p>A new generation marketplace with the main objective to assist users and dynamically provide a more sustainable economy through a global platform for a more agile and effective procurement of services.</p>
+                    <p>The idea has been driven by the strong commitment of the founder on academic research, professional experience and social responsibility for a resulting marketplace to be customised by the users themselves and open to continuous improvements.</p>
+                </div>
+            </article>
+            <article id="col2">
+                <div class="heading" clickable>
+                    <h1><a class="nostyle"  href="{{link.asker.href}}">Ask</a></h1>
+                </div>
+                <h2>Do you need a service?</h2>
+                <p>Everyone does! You can use the many existing online marketplaces and spend the rest of your day or week looking for what you need. You might be notified by many suppliers and you will be able to select your favorite one, and endlessly discuss about the service.</p>
+                <p>However, if nowadays you have no time to go through such a process, getting frustrated by Suppliers' specifications, notifications, or questions you cannot even understand, just Ask uinteam!</p>
+                <p>Follow the friendly and fast selection steps of the website (What, Where, When, Budget), and the uinteam platform will instantaneously find the service you need, where and when you want it delivered through an automatic matching process.</p>
+                <p>Furthermore, when you are not familiar with the service you need, uinteam will assist you with competent Advisers, whose only purpose is to provide you with advices to get the best deal. They might be suppliers, and they might even compete for the deal.</p>
+            </article>
+            <article id="col3">
+                <div class="heading" clickable>
+                    <h1><a class="nostyle"  href="{{link.supplier.href}}">Supply</a></h1>
+                </div>
+                <h2>Can you supply a service?</h2>
+                <p>Just follow the same selection process for Supplier, and instantaneously the uinteam platform will find the possible Askers' requests matching your service. Then, if you approve the request, the best Supplier will be automatically procured by the uinteam selection process. If you win the competition you will be able to start delivering your service.</p>
+                <p class="bold">Registrations are open to build the strongest Supplier team and start to analyze the pattern of demand for the services. </p>
+                <p class="bold">Once the website will be completed, all Suppliers will be notified and asked for the required details to allow an objective and effective selection process.</p>
+                <div id="adviser-box">
+                        <p><span>Or</span></p>
+                        <div class="button" clickable>
+                            <p><a class="nostyle"  href="{{link.become_adviser.href}}">Become an <span>Adviser</span></a></p>
+                        </div>
+                </div>
+            </article>
+        </main>
+        <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+{% endblock %}

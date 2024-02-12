@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>        
+        {% if data.verified %}
+            <div class="usr-msg">
+                <p>Your account has been verified</p>
+            </div>
+            <div id="additinal_login" data-ng-controller="LoginFormCtrl as l">
+                <h2>Already have an account? Login:</h2>
+                <p class="invalid" ng-show="l.loginFailed.flag" style="font-size:.76em; color:red">{{'{{l.loginFailed.msg}}'}}</p>
+                {{forms.login| raw}}
+            </div>
+        {% else %}
+            <div class="usr-msg error">
+                <p>Verification error.</p>
+            </div>                
+        {% endif %}
+            
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

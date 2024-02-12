@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/add-tag",
+        "controller": "Index\/WhatSearch:ajax_add_tag",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

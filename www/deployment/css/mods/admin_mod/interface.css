@@ -1,0 +1,118 @@
+.btn_edit--image{
+    height: 20px;
+    color:white;
+    background-color: rgba(0,0,0,0.7);
+    background-image:url(../../img/admin/bg/edt.png); background-repeat: no-repeat;
+    position:absolute; z-index: 9;   
+    display: none;
+    padding-left: 20px;
+}
+
+/* Angular TextEditor */
+.ta-editor {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit; font-size: 100%; text-align: left;
+    margin:20px 0;
+    border: 1px #b3e2ff solid;
+    clear:both; float: none;
+}
+
+.ta-scroll-window > .ta-bind {
+    height: auto;
+    min-height: 300px;
+    padding: 6px 12px;
+}
+
+.ta-root.focussed .ta-scroll-window.form-control {
+    border-color: #66AFE9;
+    outline: 0px none;
+}
+.ta-scroll-window.form-control {
+    height: auto;
+    min-height: 300px;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    position: relative;
+    padding: 0px;
+}
+
+.ta-toolbar {
+    clear:both; float:none;
+    margin: 0 auto;
+}
+
+.ta-toolbar .btn-group {
+    float:left;
+}
+
+.ta-toolbar .btn-group .btn {
+    padding:4px;
+}
+
+
+
+
+
+.btn_delete {
+    width: 100px; height:30px;
+    background-color:#fc4040;
+    float:left;
+    margin: 7px;
+    border-bottom: 3px #e74f4f solid; border-left: 3px #e74f4f solid; border-right: 3px #e74f4f solid;
+    border-radius: 3px;;
+    cursor:pointer;
+}
+
+.btn_delete p{
+    color:#ffffff; text-align: center; 
+    padding-top:3px;
+}
+
+.btn_edit {    
+    width: 100px; height:30px;
+    float:left;
+    margin: 7px;
+    background-color:#4056fc;
+    border-bottom: 3px #4d5fe3 solid; border-left: 3px #4d5fe3 solid; border-right: 3px #4d5fe3 solid;
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+.btn_edit p{
+    color:#ffffff; text-align: center; 
+    padding-top:3px;
+}
+
+.hint_edit {
+    color:#818181; font-size: .87em; font-weight: normal;
+    text-decoration: none;
+}
+
+/* NEW ITEM BTN */
+
+.btn_new-item {
+    width: 210px; height:50px;
+    margin: 25px auto;
+    background-color:#4dfc40;
+    border-bottom: 2px #5bd052 solid; border-left: 2px #5bd052 solid; border-right: 2px #5bd052 solid;
+    border-radius: 3px;
+    float:none;
+    cursor:pointer;
+}
+
+.btn_new-item p{
+    text-align: center; font-size:1.25em;
+    font-family: 'Monda', sans-serif;
+    padding-top:10px;
+}
+
+.btn_new-item p span {
+    font-size:2.5em; line-height: .5;
+    padding-top:0px;
+    display:block;
+    float:left;
+    padding-left: 15px;
+}

@@ -1,0 +1,82 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>     
+        <h1>My uin - Asking</h1>        
+        {% include 'commons/myuin-nav.html.twig'%}  
+        <div clickable class="btn__new">
+            <p><a href="{{link.home.href}}" class="nostyle">Create a new Ask query</a></p>
+        </div>
+        <div>
+            <p class="link"><a href="{{link.myuin__asking_archive.href}}">View archived Queries</a></p>
+        </div>        
+        <div id="queries" ng-controller="AskCtrl as ask">
+            <table class="outer">                
+                <tr>
+                    <th>Query Ref. Number</th>
+                    <th class="tcell__what"></th>
+                    <th class="tcell__where"></th>
+                    <th class="tcell__when"></th>
+                    <th></th>
+                    <th>Status</th>
+                </tr>
+                <tr ng-repeat="query in queries">                    
+                    <td class="tcell__id">
+                        &#35{{ '{{query.id}}' }} 
+                        <p class="link" data-ng-click="ask.archive(query.id)">Archive this query</p>
+                    </td>
+                    <td>
+                        <div class="tcell__what"></div>
+                        <table class="inner">
+                            <tr ng-repeat="tags in query.whats">
+                                <td>{{ '{{tags.tag.tag}}' }}</td>                                 
+                            </tr> 
+                            <tr ng-if="query.status==='incomplete'">
+                                <td class="btn__edit"><div clickable><a class="nostyle" href="{{link.myuin__edit_what.href}}?query_id={{ '{{query.id}}' }}&type=asking">Edit</a></div></td>
+                            </tr>
+                        </table>                        
+                    </td>
+                    <td> 
+                        <div class="tcell__where"></div>
+                        <p ng-if="query.wheres.length<1">Anywhere</p>
+                        <p ng-if="query.wheres.length>0">Within {{ '{{query.wheres[0].radius}}' }} miles of
+                        <br/>
+                        {{ '{{query.wheres[0].place.formattedAddress}}' }}</p>
+                        <div ng-if="query.status==='incomplete'" class="btn__edit" clickable><a class="nostyle" href="{{link.myuin__edit_where.href}}?query_id={{ '{{query.id}}' }}&place_id={{ '{{query.wheres[0].place.placeId}}' }}&type=asking">Edit</a></div>
+                        <div ng-if="query.wheres.length>0 && query.status==='incomplete'" class="btn__delete" ng-click="ask.remove_loc(query.wheres[0].id)">Remove</div>
+                    </td>
+                    <td>
+                        <div class="tcell__when"></div>
+                        <table class="inner">
+                            <tr>
+                                <td><p>{{'{{query.QueryWhenAsker[0].date1}}'}}</p><p>{{'{{query.QueryWhenAsker[0].date2}}'}}</p><p>expires:{{'{{query.QueryWhenAsker[0].expDate}}'}}</p><p>Timezone: {{'{{query.timezone}}'}}</p></td>
+                            </tr>
+                            <tr ng-if="query.status==='incomplete'">
+                                    <td class="btn__edit"><div clickable><a class="nostyle" href="{{link.ask__when.href}}?query_id={{ '{{query.id}}' }}">Edit</a></div></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="inner">
+                            <tr>
+                                <td><p>budget: {{'{{query.finalAsker.budget}}'}}</p></td> 
+                                <td><p>currency: {{'{{query.finalAsker.currency}}'}}</p></td>
+                            </tr> 
+                            <tr ng-if="query.status==='incomplete'">
+                                <td class="btn__edit"><div clickable><a class="nostyle" href="{{link.ask__final.href}}?query_id={{ '{{query.id}}' }}">Edit</a></div></td>
+                                
+                            </tr>
+                        </table>                       
+                    </td>
+                     <td>
+                        {{'{{query.status}}'}}
+                        <div class="btn" ng-if="query.status==='incomplete'&&query.complete==true"><p data-ng-click="ask.find_matches(query.id)">Confirm</p></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

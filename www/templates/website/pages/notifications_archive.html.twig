@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main ng-controller="NotificationsArchiveCtrl as noti">
+        <h1>My uin - notifications</h1>
+        {% include 'commons/myuin-nav.html.twig'%}
+        <div>
+            <p class="link"><a href="{{link.notifications.href}}">View notifications</a></p>
+        </div>
+            <table id="notifications-list">
+                <tr class="item">
+                    <th class="date" data-ng-click="get('n.dateCreated')">Date</th>
+                    <th class="type" data-ng-click="get('n.type')">Notification type</th>
+                    <th class="data" data-ng-click="get('query.id')">Query id</th>
+                </tr>
+                <tr class="item" ng-repeat="n in notifications">
+                    <td class="date">{{'{{n.created}}'}} <p ng-show="n.isRead" ng-click="noti.unarchive(n.id)">unarchive</p></td>
+                    <td class="type">{{'{{n.type}}'}}</td>
+                    <td class="data">for your Query #{{'{{n.idQuery.id}}'}}</td>                    
+                </tr>
+            </table>
+            
+        <!--</div>-->
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

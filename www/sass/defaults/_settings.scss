@@ -1,0 +1,17 @@
+$footerHeight:60px;
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+    border:none;
+    width:auto;
+    height:auto;
+    -webkit-appearance:radio;
+}

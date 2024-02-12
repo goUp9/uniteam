@@ -1,0 +1,9 @@
+Catering
+Special Food
+Food Truck
+Bar
+Pub
+Coffee Shop
+Restaurant
+Take Away
+Home Delivery

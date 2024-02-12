@@ -1,0 +1,9 @@
+{
+    "mysql": {
+        "dbname": "uinteamc_uin",
+        "user": "uinteamc_web",
+        "password": "m*!%IDqd^H8$",
+        "host": "localhost",
+        "driver": "pdo_mysql"
+    }
+}

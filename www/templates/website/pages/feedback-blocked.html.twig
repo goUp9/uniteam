@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block content %}   
+    <div id="wrapper">
+        {% include 'commons/header.html.twig'%}
+    <main>     
+        <h1>My uin - Feedback left</h1>        
+        {% include 'commons/myuin-nav.html.twig'%} 
+        <article>
+            <p>You need to leave your feedback for the Supplier who delivered your service before you can make new Ask queries.</p>
+            <p>Please go to <a href="{{constant("LINKS_PRE")}}notifications/">your notifications page</a> to leave the feedback.</p>
+        </article>
+        
+    </main>
+    <div id="push-footer"></div>    
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{
+    "route": {
+        "request": "ajax/send-feedback",
+        "controller": "Feedback\/Send",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

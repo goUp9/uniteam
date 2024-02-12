@@ -1,0 +1,47 @@
+.feedbck_btn {
+    height: 30px; width:60px;
+    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+    padding: 0 10px;
+    position: absolute;    
+    z-index: 99;
+    top:70%; left:-25px;
+    background-color: $blue;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+    cursor:pointer;
+    p {
+        color:white; padding-top:5px;
+        text-align: center;
+        font-size:.87em;
+    }
+}
+
+#form__feedbck {
+    fieldset{
+        margin: 10px 0;
+        input[type="email"]{
+            margin: 0 15px;
+            font-family: $mainFont;
+        }
+        textarea{
+            height: 250px;
+            font-family: $mainFont;
+            vertical-align: top;
+        }
+    }
+    label {
+        font-family: $mainFont;
+        vertical-align: top;
+    }
+    input[type="submit"]{
+        padding: 5px;
+        font-family: $mainFont;
+        margin: 0 auto;
+        display: block;
+    }
+}

@@ -1,0 +1,68 @@
+{% extends "base.html.twig" %}
+{% block main %}
+    <article ng-controller="UsersCtrl as u">
+        <div ng-hide="u.editMode" id="tools">
+            <p ng-click="u.all_active()">Set selected to active</p>
+            <p ng-click="u.all_disabled()">Set selected to disabled</p>
+        </div>
+        <div  ng-hide="u.editMode" id="filters">
+            <p ng-click="u.get_users()">Filter All</p>
+            <p ng-click="u.filter_users('supply')">Filter Supplyers</p>
+            <p ng-click="u.filter_users('ask')">Filter Askers</p>
+            <p ng-click="u.filter_users('advise')">Filter Advisers</p>
+        </div>
+        <div  ng-hide="u.editMode" class="search-items">
+            <label>Search users:</label>
+            <input type="text" ng-model="u.postData.searchVal"> 
+            <label>Search by:</label>
+            <fieldset ng-repeat="field in u.searchCheckboxes">                
+                <input type="checkbox" ng-model="u.postData.fields[field.id]"/>  
+                <label>{{'{{field.name}}'}}</label>
+            </fieldset>
+            <div ng-click="u.search_users()" id="btn__search">
+                <p>search</p>
+            </div>
+        </div>
+        <table ng-hide="u.editMode">
+            <tr>
+                <th><input type="checkbox" ng-model="u.bulkPageFlag" ng-click="u.bulk_page()"></th>
+                <th>registration date</th>
+                <th>username</th>
+                <th>email</th>
+                <th>status</th>
+                <th>actions</th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td><input type="checkbox" class="bulk" ng-model="user.bulk" ng-init="user.bulk=false" ng-click="user.bulk=!user.bulk"/></td>                
+                <td>{{'{{user.dateCreated}}'}}</td>
+                <td>{{ '{{user.username}}' }}</td>   
+                <td>{{ '{{user.email}}' }}</td> 
+                <td>  
+                    <div class="onoffswitch">
+                        <input ng-model="user.status" ng-change="u.save_change($index)" type="checkbox"  class="onoffswitch-checkbox" id="myonoffswitch{{ '{{user.id}}' }}">
+                        <label class="onoffswitch-label" for="myonoffswitch{{ '{{user.id}}' }}">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <p ng-click="u.edit_mode($index)">edit details</p>
+                    <p><a href="{{link.admin__user_queries.href}}{{ '{{user.id}}' }}/supply/" target="_blank">View Supply Queries</a></p>
+                    <p><a href="{{link.admin__user_queries.href}}{{ '{{user.id}}' }}/ask/" target="_blank">View Ask Queries</a></p>
+                    <p><a href="{{link.admin__user_queries.href}}{{ '{{user.id}}' }}/advice/" target="_blank">View Advise Queries</a></p>
+                </td>
+            </tr> 
+        </table>
+        <div ng-hide="u.editMode" class="page-nums">
+            <div ng-repeat="page in pages" data-ng-click="u.go_to_page($index)" ng-class="{current: page==u.postData.page}">
+                <p>{{ '{{page}}' }}</p>
+            </div>
+        </div>
+        <div ng-show="u.editMode" id="edit_form">
+            <p ng-click="u.exit_edit_mode()">Back to all users</p>
+            {{forms.edit| raw}}
+            <p>Date registered: {{'{{u.editItem.dateCreated.date}}'}}
+        </div>
+    </article> 
+{% endblock %}

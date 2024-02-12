@@ -1,0 +1,22 @@
+{
+    "route": {
+        "request": "ajax/myuin-get-advises-archived",
+        "controller": "MyUin\/Advise:ajax_get_archived",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "calls":[],
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}

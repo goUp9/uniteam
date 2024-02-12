@@ -1,0 +1,40 @@
+.social-login-btns,.g-signin2{
+    display:inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.twitter-social-signin-btn{
+    height:30px;
+    border-radius: 30px;
+    background-color:#1DA1F2;
+    padding: 5px 10px 5px 45px;
+    cursor: pointer;
+    background-image: url("../../img/css/Twitter_Logo_White_On_Blue.png"); background-size: 20%; background-position: 10px center; background-repeat: no-repeat;
+    p {
+        color: white;
+        margin-top: 10px;
+        font-size:.86em;
+        font-weight: bold;
+    }
+}
+
+.facebook-social-signin-btn{
+    height:30px;
+    border-radius: 4px;
+    background-color:#3B5998;
+    padding: 5px 10px;
+    cursor: pointer;    
+    p {
+        color: white;
+        margin-top: 10px;
+        font-size:.86em;
+        font-weight: bold;
+    }
+}
+
+.g-signin2{
+    .abcRioButton{
+        width:150px !important;
+    }
+}

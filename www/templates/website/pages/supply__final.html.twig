@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block content %}
+    <div id="wrapper">    
+    {% include 'commons/header.html.twig'%}
+    <main>
+        <div id="query-type">
+            <img src="{{img.uin_supply.src}}" alt="{{img.uin_supply.alt}}" /><h1>supplying</h1>
+        </div>
+        <div class="steps-heading">
+            <div clickable><a href="{{link.home.href}}"><img class="grayscale opacity" src="{{img.step_what.src}}" alt="{{img.step_what.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.supply__where.href}}"><img class="grayscale opacity" src="{{img.step_where.src}}" alt="{{img.step_where.alt}}"/></a><p class="grayscale">&RightArrow;</p></div>
+            <div><a href="{{link.supply__when.href}}"><img class="grayscale opacity" src="{{img.step_when.src}}" alt="{{img.step_when.alt}}"/></a></div>
+        </div>
+        <div id="form" data-ng-controller="SupplyFinalCtrl as final">
+            <label>Years of experience:</label>
+            <input type="number" min="0" ng-change="final.validate_exp()" ng-model="final.experience"/>
+            <label>Qualifications:</label>
+            <select ng-model="final.qualification">
+                <option value="0">None</option>
+                <option value="1">Secondary school</option>
+                <option value="2">High school school/College</option>
+                <option value="3">Bachelor's degree</option>
+                <option value="4">Master's degree</option>
+                <option value="5">PhD</option>
+            </select>
+            <div class="btn" id="btn__save" data-ng-click="final.submit()">
+                <p>Save</p>
+            </div>
+        </div>
+    </main>
+    <div id="push-footer"></div>                
+    </div>
+    {% include 'commons/footer.html.twig'%}
+    
+{% endblock %}

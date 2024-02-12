@@ -1,0 +1,215 @@
+@import "../defaults/normalize";
+@import "../defaults/links";
+@import "../defaults/settings";
+@import "../defaults/force-footer";
+
+@import "../modules/fonts";
+@import "../modules/colors";
+
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/profile-nav";
+
+@import "../widgets/login_panel";
+
+.btn__new {
+    width: 160px;
+    background-color: $blue; color: white;
+    padding: 10px; margin:15px auto 5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+
+table.outer {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-family: $mainFont;
+    tr {
+        background-color:#ebeffa;
+        border-bottom:$blue 1px solid; 
+        th {
+            padding: 35px;
+        }
+        td {
+            border-right:$blue 1px solid;
+            padding: 20px;
+        }
+        td:last-of-type{
+            border-right:none;
+        }
+    }
+    th {
+        background-color:white; 
+    }
+}
+
+table.inner {
+    tr{
+        border:none;
+        td {
+            border:none;
+            padding: 3px;
+        }
+    }
+}
+
+td.tcell__id {
+    width: 15%;
+}
+
+.tcell__what {
+    min-height: 20px; min-width:70px;
+    background: url("../../img/css/step_what.png") no-repeat center center;
+}
+
+.tcell__when {
+    min-height: 20px; min-width:70px;
+    background: url("../../img/css/step_when.png") no-repeat center center;
+}
+
+.tcell__where {
+    min-height: 20px; min-width:70px;
+    background: url("../../img/css/step_where.png") no-repeat center center;
+}
+
+.btn__edit div {
+    width: 60px;
+    background-color: $blue; color: white;
+    padding: 10px; margin:5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+.btn__delete div {
+    width: 60px;
+    background-color: darkred; color: white;
+    padding: 10px; margin: 5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+.btn__add div {
+    width: 60px;
+    background-color: darkgreen; color: white;
+    padding: 10px; margin: 5px;
+    display:block;
+    font-size:.87em; text-align: center; font-weight: bold;
+}
+
+div.tcell__what {
+    display:none;
+}
+
+div.tcell__when {
+    display:none;
+}
+
+div.tcell__where {
+    display:none;
+}
+
+.internal-link{ 
+    display: inline-block;
+    vertical-align: top;
+    background-color: $blue;
+    margin: 20px 10px;
+    cursor: pointer;
+    p{
+        color:white;
+        margin: 10px 5px;   
+        display: inline-block;                
+    } 
+    span{
+        width: 15px; height: 20px;
+        display: block;
+        float:left;
+        padding: 0 0 0 5px;
+        margin: 0 5px;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 20px;
+        color:$blue;
+    }
+}
+
+#videos{
+    width: 100%;
+    padding: 5px 0;
+    text-align:center;
+    .video{
+        display: inline-block;
+        iframe{
+            display: inline-block;
+        }
+        p{
+            color:$blue;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media (max-width:520px){
+     div.tcell__what {
+        min-height: 70px;
+        display:block;
+    }
+    
+    div.tcell__when {
+        min-height: 70px;
+        display:block;
+    }
+
+    div.tcell__where {
+        min-height: 70px;
+        display:block;
+    }
+    
+    table.outer {
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: none;
+        tr {
+            border-left: 1px solid $blue; border-right: 1px solid $blue;
+            margin: 0 auto; margin-bottom: 25px;
+            padding: none;
+            td{
+                width:80%;
+                display:block;
+                border-top: 1px solid $blue; 
+                border-bottom: none;  border-right:  none;
+                padding: none;
+            }
+            td+td{
+                width: 80%;
+                border-top: none; border-bottom: 1px solid $blue; border-right:  none;
+            }
+            th{
+                display:none;
+            }
+            
+        } 
+    }
+    table.inner {        
+        display:table;
+        tr{
+            border:none;
+            td{
+                border:none;
+                padding: 2px;
+            }
+            td:last-of-type{
+                 border-right:  none;
+            }
+        }
+    }
+    td.tcell__id {
+        width: auto;
+        font-weight: bold;
+        border-right: none;
+    }
+}
+

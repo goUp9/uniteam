@@ -1,0 +1,21 @@
+{
+    "route": {
+        "request": "ajax/logout",
+        "controller": "Users\/Login:action_logout",
+        "injections": [],
+        "dependancies": [],
+        "params":{},
+        "tpl":"",
+        "tplBasePath":"",
+        "forms":{},
+        "css":[
+            
+        ],
+        "js":[
+            
+        ],
+        "title":"",
+        "keywords":[],
+        "description":""
+    }
+}
